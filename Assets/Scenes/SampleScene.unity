@@ -145,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 10513584}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -51.999996, y: 0, z: 0}
+  m_LocalPosition: {x: -58.959995, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -169,756 +169,756 @@ MonoBehaviour:
   cellSize: 4
   canHostBaseBuildings: 0
   enableDebugLines: 0
-  lineThickness: 0.1
+  lineThickness: 0.34
   gridVisualizationMesh: {fileID: 1050943058}
   gridVisualizationMeshFilter: {fileID: 1050943059}
+  oldPosition: {x: -73.299995, y: -17.8, z: 0}
   cellExtents: 2
-  oldPosition: {x: -64.2, y: -14.8, z: 0}
   gridBounds:
     serializedVersion: 2
-    x: -64.2
-    y: -14.8
+    x: -73.299995
+    y: -17.8
     width: 52
     height: 28
   allTiles:
   - tileIndex: 0
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -62.199997, y: -12.8}
+    position: {x: -71.299995, y: -15.799999}
   - tileIndex: 1
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -58.199997, y: -12.8}
+    position: {x: -67.299995, y: -15.799999}
   - tileIndex: 2
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -54.199997, y: -12.8}
+    position: {x: -63.299995, y: -15.799999}
   - tileIndex: 3
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -50.199997, y: -12.8}
+    position: {x: -59.299995, y: -15.799999}
   - tileIndex: 4
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -46.199997, y: -12.8}
+    position: {x: -55.299995, y: -15.799999}
   - tileIndex: 5
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -42.199997, y: -12.8}
+    position: {x: -51.299995, y: -15.799999}
   - tileIndex: 6
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -38.199997, y: -12.8}
+    position: {x: -47.299995, y: -15.799999}
   - tileIndex: 7
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -34.199997, y: -12.8}
+    position: {x: -43.299995, y: -15.799999}
   - tileIndex: 8
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -30.199997, y: -12.8}
+    position: {x: -39.299995, y: -15.799999}
   - tileIndex: 9
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -26.199997, y: -12.8}
+    position: {x: -35.299995, y: -15.799999}
   - tileIndex: 10
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -22.199997, y: -12.8}
+    position: {x: -31.299995, y: -15.799999}
   - tileIndex: 11
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -18.199997, y: -12.8}
+    position: {x: -27.299995, y: -15.799999}
   - tileIndex: 12
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -14.199997, y: -12.8}
+    position: {x: -23.299995, y: -15.799999}
   - tileIndex: 13
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -62.199997, y: -8.8}
+    position: {x: -71.299995, y: -11.799999}
   - tileIndex: 14
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -58.199997, y: -8.8}
+    position: {x: -67.299995, y: -11.799999}
   - tileIndex: 15
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -54.199997, y: -8.8}
+    position: {x: -63.299995, y: -11.799999}
   - tileIndex: 16
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -50.199997, y: -8.8}
+    position: {x: -59.299995, y: -11.799999}
   - tileIndex: 17
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -46.199997, y: -8.8}
+    position: {x: -55.299995, y: -11.799999}
   - tileIndex: 18
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -42.199997, y: -8.8}
+    position: {x: -51.299995, y: -11.799999}
   - tileIndex: 19
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -38.199997, y: -8.8}
+    position: {x: -47.299995, y: -11.799999}
   - tileIndex: 20
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -34.199997, y: -8.8}
+    position: {x: -43.299995, y: -11.799999}
   - tileIndex: 21
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -30.199997, y: -8.8}
+    position: {x: -39.299995, y: -11.799999}
   - tileIndex: 22
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -26.199997, y: -8.8}
+    position: {x: -35.299995, y: -11.799999}
   - tileIndex: 23
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -22.199997, y: -8.8}
+    position: {x: -31.299995, y: -11.799999}
   - tileIndex: 24
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -18.199997, y: -8.8}
+    position: {x: -27.299995, y: -11.799999}
   - tileIndex: 25
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -14.199997, y: -8.8}
+    position: {x: -23.299995, y: -11.799999}
   - tileIndex: 26
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -62.199997, y: -4.8}
+    position: {x: -71.299995, y: -7.799999}
   - tileIndex: 27
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -58.199997, y: -4.8}
+    position: {x: -67.299995, y: -7.799999}
   - tileIndex: 28
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -54.199997, y: -4.8}
+    position: {x: -63.299995, y: -7.799999}
   - tileIndex: 29
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -50.199997, y: -4.8}
+    position: {x: -59.299995, y: -7.799999}
   - tileIndex: 30
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -46.199997, y: -4.8}
+    position: {x: -55.299995, y: -7.799999}
   - tileIndex: 31
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -42.199997, y: -4.8}
+    position: {x: -51.299995, y: -7.799999}
   - tileIndex: 32
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -38.199997, y: -4.8}
+    position: {x: -47.299995, y: -7.799999}
   - tileIndex: 33
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -34.199997, y: -4.8}
+    position: {x: -43.299995, y: -7.799999}
   - tileIndex: 34
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -30.199997, y: -4.8}
+    position: {x: -39.299995, y: -7.799999}
   - tileIndex: 35
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -26.199997, y: -4.8}
+    position: {x: -35.299995, y: -7.799999}
   - tileIndex: 36
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -22.199997, y: -4.8}
+    position: {x: -31.299995, y: -7.799999}
   - tileIndex: 37
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -18.199997, y: -4.8}
+    position: {x: -27.299995, y: -7.799999}
   - tileIndex: 38
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -14.199997, y: -4.8}
+    position: {x: -23.299995, y: -7.799999}
   - tileIndex: 39
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -62.199997, y: -0.8000002}
+    position: {x: -71.299995, y: -3.7999992}
   - tileIndex: 40
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -58.199997, y: -0.8000002}
+    position: {x: -67.299995, y: -3.7999992}
   - tileIndex: 41
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -54.199997, y: -0.8000002}
+    position: {x: -63.299995, y: -3.7999992}
   - tileIndex: 42
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -50.199997, y: -0.8000002}
+    position: {x: -59.299995, y: -3.7999992}
   - tileIndex: 43
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -46.199997, y: -0.8000002}
+    position: {x: -55.299995, y: -3.7999992}
   - tileIndex: 44
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -42.199997, y: -0.8000002}
+    position: {x: -51.299995, y: -3.7999992}
   - tileIndex: 45
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -38.199997, y: -0.8000002}
+    position: {x: -47.299995, y: -3.7999992}
   - tileIndex: 46
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -34.199997, y: -0.8000002}
+    position: {x: -43.299995, y: -3.7999992}
   - tileIndex: 47
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -30.199997, y: -0.8000002}
+    position: {x: -39.299995, y: -3.7999992}
   - tileIndex: 48
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -26.199997, y: -0.8000002}
+    position: {x: -35.299995, y: -3.7999992}
   - tileIndex: 49
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -22.199997, y: -0.8000002}
+    position: {x: -31.299995, y: -3.7999992}
   - tileIndex: 50
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -18.199997, y: -0.8000002}
+    position: {x: -27.299995, y: -3.7999992}
   - tileIndex: 51
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -14.199997, y: -0.8000002}
+    position: {x: -23.299995, y: -3.7999992}
   - tileIndex: 52
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -62.199997, y: 3.1999998}
+    position: {x: -71.299995, y: 0.20000076}
   - tileIndex: 53
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -58.199997, y: 3.1999998}
+    position: {x: -67.299995, y: 0.20000076}
   - tileIndex: 54
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -54.199997, y: 3.1999998}
+    position: {x: -63.299995, y: 0.20000076}
   - tileIndex: 55
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -50.199997, y: 3.1999998}
+    position: {x: -59.299995, y: 0.20000076}
   - tileIndex: 56
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -46.199997, y: 3.1999998}
+    position: {x: -55.299995, y: 0.20000076}
   - tileIndex: 57
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -42.199997, y: 3.1999998}
+    position: {x: -51.299995, y: 0.20000076}
   - tileIndex: 58
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -38.199997, y: 3.1999998}
+    position: {x: -47.299995, y: 0.20000076}
   - tileIndex: 59
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -34.199997, y: 3.1999998}
+    position: {x: -43.299995, y: 0.20000076}
   - tileIndex: 60
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -30.199997, y: 3.1999998}
+    position: {x: -39.299995, y: 0.20000076}
   - tileIndex: 61
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -26.199997, y: 3.1999998}
+    position: {x: -35.299995, y: 0.20000076}
   - tileIndex: 62
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -22.199997, y: 3.1999998}
+    position: {x: -31.299995, y: 0.20000076}
   - tileIndex: 63
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -18.199997, y: 3.1999998}
+    position: {x: -27.299995, y: 0.20000076}
   - tileIndex: 64
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -14.199997, y: 3.1999998}
+    position: {x: -23.299995, y: 0.20000076}
   - tileIndex: 65
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -62.199997, y: 7.2}
+    position: {x: -71.299995, y: 4.200001}
   - tileIndex: 66
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -58.199997, y: 7.2}
+    position: {x: -67.299995, y: 4.200001}
   - tileIndex: 67
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -54.199997, y: 7.2}
+    position: {x: -63.299995, y: 4.200001}
   - tileIndex: 68
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -50.199997, y: 7.2}
+    position: {x: -59.299995, y: 4.200001}
   - tileIndex: 69
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -46.199997, y: 7.2}
+    position: {x: -55.299995, y: 4.200001}
   - tileIndex: 70
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -42.199997, y: 7.2}
+    position: {x: -51.299995, y: 4.200001}
   - tileIndex: 71
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -38.199997, y: 7.2}
+    position: {x: -47.299995, y: 4.200001}
   - tileIndex: 72
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -34.199997, y: 7.2}
+    position: {x: -43.299995, y: 4.200001}
   - tileIndex: 73
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -30.199997, y: 7.2}
+    position: {x: -39.299995, y: 4.200001}
   - tileIndex: 74
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -26.199997, y: 7.2}
+    position: {x: -35.299995, y: 4.200001}
   - tileIndex: 75
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -22.199997, y: 7.2}
+    position: {x: -31.299995, y: 4.200001}
   - tileIndex: 76
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -18.199997, y: 7.2}
+    position: {x: -27.299995, y: 4.200001}
   - tileIndex: 77
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -14.199997, y: 7.2}
+    position: {x: -23.299995, y: 4.200001}
   - tileIndex: 78
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -62.199997, y: 11.2}
+    position: {x: -71.299995, y: 8.200001}
   - tileIndex: 79
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -58.199997, y: 11.2}
+    position: {x: -67.299995, y: 8.200001}
   - tileIndex: 80
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -54.199997, y: 11.2}
+    position: {x: -63.299995, y: 8.200001}
   - tileIndex: 81
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -50.199997, y: 11.2}
+    position: {x: -59.299995, y: 8.200001}
   - tileIndex: 82
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -46.199997, y: 11.2}
+    position: {x: -55.299995, y: 8.200001}
   - tileIndex: 83
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -42.199997, y: 11.2}
+    position: {x: -51.299995, y: 8.200001}
   - tileIndex: 84
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -38.199997, y: 11.2}
+    position: {x: -47.299995, y: 8.200001}
   - tileIndex: 85
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -34.199997, y: 11.2}
+    position: {x: -43.299995, y: 8.200001}
   - tileIndex: 86
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -30.199997, y: 11.2}
+    position: {x: -39.299995, y: 8.200001}
   - tileIndex: 87
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -26.199997, y: 11.2}
+    position: {x: -35.299995, y: 8.200001}
   - tileIndex: 88
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -22.199997, y: 11.2}
+    position: {x: -31.299995, y: 8.200001}
   - tileIndex: 89
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -18.199997, y: 11.2}
+    position: {x: -27.299995, y: 8.200001}
   - tileIndex: 90
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -14.199997, y: 11.2}
+    position: {x: -23.299995, y: 8.200001}
   laneDirection: 0
   _lanes:
   - tiles:
     - tileIndex: 12
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -14.199997, y: -12.8}
+      position: {x: -23.299995, y: -15.799999}
     - tileIndex: 11
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -18.199997, y: -12.8}
+      position: {x: -27.299995, y: -15.799999}
     - tileIndex: 10
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -22.199997, y: -12.8}
+      position: {x: -31.299995, y: -15.799999}
     - tileIndex: 9
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -26.199997, y: -12.8}
+      position: {x: -35.299995, y: -15.799999}
     - tileIndex: 8
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -30.199997, y: -12.8}
+      position: {x: -39.299995, y: -15.799999}
     - tileIndex: 7
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -34.199997, y: -12.8}
+      position: {x: -43.299995, y: -15.799999}
     - tileIndex: 6
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -38.199997, y: -12.8}
+      position: {x: -47.299995, y: -15.799999}
     - tileIndex: 5
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -42.199997, y: -12.8}
+      position: {x: -51.299995, y: -15.799999}
     - tileIndex: 4
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -46.199997, y: -12.8}
+      position: {x: -55.299995, y: -15.799999}
     - tileIndex: 3
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -50.199997, y: -12.8}
+      position: {x: -59.299995, y: -15.799999}
     - tileIndex: 2
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -54.199997, y: -12.8}
+      position: {x: -63.299995, y: -15.799999}
     - tileIndex: 1
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -58.199997, y: -12.8}
+      position: {x: -67.299995, y: -15.799999}
     - tileIndex: 0
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -62.199997, y: -12.8}
+      position: {x: -71.299995, y: -15.799999}
   - tiles:
     - tileIndex: 25
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -14.199997, y: -8.8}
+      position: {x: -23.299995, y: -11.799999}
     - tileIndex: 24
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -18.199997, y: -8.8}
+      position: {x: -27.299995, y: -11.799999}
     - tileIndex: 23
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -22.199997, y: -8.8}
+      position: {x: -31.299995, y: -11.799999}
     - tileIndex: 22
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -26.199997, y: -8.8}
+      position: {x: -35.299995, y: -11.799999}
     - tileIndex: 21
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -30.199997, y: -8.8}
+      position: {x: -39.299995, y: -11.799999}
     - tileIndex: 20
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -34.199997, y: -8.8}
+      position: {x: -43.299995, y: -11.799999}
     - tileIndex: 19
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -38.199997, y: -8.8}
+      position: {x: -47.299995, y: -11.799999}
     - tileIndex: 18
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -42.199997, y: -8.8}
+      position: {x: -51.299995, y: -11.799999}
     - tileIndex: 17
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -46.199997, y: -8.8}
+      position: {x: -55.299995, y: -11.799999}
     - tileIndex: 16
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -50.199997, y: -8.8}
+      position: {x: -59.299995, y: -11.799999}
     - tileIndex: 15
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -54.199997, y: -8.8}
+      position: {x: -63.299995, y: -11.799999}
     - tileIndex: 14
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -58.199997, y: -8.8}
+      position: {x: -67.299995, y: -11.799999}
     - tileIndex: 13
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -62.199997, y: -8.8}
+      position: {x: -71.299995, y: -11.799999}
   - tiles:
     - tileIndex: 38
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -14.199997, y: -4.8}
+      position: {x: -23.299995, y: -7.799999}
     - tileIndex: 37
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -18.199997, y: -4.8}
+      position: {x: -27.299995, y: -7.799999}
     - tileIndex: 36
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -22.199997, y: -4.8}
+      position: {x: -31.299995, y: -7.799999}
     - tileIndex: 35
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -26.199997, y: -4.8}
+      position: {x: -35.299995, y: -7.799999}
     - tileIndex: 34
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -30.199997, y: -4.8}
+      position: {x: -39.299995, y: -7.799999}
     - tileIndex: 33
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -34.199997, y: -4.8}
+      position: {x: -43.299995, y: -7.799999}
     - tileIndex: 32
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -38.199997, y: -4.8}
+      position: {x: -47.299995, y: -7.799999}
     - tileIndex: 31
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -42.199997, y: -4.8}
+      position: {x: -51.299995, y: -7.799999}
     - tileIndex: 30
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -46.199997, y: -4.8}
+      position: {x: -55.299995, y: -7.799999}
     - tileIndex: 29
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -50.199997, y: -4.8}
+      position: {x: -59.299995, y: -7.799999}
     - tileIndex: 28
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -54.199997, y: -4.8}
+      position: {x: -63.299995, y: -7.799999}
     - tileIndex: 27
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -58.199997, y: -4.8}
+      position: {x: -67.299995, y: -7.799999}
     - tileIndex: 26
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -62.199997, y: -4.8}
+      position: {x: -71.299995, y: -7.799999}
   - tiles:
     - tileIndex: 51
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -14.199997, y: -0.8000002}
+      position: {x: -23.299995, y: -3.7999992}
     - tileIndex: 50
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -18.199997, y: -0.8000002}
+      position: {x: -27.299995, y: -3.7999992}
     - tileIndex: 49
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -22.199997, y: -0.8000002}
+      position: {x: -31.299995, y: -3.7999992}
     - tileIndex: 48
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -26.199997, y: -0.8000002}
+      position: {x: -35.299995, y: -3.7999992}
     - tileIndex: 47
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -30.199997, y: -0.8000002}
+      position: {x: -39.299995, y: -3.7999992}
     - tileIndex: 46
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -34.199997, y: -0.8000002}
+      position: {x: -43.299995, y: -3.7999992}
     - tileIndex: 45
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -38.199997, y: -0.8000002}
+      position: {x: -47.299995, y: -3.7999992}
     - tileIndex: 44
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -42.199997, y: -0.8000002}
+      position: {x: -51.299995, y: -3.7999992}
     - tileIndex: 43
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -46.199997, y: -0.8000002}
+      position: {x: -55.299995, y: -3.7999992}
     - tileIndex: 42
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -50.199997, y: -0.8000002}
+      position: {x: -59.299995, y: -3.7999992}
     - tileIndex: 41
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -54.199997, y: -0.8000002}
+      position: {x: -63.299995, y: -3.7999992}
     - tileIndex: 40
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -58.199997, y: -0.8000002}
+      position: {x: -67.299995, y: -3.7999992}
     - tileIndex: 39
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -62.199997, y: -0.8000002}
+      position: {x: -71.299995, y: -3.7999992}
   - tiles:
     - tileIndex: 64
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -14.199997, y: 3.1999998}
+      position: {x: -23.299995, y: 0.20000076}
     - tileIndex: 63
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -18.199997, y: 3.1999998}
+      position: {x: -27.299995, y: 0.20000076}
     - tileIndex: 62
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -22.199997, y: 3.1999998}
+      position: {x: -31.299995, y: 0.20000076}
     - tileIndex: 61
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -26.199997, y: 3.1999998}
+      position: {x: -35.299995, y: 0.20000076}
     - tileIndex: 60
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -30.199997, y: 3.1999998}
+      position: {x: -39.299995, y: 0.20000076}
     - tileIndex: 59
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -34.199997, y: 3.1999998}
+      position: {x: -43.299995, y: 0.20000076}
     - tileIndex: 58
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -38.199997, y: 3.1999998}
+      position: {x: -47.299995, y: 0.20000076}
     - tileIndex: 57
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -42.199997, y: 3.1999998}
+      position: {x: -51.299995, y: 0.20000076}
     - tileIndex: 56
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -46.199997, y: 3.1999998}
+      position: {x: -55.299995, y: 0.20000076}
     - tileIndex: 55
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -50.199997, y: 3.1999998}
+      position: {x: -59.299995, y: 0.20000076}
     - tileIndex: 54
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -54.199997, y: 3.1999998}
+      position: {x: -63.299995, y: 0.20000076}
     - tileIndex: 53
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -58.199997, y: 3.1999998}
+      position: {x: -67.299995, y: 0.20000076}
     - tileIndex: 52
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -62.199997, y: 3.1999998}
+      position: {x: -71.299995, y: 0.20000076}
   - tiles:
     - tileIndex: 77
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -14.199997, y: 7.2}
+      position: {x: -23.299995, y: 4.200001}
     - tileIndex: 76
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -18.199997, y: 7.2}
+      position: {x: -27.299995, y: 4.200001}
     - tileIndex: 75
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -22.199997, y: 7.2}
+      position: {x: -31.299995, y: 4.200001}
     - tileIndex: 74
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -26.199997, y: 7.2}
+      position: {x: -35.299995, y: 4.200001}
     - tileIndex: 73
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -30.199997, y: 7.2}
+      position: {x: -39.299995, y: 4.200001}
     - tileIndex: 72
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -34.199997, y: 7.2}
+      position: {x: -43.299995, y: 4.200001}
     - tileIndex: 71
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -38.199997, y: 7.2}
+      position: {x: -47.299995, y: 4.200001}
     - tileIndex: 70
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -42.199997, y: 7.2}
+      position: {x: -51.299995, y: 4.200001}
     - tileIndex: 69
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -46.199997, y: 7.2}
+      position: {x: -55.299995, y: 4.200001}
     - tileIndex: 68
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -50.199997, y: 7.2}
+      position: {x: -59.299995, y: 4.200001}
     - tileIndex: 67
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -54.199997, y: 7.2}
+      position: {x: -63.299995, y: 4.200001}
     - tileIndex: 66
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -58.199997, y: 7.2}
+      position: {x: -67.299995, y: 4.200001}
     - tileIndex: 65
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -62.199997, y: 7.2}
+      position: {x: -71.299995, y: 4.200001}
   - tiles:
     - tileIndex: 90
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -14.199997, y: 11.2}
+      position: {x: -23.299995, y: 8.200001}
     - tileIndex: 89
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -18.199997, y: 11.2}
+      position: {x: -27.299995, y: 8.200001}
     - tileIndex: 88
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -22.199997, y: 11.2}
+      position: {x: -31.299995, y: 8.200001}
     - tileIndex: 87
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -26.199997, y: 11.2}
+      position: {x: -35.299995, y: 8.200001}
     - tileIndex: 86
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -30.199997, y: 11.2}
+      position: {x: -39.299995, y: 8.200001}
     - tileIndex: 85
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -34.199997, y: 11.2}
+      position: {x: -43.299995, y: 8.200001}
     - tileIndex: 84
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -38.199997, y: 11.2}
+      position: {x: -47.299995, y: 8.200001}
     - tileIndex: 83
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -42.199997, y: 11.2}
+      position: {x: -51.299995, y: 8.200001}
     - tileIndex: 82
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -46.199997, y: 11.2}
+      position: {x: -55.299995, y: 8.200001}
     - tileIndex: 81
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -50.199997, y: 11.2}
+      position: {x: -59.299995, y: 8.200001}
     - tileIndex: 80
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -54.199997, y: 11.2}
+      position: {x: -63.299995, y: 8.200001}
     - tileIndex: 79
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -58.199997, y: 11.2}
+      position: {x: -67.299995, y: 8.200001}
     - tileIndex: 78
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -62.199997, y: 11.2}
---- !u!43 &178618100
+      position: {x: -71.299995, y: 8.200001}
+--- !u!43 &161135808
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -935,8 +935,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 64
     localAABB:
-      m_Center: {x: 14.05, y: 14.05, z: 0}
-      m_Extent: {x: 14.05, y: 14.05, z: 0}
+      m_Center: {x: 14.17, y: 14.17, z: 0}
+      m_Extent: {x: 14.17, y: 14.17, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -1015,7 +1015,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 768
-    _typelessdata: 000000000000000000000000cdcce0410000000000000000cdcce041cdcccc3d0000000000000000cdcccc3d00000000000000000000804000000000cdcce0410000804000000000cdcce0413333834000000000000000003333834000000000000000000000004100000000cdcce0410000004100000000cdcce0419a99014100000000000000009a99014100000000000000000000404100000000cdcce0410000404100000000cdcce0419a99414100000000000000009a99414100000000000000000000804100000000cdcce0410000804100000000cdcce041cdcc80410000000000000000cdcc804100000000000000000000a04100000000cdcce0410000a04100000000cdcce041cdcca0410000000000000000cdcca04100000000000000000000c04100000000cdcce0410000c04100000000cdcce041cdccc0410000000000000000cdccc04100000000000000000000e04100000000cdcce0410000e04100000000cdcce041cdcce0410000000000000000cdcce04100000000000000000000000000000000000000000000e04100000000cdcccc3d0000e04100000000cdcccc3d0000000000000000000080400000000000000000000080400000e04100000000333383400000e04100000000333383400000000000000000000000410000000000000000000000410000e041000000009a9901410000e041000000009a9901410000000000000000000040410000000000000000000040410000e041000000009a9941410000e041000000009a9941410000000000000000000080410000000000000000000080410000e04100000000cdcc80410000e04100000000cdcc804100000000000000000000a04100000000000000000000a0410000e04100000000cdcca0410000e04100000000cdcca04100000000000000000000c04100000000000000000000c0410000e04100000000cdccc0410000e04100000000cdccc04100000000000000000000e04100000000000000000000e0410000e04100000000cdcce0410000e04100000000cdcce0410000000000000000
+    _typelessdata: 00000000000000000000000052b8e241000000000000000052b8e2417b14ae3e00000000000000007b14ae3e0000000000000000000080400000000052b8e241000080400000000052b8e24148e18a40000000000000000048e18a400000000000000000000000410000000052b8e241000000410000000052b8e241a47005410000000000000000a47005410000000000000000000040410000000052b8e241000040410000000052b8e241a47045410000000000000000a47045410000000000000000000080410000000052b8e241000080410000000052b8e24152b88241000000000000000052b8824100000000000000000000a0410000000052b8e2410000a0410000000052b8e24152b8a241000000000000000052b8a24100000000000000000000c0410000000052b8e2410000c0410000000052b8e24152b8c241000000000000000052b8c24100000000000000000000e0410000000052b8e2410000e0410000000052b8e24152b8e241000000000000000052b8e24100000000000000000000000000000000000000000000e041000000007b14ae3e0000e041000000007b14ae3e0000000000000000000080400000000000000000000080400000e0410000000048e18a400000e0410000000048e18a400000000000000000000000410000000000000000000000410000e04100000000a47005410000e04100000000a47005410000000000000000000040410000000000000000000040410000e04100000000a47045410000e04100000000a47045410000000000000000000080410000000000000000000080410000e0410000000052b882410000e0410000000052b8824100000000000000000000a04100000000000000000000a0410000e0410000000052b8a2410000e0410000000052b8a24100000000000000000000c04100000000000000000000c0410000e0410000000052b8c2410000e0410000000052b8c24100000000000000000000e04100000000000000000000e0410000e0410000000052b8e2410000e0410000000052b8e2410000000000000000
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -1069,8 +1069,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 14.05, y: 14.05, z: 0}
-    m_Extent: {x: 14.05, y: 14.05, z: 0}
+    m_Center: {x: 14.17, y: 14.17, z: 0}
+    m_Extent: {x: 14.17, y: 14.17, z: 0}
   m_MeshUsageFlags: 0
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
@@ -1114,37 +1114,7 @@ Transform:
   m_Children:
   - {fileID: 2076894360}
   - {fileID: 577798847}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &231880014
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 231880015}
-  m_Layer: 0
-  m_Name: PrototypeObjects
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &231880015
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 231880014}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.489613, y: 1.2262008, z: -0.03875681}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
+  - {fileID: 2029548785}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &270193115
@@ -1232,7 +1202,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270193115}
-  m_Mesh: {fileID: 1250742305}
+  m_Mesh: {fileID: 2064453144}
 --- !u!1 &278444370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,7 +1288,172 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278444370}
-  m_Mesh: {fileID: 1601727232}
+  m_Mesh: {fileID: 735322092}
+--- !u!43 &370360078
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 132
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 88
+    localAABB:
+      m_Center: {x: 26.17, y: 14.17, z: 0}
+      m_Extent: {x: 26.17, y: 14.17, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 00000300020002000100000004000700060006000500040008000b000a000a00090008000c000f000e000e000d000c0010001300120012001100100014001700160016001500140018001b001a001a00190018001c001f001e001e001d001c00200021002200220023002000240025002600260027002400280029002a002a002b0028002c002d002e002e002f002c00300031003200320033003000340035003600360037003400380039003a003a003b0038003c003d003e003e003f003c00400041004200420043004000440045004600460047004400480049004a004a004b0048004c004d004e004e004f004c00500051005200520053005000540055005600560057005400
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 88
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1056
+    _typelessdata: 000000000000000000000000295c51420000000000000000295c51427b14ae3e00000000000000007b14ae3e00000000000000000000804000000000295c51420000804000000000295c514248e18a40000000000000000048e18a4000000000000000000000004100000000295c51420000004100000000295c5142a47005410000000000000000a470054100000000000000000000404100000000295c51420000404100000000295c5142a47045410000000000000000a470454100000000000000000000804100000000295c51420000804100000000295c514252b88241000000000000000052b8824100000000000000000000a04100000000295c51420000a04100000000295c514252b8a241000000000000000052b8a24100000000000000000000c04100000000295c51420000c04100000000295c514252b8c241000000000000000052b8c24100000000000000000000e04100000000295c51420000e04100000000295c514252b8e241000000000000000052b8e24100000000000000000000000000000000000000000000e041000000007b14ae3e0000e041000000007b14ae3e0000000000000000000080400000000000000000000080400000e0410000000048e18a400000e0410000000048e18a400000000000000000000000410000000000000000000000410000e04100000000a47005410000e04100000000a47005410000000000000000000040410000000000000000000040410000e04100000000a47045410000e04100000000a47045410000000000000000000080410000000000000000000080410000e0410000000052b882410000e0410000000052b8824100000000000000000000a04100000000000000000000a0410000e0410000000052b8a2410000e0410000000052b8a24100000000000000000000c04100000000000000000000c0410000e0410000000052b8c2410000e0410000000052b8c24100000000000000000000e04100000000000000000000e0410000e0410000000052b8e2410000e0410000000052b8e2410000000000000000000000420000000000000000000000420000e04100000000295c01420000e04100000000295c01420000000000000000000010420000000000000000000010420000e04100000000295c11420000e04100000000295c11420000000000000000000020420000000000000000000020420000e04100000000295c21420000e04100000000295c21420000000000000000000030420000000000000000000030420000e04100000000295c31420000e04100000000295c31420000000000000000000040420000000000000000000040420000e04100000000295c41420000e04100000000295c41420000000000000000000050420000000000000000000050420000e04100000000295c51420000e04100000000295c51420000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 26.17, y: 14.17, z: 0}
+    m_Extent: {x: 26.17, y: 14.17, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &394139139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,7 +1480,7 @@ Transform:
   m_GameObject: {fileID: 394139139}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -40, z: 0}
+  m_LocalPosition: {x: 0, y: -46.960003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1369,587 +1504,587 @@ MonoBehaviour:
   cellSize: 4
   canHostBaseBuildings: 0
   enableDebugLines: 0
-  lineThickness: 0.1
+  lineThickness: 0.34
   gridVisualizationMesh: {fileID: 278444372}
   gridVisualizationMeshFilter: {fileID: 278444373}
+  oldPosition: {x: -14.34, y: -64.76, z: 0}
   cellExtents: 2
-  oldPosition: {x: -12.2, y: -54.8, z: 0}
   gridBounds:
     serializedVersion: 2
-    x: -12.2
-    y: -54.8
+    x: -14.34
+    y: -64.76
     width: 28
     height: 40
   allTiles:
   - tileIndex: 0
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: -52.8}
+    position: {x: -12.34, y: -62.760002}
   - tileIndex: 1
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: -52.8}
+    position: {x: -8.34, y: -62.760002}
   - tileIndex: 2
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: -52.8}
+    position: {x: -4.34, y: -62.760002}
   - tileIndex: 3
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: -52.8}
+    position: {x: -0.34000015, y: -62.760002}
   - tileIndex: 4
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: -52.8}
+    position: {x: 3.6599998, y: -62.760002}
   - tileIndex: 5
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: -52.8}
+    position: {x: 7.66, y: -62.760002}
   - tileIndex: 6
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: -52.8}
+    position: {x: 11.66, y: -62.760002}
   - tileIndex: 7
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: -48.8}
+    position: {x: -12.34, y: -58.760002}
   - tileIndex: 8
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: -48.8}
+    position: {x: -8.34, y: -58.760002}
   - tileIndex: 9
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: -48.8}
+    position: {x: -4.34, y: -58.760002}
   - tileIndex: 10
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: -48.8}
+    position: {x: -0.34000015, y: -58.760002}
   - tileIndex: 11
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: -48.8}
+    position: {x: 3.6599998, y: -58.760002}
   - tileIndex: 12
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: -48.8}
+    position: {x: 7.66, y: -58.760002}
   - tileIndex: 13
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: -48.8}
+    position: {x: 11.66, y: -58.760002}
   - tileIndex: 14
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: -44.8}
+    position: {x: -12.34, y: -54.760002}
   - tileIndex: 15
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: -44.8}
+    position: {x: -8.34, y: -54.760002}
   - tileIndex: 16
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: -44.8}
+    position: {x: -4.34, y: -54.760002}
   - tileIndex: 17
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: -44.8}
+    position: {x: -0.34000015, y: -54.760002}
   - tileIndex: 18
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: -44.8}
+    position: {x: 3.6599998, y: -54.760002}
   - tileIndex: 19
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: -44.8}
+    position: {x: 7.66, y: -54.760002}
   - tileIndex: 20
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: -44.8}
+    position: {x: 11.66, y: -54.760002}
   - tileIndex: 21
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: -40.8}
+    position: {x: -12.34, y: -50.760002}
   - tileIndex: 22
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: -40.8}
+    position: {x: -8.34, y: -50.760002}
   - tileIndex: 23
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: -40.8}
+    position: {x: -4.34, y: -50.760002}
   - tileIndex: 24
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: -40.8}
+    position: {x: -0.34000015, y: -50.760002}
   - tileIndex: 25
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: -40.8}
+    position: {x: 3.6599998, y: -50.760002}
   - tileIndex: 26
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: -40.8}
+    position: {x: 7.66, y: -50.760002}
   - tileIndex: 27
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: -40.8}
+    position: {x: 11.66, y: -50.760002}
   - tileIndex: 28
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: -36.8}
+    position: {x: -12.34, y: -46.760002}
   - tileIndex: 29
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: -36.8}
+    position: {x: -8.34, y: -46.760002}
   - tileIndex: 30
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: -36.8}
+    position: {x: -4.34, y: -46.760002}
   - tileIndex: 31
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: -36.8}
+    position: {x: -0.34000015, y: -46.760002}
   - tileIndex: 32
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: -36.8}
+    position: {x: 3.6599998, y: -46.760002}
   - tileIndex: 33
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: -36.8}
+    position: {x: 7.66, y: -46.760002}
   - tileIndex: 34
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: -36.8}
+    position: {x: 11.66, y: -46.760002}
   - tileIndex: 35
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: -32.8}
+    position: {x: -12.34, y: -42.760002}
   - tileIndex: 36
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: -32.8}
+    position: {x: -8.34, y: -42.760002}
   - tileIndex: 37
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: -32.8}
+    position: {x: -4.34, y: -42.760002}
   - tileIndex: 38
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: -32.8}
+    position: {x: -0.34000015, y: -42.760002}
   - tileIndex: 39
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: -32.8}
+    position: {x: 3.6599998, y: -42.760002}
   - tileIndex: 40
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: -32.8}
+    position: {x: 7.66, y: -42.760002}
   - tileIndex: 41
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: -32.8}
+    position: {x: 11.66, y: -42.760002}
   - tileIndex: 42
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: -28.8}
+    position: {x: -12.34, y: -38.760002}
   - tileIndex: 43
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: -28.8}
+    position: {x: -8.34, y: -38.760002}
   - tileIndex: 44
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: -28.8}
+    position: {x: -4.34, y: -38.760002}
   - tileIndex: 45
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: -28.8}
+    position: {x: -0.34000015, y: -38.760002}
   - tileIndex: 46
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: -28.8}
+    position: {x: 3.6599998, y: -38.760002}
   - tileIndex: 47
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: -28.8}
+    position: {x: 7.66, y: -38.760002}
   - tileIndex: 48
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: -28.8}
+    position: {x: 11.66, y: -38.760002}
   - tileIndex: 49
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: -24.8}
+    position: {x: -12.34, y: -34.760002}
   - tileIndex: 50
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: -24.8}
+    position: {x: -8.34, y: -34.760002}
   - tileIndex: 51
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: -24.8}
+    position: {x: -4.34, y: -34.760002}
   - tileIndex: 52
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: -24.8}
+    position: {x: -0.34000015, y: -34.760002}
   - tileIndex: 53
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: -24.8}
+    position: {x: 3.6599998, y: -34.760002}
   - tileIndex: 54
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: -24.8}
+    position: {x: 7.66, y: -34.760002}
   - tileIndex: 55
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: -24.8}
+    position: {x: 11.66, y: -34.760002}
   - tileIndex: 56
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: -20.8}
+    position: {x: -12.34, y: -30.760002}
   - tileIndex: 57
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: -20.8}
+    position: {x: -8.34, y: -30.760002}
   - tileIndex: 58
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: -20.8}
+    position: {x: -4.34, y: -30.760002}
   - tileIndex: 59
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: -20.8}
+    position: {x: -0.34000015, y: -30.760002}
   - tileIndex: 60
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: -20.8}
+    position: {x: 3.6599998, y: -30.760002}
   - tileIndex: 61
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: -20.8}
+    position: {x: 7.66, y: -30.760002}
   - tileIndex: 62
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: -20.8}
+    position: {x: 11.66, y: -30.760002}
   - tileIndex: 63
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: -16.8}
+    position: {x: -12.34, y: -26.760002}
   - tileIndex: 64
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: -16.8}
+    position: {x: -8.34, y: -26.760002}
   - tileIndex: 65
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: -16.8}
+    position: {x: -4.34, y: -26.760002}
   - tileIndex: 66
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: -16.8}
+    position: {x: -0.34000015, y: -26.760002}
   - tileIndex: 67
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: -16.8}
+    position: {x: 3.6599998, y: -26.760002}
   - tileIndex: 68
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: -16.8}
+    position: {x: 7.66, y: -26.760002}
   - tileIndex: 69
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: -16.8}
+    position: {x: 11.66, y: -26.760002}
   laneDirection: 3
   _lanes:
   - tiles:
     - tileIndex: 63
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: -16.8}
+      position: {x: -12.34, y: -26.760002}
     - tileIndex: 56
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: -20.8}
+      position: {x: -12.34, y: -30.760002}
     - tileIndex: 49
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: -24.8}
+      position: {x: -12.34, y: -34.760002}
     - tileIndex: 42
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: -28.8}
+      position: {x: -12.34, y: -38.760002}
     - tileIndex: 35
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: -32.8}
+      position: {x: -12.34, y: -42.760002}
     - tileIndex: 28
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: -36.8}
+      position: {x: -12.34, y: -46.760002}
     - tileIndex: 21
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: -40.8}
+      position: {x: -12.34, y: -50.760002}
     - tileIndex: 14
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: -44.8}
+      position: {x: -12.34, y: -54.760002}
     - tileIndex: 7
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: -48.8}
+      position: {x: -12.34, y: -58.760002}
     - tileIndex: 0
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: -52.8}
+      position: {x: -12.34, y: -62.760002}
   - tiles:
     - tileIndex: 64
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: -16.8}
+      position: {x: -8.34, y: -26.760002}
     - tileIndex: 57
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: -20.8}
+      position: {x: -8.34, y: -30.760002}
     - tileIndex: 50
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: -24.8}
+      position: {x: -8.34, y: -34.760002}
     - tileIndex: 43
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: -28.8}
+      position: {x: -8.34, y: -38.760002}
     - tileIndex: 36
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: -32.8}
+      position: {x: -8.34, y: -42.760002}
     - tileIndex: 29
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: -36.8}
+      position: {x: -8.34, y: -46.760002}
     - tileIndex: 22
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: -40.8}
+      position: {x: -8.34, y: -50.760002}
     - tileIndex: 15
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: -44.8}
+      position: {x: -8.34, y: -54.760002}
     - tileIndex: 8
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: -48.8}
+      position: {x: -8.34, y: -58.760002}
     - tileIndex: 1
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: -52.8}
+      position: {x: -8.34, y: -62.760002}
   - tiles:
     - tileIndex: 65
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: -16.8}
+      position: {x: -4.34, y: -26.760002}
     - tileIndex: 58
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: -20.8}
+      position: {x: -4.34, y: -30.760002}
     - tileIndex: 51
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: -24.8}
+      position: {x: -4.34, y: -34.760002}
     - tileIndex: 44
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: -28.8}
+      position: {x: -4.34, y: -38.760002}
     - tileIndex: 37
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: -32.8}
+      position: {x: -4.34, y: -42.760002}
     - tileIndex: 30
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: -36.8}
+      position: {x: -4.34, y: -46.760002}
     - tileIndex: 23
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: -40.8}
+      position: {x: -4.34, y: -50.760002}
     - tileIndex: 16
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: -44.8}
+      position: {x: -4.34, y: -54.760002}
     - tileIndex: 9
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: -48.8}
+      position: {x: -4.34, y: -58.760002}
     - tileIndex: 2
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: -52.8}
+      position: {x: -4.34, y: -62.760002}
   - tiles:
     - tileIndex: 66
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: -16.8}
+      position: {x: -0.34000015, y: -26.760002}
     - tileIndex: 59
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: -20.8}
+      position: {x: -0.34000015, y: -30.760002}
     - tileIndex: 52
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: -24.8}
+      position: {x: -0.34000015, y: -34.760002}
     - tileIndex: 45
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: -28.8}
+      position: {x: -0.34000015, y: -38.760002}
     - tileIndex: 38
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: -32.8}
+      position: {x: -0.34000015, y: -42.760002}
     - tileIndex: 31
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: -36.8}
+      position: {x: -0.34000015, y: -46.760002}
     - tileIndex: 24
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: -40.8}
+      position: {x: -0.34000015, y: -50.760002}
     - tileIndex: 17
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: -44.8}
+      position: {x: -0.34000015, y: -54.760002}
     - tileIndex: 10
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: -48.8}
+      position: {x: -0.34000015, y: -58.760002}
     - tileIndex: 3
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: -52.8}
+      position: {x: -0.34000015, y: -62.760002}
   - tiles:
     - tileIndex: 67
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: -16.8}
+      position: {x: 3.6599998, y: -26.760002}
     - tileIndex: 60
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: -20.8}
+      position: {x: 3.6599998, y: -30.760002}
     - tileIndex: 53
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: -24.8}
+      position: {x: 3.6599998, y: -34.760002}
     - tileIndex: 46
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: -28.8}
+      position: {x: 3.6599998, y: -38.760002}
     - tileIndex: 39
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: -32.8}
+      position: {x: 3.6599998, y: -42.760002}
     - tileIndex: 32
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: -36.8}
+      position: {x: 3.6599998, y: -46.760002}
     - tileIndex: 25
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: -40.8}
+      position: {x: 3.6599998, y: -50.760002}
     - tileIndex: 18
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: -44.8}
+      position: {x: 3.6599998, y: -54.760002}
     - tileIndex: 11
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: -48.8}
+      position: {x: 3.6599998, y: -58.760002}
     - tileIndex: 4
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: -52.8}
+      position: {x: 3.6599998, y: -62.760002}
   - tiles:
     - tileIndex: 68
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: -16.8}
+      position: {x: 7.66, y: -26.760002}
     - tileIndex: 61
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: -20.8}
+      position: {x: 7.66, y: -30.760002}
     - tileIndex: 54
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: -24.8}
+      position: {x: 7.66, y: -34.760002}
     - tileIndex: 47
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: -28.8}
+      position: {x: 7.66, y: -38.760002}
     - tileIndex: 40
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: -32.8}
+      position: {x: 7.66, y: -42.760002}
     - tileIndex: 33
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: -36.8}
+      position: {x: 7.66, y: -46.760002}
     - tileIndex: 26
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: -40.8}
+      position: {x: 7.66, y: -50.760002}
     - tileIndex: 19
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: -44.8}
+      position: {x: 7.66, y: -54.760002}
     - tileIndex: 12
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: -48.8}
+      position: {x: 7.66, y: -58.760002}
     - tileIndex: 5
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: -52.8}
+      position: {x: 7.66, y: -62.760002}
   - tiles:
     - tileIndex: 69
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: -16.8}
+      position: {x: 11.66, y: -26.760002}
     - tileIndex: 62
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: -20.8}
+      position: {x: 11.66, y: -30.760002}
     - tileIndex: 55
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: -24.8}
+      position: {x: 11.66, y: -34.760002}
     - tileIndex: 48
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: -28.8}
+      position: {x: 11.66, y: -38.760002}
     - tileIndex: 41
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: -32.8}
+      position: {x: 11.66, y: -42.760002}
     - tileIndex: 34
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: -36.8}
+      position: {x: 11.66, y: -46.760002}
     - tileIndex: 27
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: -40.8}
+      position: {x: 11.66, y: -50.760002}
     - tileIndex: 20
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: -44.8}
+      position: {x: 11.66, y: -54.760002}
     - tileIndex: 13
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: -48.8}
+      position: {x: 11.66, y: -58.760002}
     - tileIndex: 6
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: -52.8}
+      position: {x: 11.66, y: -62.760002}
 --- !u!1 &428625571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,7 +2170,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428625571}
-  m_Mesh: {fileID: 178618100}
+  m_Mesh: {fileID: 161135808}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,7 +2224,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -2145,7 +2280,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 4.04
+  orthographic size: 22.36
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2402,6 +2537,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentlySelectedBuildingToBuild: {fileID: 0}
   allPlacedBuildings: []
+  allBuildings: []
+  buildingStateMachine: {fileID: 11400000, guid: fed874d437846fe4a9fb337a0082d2a5, type: 2}
 --- !u!1 &643797164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,215 +2588,380 @@ MonoBehaviour:
   rowCount: 7
   cellSize: 4
   canHostBaseBuildings: 1
-  enableDebugLines: 1
-  lineThickness: 0.1
+  enableDebugLines: 0
+  lineThickness: 0.34
   gridVisualizationMesh: {fileID: 428625573}
   gridVisualizationMeshFilter: {fileID: 428625574}
+  oldPosition: {x: -14.34, y: -17.8, z: 0}
   cellExtents: 2
-  oldPosition: {x: -12.2, y: -14.8, z: 0}
   gridBounds:
     serializedVersion: 2
-    x: -12.2
-    y: -14.8
+    x: -14.34
+    y: -17.8
     width: 28
     height: 28
   allTiles:
   - tileIndex: 0
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -10.2, y: -12.8}
+    position: {x: -12.34, y: -15.799999}
   - tileIndex: 1
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -6.2, y: -12.8}
+    position: {x: -8.34, y: -15.799999}
   - tileIndex: 2
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -2.1999998, y: -12.8}
+    position: {x: -4.34, y: -15.799999}
   - tileIndex: 3
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 1.8000002, y: -12.8}
+    position: {x: -0.34000015, y: -15.799999}
   - tileIndex: 4
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 5.8, y: -12.8}
+    position: {x: 3.6599998, y: -15.799999}
   - tileIndex: 5
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 9.8, y: -12.8}
+    position: {x: 7.66, y: -15.799999}
   - tileIndex: 6
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 13.8, y: -12.8}
+    position: {x: 11.66, y: -15.799999}
   - tileIndex: 7
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -10.2, y: -8.8}
+    position: {x: -12.34, y: -11.799999}
   - tileIndex: 8
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -6.2, y: -8.8}
+    position: {x: -8.34, y: -11.799999}
   - tileIndex: 9
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -2.1999998, y: -8.8}
+    position: {x: -4.34, y: -11.799999}
   - tileIndex: 10
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 1.8000002, y: -8.8}
+    position: {x: -0.34000015, y: -11.799999}
   - tileIndex: 11
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 5.8, y: -8.8}
+    position: {x: 3.6599998, y: -11.799999}
   - tileIndex: 12
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 9.8, y: -8.8}
+    position: {x: 7.66, y: -11.799999}
   - tileIndex: 13
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 13.8, y: -8.8}
+    position: {x: 11.66, y: -11.799999}
   - tileIndex: 14
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -10.2, y: -4.8}
+    position: {x: -12.34, y: -7.799999}
   - tileIndex: 15
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -6.2, y: -4.8}
+    position: {x: -8.34, y: -7.799999}
   - tileIndex: 16
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -2.1999998, y: -4.8}
+    position: {x: -4.34, y: -7.799999}
   - tileIndex: 17
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 1.8000002, y: -4.8}
+    position: {x: -0.34000015, y: -7.799999}
   - tileIndex: 18
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 5.8, y: -4.8}
+    position: {x: 3.6599998, y: -7.799999}
   - tileIndex: 19
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 9.8, y: -4.8}
+    position: {x: 7.66, y: -7.799999}
   - tileIndex: 20
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 13.8, y: -4.8}
+    position: {x: 11.66, y: -7.799999}
   - tileIndex: 21
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -10.2, y: -0.8000002}
+    position: {x: -12.34, y: -3.7999992}
   - tileIndex: 22
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -6.2, y: -0.8000002}
+    position: {x: -8.34, y: -3.7999992}
   - tileIndex: 23
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -2.1999998, y: -0.8000002}
+    position: {x: -4.34, y: -3.7999992}
   - tileIndex: 24
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 1.8000002, y: -0.8000002}
+    position: {x: -0.34000015, y: -3.7999992}
   - tileIndex: 25
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 5.8, y: -0.8000002}
+    position: {x: 3.6599998, y: -3.7999992}
   - tileIndex: 26
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 9.8, y: -0.8000002}
+    position: {x: 7.66, y: -3.7999992}
   - tileIndex: 27
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 13.8, y: -0.8000002}
+    position: {x: 11.66, y: -3.7999992}
   - tileIndex: 28
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -10.2, y: 3.1999998}
+    position: {x: -12.34, y: 0.20000076}
   - tileIndex: 29
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -6.2, y: 3.1999998}
+    position: {x: -8.34, y: 0.20000076}
   - tileIndex: 30
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -2.1999998, y: 3.1999998}
+    position: {x: -4.34, y: 0.20000076}
   - tileIndex: 31
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 1.8000002, y: 3.1999998}
+    position: {x: -0.34000015, y: 0.20000076}
   - tileIndex: 32
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 5.8, y: 3.1999998}
+    position: {x: 3.6599998, y: 0.20000076}
   - tileIndex: 33
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 9.8, y: 3.1999998}
+    position: {x: 7.66, y: 0.20000076}
   - tileIndex: 34
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 13.8, y: 3.1999998}
+    position: {x: 11.66, y: 0.20000076}
   - tileIndex: 35
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -10.2, y: 7.2}
+    position: {x: -12.34, y: 4.200001}
   - tileIndex: 36
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -6.2, y: 7.2}
+    position: {x: -8.34, y: 4.200001}
   - tileIndex: 37
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -2.1999998, y: 7.2}
+    position: {x: -4.34, y: 4.200001}
   - tileIndex: 38
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 1.8000002, y: 7.2}
+    position: {x: -0.34000015, y: 4.200001}
   - tileIndex: 39
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 5.8, y: 7.2}
+    position: {x: 3.6599998, y: 4.200001}
   - tileIndex: 40
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 9.8, y: 7.2}
+    position: {x: 7.66, y: 4.200001}
   - tileIndex: 41
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 13.8, y: 7.2}
+    position: {x: 11.66, y: 4.200001}
   - tileIndex: 42
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -10.2, y: 11.2}
+    position: {x: -12.34, y: 8.200001}
   - tileIndex: 43
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -6.2, y: 11.2}
+    position: {x: -8.34, y: 8.200001}
   - tileIndex: 44
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: -2.1999998, y: 11.2}
+    position: {x: -4.34, y: 8.200001}
   - tileIndex: 45
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 1.8000002, y: 11.2}
+    position: {x: -0.34000015, y: 8.200001}
   - tileIndex: 46
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 5.8, y: 11.2}
+    position: {x: 3.6599998, y: 8.200001}
   - tileIndex: 47
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 9.8, y: 11.2}
+    position: {x: 7.66, y: 8.200001}
   - tileIndex: 48
     isOccupied: 0
     canHostBaseBuildings: 1
-    position: {x: 13.8, y: 11.2}
+    position: {x: 11.66, y: 8.200001}
+--- !u!43 &735322092
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 114
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 76
+    localAABB:
+      m_Center: {x: 14.17, y: 20.17, z: 0}
+      m_Extent: {x: 14.17, y: 20.17, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 00000300020002000100000004000700060006000500040008000b000a000a00090008000c000f000e000e000d000c0010001300120012001100100014001700160016001500140018001b001a001a00190018001c001f001e001e001d001c0020002300220022002100200024002700260026002500240028002b002a002a00290028002c002d002e002e002f002c00300031003200320033003000340035003600360037003400380039003a003a003b0038003c003d003e003e003f003c00400041004200420043004000440045004600460047004400480049004a004a004b004800
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 76
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 912
+    _typelessdata: 00000000000000000000000052b8e241000000000000000052b8e2417b14ae3e00000000000000007b14ae3e0000000000000000000080400000000052b8e241000080400000000052b8e24148e18a40000000000000000048e18a400000000000000000000000410000000052b8e241000000410000000052b8e241a47005410000000000000000a47005410000000000000000000040410000000052b8e241000040410000000052b8e241a47045410000000000000000a47045410000000000000000000080410000000052b8e241000080410000000052b8e24152b88241000000000000000052b8824100000000000000000000a0410000000052b8e2410000a0410000000052b8e24152b8a241000000000000000052b8a24100000000000000000000c0410000000052b8e2410000c0410000000052b8e24152b8c241000000000000000052b8c24100000000000000000000e0410000000052b8e2410000e0410000000052b8e24152b8e241000000000000000052b8e2410000000000000000000000420000000052b8e241000000420000000052b8e241295c01420000000000000000295c01420000000000000000000010420000000052b8e241000010420000000052b8e241295c11420000000000000000295c11420000000000000000000020420000000052b8e241000020420000000052b8e241295c21420000000000000000295c2142000000000000000000000000000000000000000000002042000000007b14ae3e00002042000000007b14ae3e000000000000000000008040000000000000000000008040000020420000000048e18a40000020420000000048e18a400000000000000000000000410000000000000000000000410000204200000000a47005410000204200000000a47005410000000000000000000040410000000000000000000040410000204200000000a47045410000204200000000a4704541000000000000000000008041000000000000000000008041000020420000000052b88241000020420000000052b8824100000000000000000000a04100000000000000000000a041000020420000000052b8a241000020420000000052b8a24100000000000000000000c04100000000000000000000c041000020420000000052b8c241000020420000000052b8c24100000000000000000000e04100000000000000000000e041000020420000000052b8e241000020420000000052b8e2410000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 14.17, y: 20.17, z: 0}
+    m_Extent: {x: 14.17, y: 20.17, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &911358754
 GameObject:
   m_ObjectHideFlags: 0
@@ -2686,7 +2988,7 @@ Transform:
   m_GameObject: {fileID: 911358754}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 28, z: 0}
+  m_LocalPosition: {x: 0, y: 34.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2710,587 +3012,671 @@ MonoBehaviour:
   cellSize: 4
   canHostBaseBuildings: 0
   enableDebugLines: 0
-  lineThickness: 0.1
+  lineThickness: 0.34
   gridVisualizationMesh: {fileID: 270193117}
   gridVisualizationMeshFilter: {fileID: 270193118}
+  oldPosition: {x: -14.34, y: 17.16, z: 0}
   cellExtents: 2
-  oldPosition: {x: -12.2, y: 13.2, z: 0}
   gridBounds:
     serializedVersion: 2
-    x: -12.2
-    y: 13.200001
+    x: -14.34
+    y: 17.16
     width: 28
     height: 40
   allTiles:
   - tileIndex: 0
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: 15.2}
+    position: {x: -12.34, y: 19.16}
   - tileIndex: 1
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: 15.2}
+    position: {x: -8.34, y: 19.16}
   - tileIndex: 2
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: 15.2}
+    position: {x: -4.34, y: 19.16}
   - tileIndex: 3
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: 15.2}
+    position: {x: -0.34000015, y: 19.16}
   - tileIndex: 4
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: 15.2}
+    position: {x: 3.6599998, y: 19.16}
   - tileIndex: 5
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: 15.2}
+    position: {x: 7.66, y: 19.16}
   - tileIndex: 6
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: 15.2}
+    position: {x: 11.66, y: 19.16}
   - tileIndex: 7
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: 19.2}
+    position: {x: -12.34, y: 23.16}
   - tileIndex: 8
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: 19.2}
+    position: {x: -8.34, y: 23.16}
   - tileIndex: 9
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: 19.2}
+    position: {x: -4.34, y: 23.16}
   - tileIndex: 10
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: 19.2}
+    position: {x: -0.34000015, y: 23.16}
   - tileIndex: 11
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: 19.2}
+    position: {x: 3.6599998, y: 23.16}
   - tileIndex: 12
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: 19.2}
+    position: {x: 7.66, y: 23.16}
   - tileIndex: 13
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: 19.2}
+    position: {x: 11.66, y: 23.16}
   - tileIndex: 14
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: 23.2}
+    position: {x: -12.34, y: 27.16}
   - tileIndex: 15
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: 23.2}
+    position: {x: -8.34, y: 27.16}
   - tileIndex: 16
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: 23.2}
+    position: {x: -4.34, y: 27.16}
   - tileIndex: 17
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: 23.2}
+    position: {x: -0.34000015, y: 27.16}
   - tileIndex: 18
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: 23.2}
+    position: {x: 3.6599998, y: 27.16}
   - tileIndex: 19
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: 23.2}
+    position: {x: 7.66, y: 27.16}
   - tileIndex: 20
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: 23.2}
+    position: {x: 11.66, y: 27.16}
   - tileIndex: 21
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: 27.2}
+    position: {x: -12.34, y: 31.16}
   - tileIndex: 22
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: 27.2}
+    position: {x: -8.34, y: 31.16}
   - tileIndex: 23
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: 27.2}
+    position: {x: -4.34, y: 31.16}
   - tileIndex: 24
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: 27.2}
+    position: {x: -0.34000015, y: 31.16}
   - tileIndex: 25
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: 27.2}
+    position: {x: 3.6599998, y: 31.16}
   - tileIndex: 26
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: 27.2}
+    position: {x: 7.66, y: 31.16}
   - tileIndex: 27
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: 27.2}
+    position: {x: 11.66, y: 31.16}
   - tileIndex: 28
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: 31.2}
+    position: {x: -12.34, y: 35.16}
   - tileIndex: 29
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: 31.2}
+    position: {x: -8.34, y: 35.16}
   - tileIndex: 30
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: 31.2}
+    position: {x: -4.34, y: 35.16}
   - tileIndex: 31
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: 31.2}
+    position: {x: -0.34000015, y: 35.16}
   - tileIndex: 32
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: 31.2}
+    position: {x: 3.6599998, y: 35.16}
   - tileIndex: 33
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: 31.2}
+    position: {x: 7.66, y: 35.16}
   - tileIndex: 34
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: 31.2}
+    position: {x: 11.66, y: 35.16}
   - tileIndex: 35
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: 35.2}
+    position: {x: -12.34, y: 39.16}
   - tileIndex: 36
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: 35.2}
+    position: {x: -8.34, y: 39.16}
   - tileIndex: 37
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: 35.2}
+    position: {x: -4.34, y: 39.16}
   - tileIndex: 38
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: 35.2}
+    position: {x: -0.34000015, y: 39.16}
   - tileIndex: 39
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: 35.2}
+    position: {x: 3.6599998, y: 39.16}
   - tileIndex: 40
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: 35.2}
+    position: {x: 7.66, y: 39.16}
   - tileIndex: 41
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: 35.2}
+    position: {x: 11.66, y: 39.16}
   - tileIndex: 42
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: 39.2}
+    position: {x: -12.34, y: 43.16}
   - tileIndex: 43
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: 39.2}
+    position: {x: -8.34, y: 43.16}
   - tileIndex: 44
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: 39.2}
+    position: {x: -4.34, y: 43.16}
   - tileIndex: 45
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: 39.2}
+    position: {x: -0.34000015, y: 43.16}
   - tileIndex: 46
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: 39.2}
+    position: {x: 3.6599998, y: 43.16}
   - tileIndex: 47
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: 39.2}
+    position: {x: 7.66, y: 43.16}
   - tileIndex: 48
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: 39.2}
+    position: {x: 11.66, y: 43.16}
   - tileIndex: 49
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: 43.2}
+    position: {x: -12.34, y: 47.16}
   - tileIndex: 50
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: 43.2}
+    position: {x: -8.34, y: 47.16}
   - tileIndex: 51
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: 43.2}
+    position: {x: -4.34, y: 47.16}
   - tileIndex: 52
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: 43.2}
+    position: {x: -0.34000015, y: 47.16}
   - tileIndex: 53
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: 43.2}
+    position: {x: 3.6599998, y: 47.16}
   - tileIndex: 54
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: 43.2}
+    position: {x: 7.66, y: 47.16}
   - tileIndex: 55
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: 43.2}
+    position: {x: 11.66, y: 47.16}
   - tileIndex: 56
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: 47.2}
+    position: {x: -12.34, y: 51.16}
   - tileIndex: 57
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: 47.2}
+    position: {x: -8.34, y: 51.16}
   - tileIndex: 58
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: 47.2}
+    position: {x: -4.34, y: 51.16}
   - tileIndex: 59
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: 47.2}
+    position: {x: -0.34000015, y: 51.16}
   - tileIndex: 60
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: 47.2}
+    position: {x: 3.6599998, y: 51.16}
   - tileIndex: 61
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: 47.2}
+    position: {x: 7.66, y: 51.16}
   - tileIndex: 62
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: 47.2}
+    position: {x: 11.66, y: 51.16}
   - tileIndex: 63
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -10.2, y: 51.2}
+    position: {x: -12.34, y: 55.16}
   - tileIndex: 64
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -6.2, y: 51.2}
+    position: {x: -8.34, y: 55.16}
   - tileIndex: 65
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: -2.1999998, y: 51.2}
+    position: {x: -4.34, y: 55.16}
   - tileIndex: 66
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 1.8000002, y: 51.2}
+    position: {x: -0.34000015, y: 55.16}
   - tileIndex: 67
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 5.8, y: 51.2}
+    position: {x: 3.6599998, y: 55.16}
   - tileIndex: 68
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 9.8, y: 51.2}
+    position: {x: 7.66, y: 55.16}
   - tileIndex: 69
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 13.8, y: 51.2}
+    position: {x: 11.66, y: 55.16}
   laneDirection: 2
   _lanes:
   - tiles:
     - tileIndex: 0
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: 15.2}
+      position: {x: -12.34, y: 19.16}
     - tileIndex: 7
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: 19.2}
+      position: {x: -12.34, y: 23.16}
     - tileIndex: 14
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: 23.2}
+      position: {x: -12.34, y: 27.16}
     - tileIndex: 21
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: 27.2}
+      position: {x: -12.34, y: 31.16}
     - tileIndex: 28
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: 31.2}
+      position: {x: -12.34, y: 35.16}
     - tileIndex: 35
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: 35.2}
+      position: {x: -12.34, y: 39.16}
     - tileIndex: 42
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: 39.2}
+      position: {x: -12.34, y: 43.16}
     - tileIndex: 49
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: 43.2}
+      position: {x: -12.34, y: 47.16}
     - tileIndex: 56
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: 47.2}
+      position: {x: -12.34, y: 51.16}
     - tileIndex: 63
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -10.2, y: 51.2}
+      position: {x: -12.34, y: 55.16}
   - tiles:
     - tileIndex: 1
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: 15.2}
+      position: {x: -8.34, y: 19.16}
     - tileIndex: 8
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: 19.2}
+      position: {x: -8.34, y: 23.16}
     - tileIndex: 15
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: 23.2}
+      position: {x: -8.34, y: 27.16}
     - tileIndex: 22
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: 27.2}
+      position: {x: -8.34, y: 31.16}
     - tileIndex: 29
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: 31.2}
+      position: {x: -8.34, y: 35.16}
     - tileIndex: 36
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: 35.2}
+      position: {x: -8.34, y: 39.16}
     - tileIndex: 43
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: 39.2}
+      position: {x: -8.34, y: 43.16}
     - tileIndex: 50
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: 43.2}
+      position: {x: -8.34, y: 47.16}
     - tileIndex: 57
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: 47.2}
+      position: {x: -8.34, y: 51.16}
     - tileIndex: 64
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -6.2, y: 51.2}
+      position: {x: -8.34, y: 55.16}
   - tiles:
     - tileIndex: 2
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: 15.2}
+      position: {x: -4.34, y: 19.16}
     - tileIndex: 9
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: 19.2}
+      position: {x: -4.34, y: 23.16}
     - tileIndex: 16
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: 23.2}
+      position: {x: -4.34, y: 27.16}
     - tileIndex: 23
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: 27.2}
+      position: {x: -4.34, y: 31.16}
     - tileIndex: 30
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: 31.2}
+      position: {x: -4.34, y: 35.16}
     - tileIndex: 37
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: 35.2}
+      position: {x: -4.34, y: 39.16}
     - tileIndex: 44
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: 39.2}
+      position: {x: -4.34, y: 43.16}
     - tileIndex: 51
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: 43.2}
+      position: {x: -4.34, y: 47.16}
     - tileIndex: 58
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: 47.2}
+      position: {x: -4.34, y: 51.16}
     - tileIndex: 65
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: -2.1999998, y: 51.2}
+      position: {x: -4.34, y: 55.16}
   - tiles:
     - tileIndex: 3
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: 15.2}
+      position: {x: -0.34000015, y: 19.16}
     - tileIndex: 10
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: 19.2}
+      position: {x: -0.34000015, y: 23.16}
     - tileIndex: 17
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: 23.2}
+      position: {x: -0.34000015, y: 27.16}
     - tileIndex: 24
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: 27.2}
+      position: {x: -0.34000015, y: 31.16}
     - tileIndex: 31
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: 31.2}
+      position: {x: -0.34000015, y: 35.16}
     - tileIndex: 38
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: 35.2}
+      position: {x: -0.34000015, y: 39.16}
     - tileIndex: 45
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: 39.2}
+      position: {x: -0.34000015, y: 43.16}
     - tileIndex: 52
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: 43.2}
+      position: {x: -0.34000015, y: 47.16}
     - tileIndex: 59
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: 47.2}
+      position: {x: -0.34000015, y: 51.16}
     - tileIndex: 66
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 1.8000002, y: 51.2}
+      position: {x: -0.34000015, y: 55.16}
   - tiles:
     - tileIndex: 4
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: 15.2}
+      position: {x: 3.6599998, y: 19.16}
     - tileIndex: 11
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: 19.2}
+      position: {x: 3.6599998, y: 23.16}
     - tileIndex: 18
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: 23.2}
+      position: {x: 3.6599998, y: 27.16}
     - tileIndex: 25
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: 27.2}
+      position: {x: 3.6599998, y: 31.16}
     - tileIndex: 32
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: 31.2}
+      position: {x: 3.6599998, y: 35.16}
     - tileIndex: 39
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: 35.2}
+      position: {x: 3.6599998, y: 39.16}
     - tileIndex: 46
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: 39.2}
+      position: {x: 3.6599998, y: 43.16}
     - tileIndex: 53
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: 43.2}
+      position: {x: 3.6599998, y: 47.16}
     - tileIndex: 60
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: 47.2}
+      position: {x: 3.6599998, y: 51.16}
     - tileIndex: 67
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 5.8, y: 51.2}
+      position: {x: 3.6599998, y: 55.16}
   - tiles:
     - tileIndex: 5
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: 15.2}
+      position: {x: 7.66, y: 19.16}
     - tileIndex: 12
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: 19.2}
+      position: {x: 7.66, y: 23.16}
     - tileIndex: 19
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: 23.2}
+      position: {x: 7.66, y: 27.16}
     - tileIndex: 26
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: 27.2}
+      position: {x: 7.66, y: 31.16}
     - tileIndex: 33
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: 31.2}
+      position: {x: 7.66, y: 35.16}
     - tileIndex: 40
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: 35.2}
+      position: {x: 7.66, y: 39.16}
     - tileIndex: 47
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: 39.2}
+      position: {x: 7.66, y: 43.16}
     - tileIndex: 54
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: 43.2}
+      position: {x: 7.66, y: 47.16}
     - tileIndex: 61
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: 47.2}
+      position: {x: 7.66, y: 51.16}
     - tileIndex: 68
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 9.8, y: 51.2}
+      position: {x: 7.66, y: 55.16}
   - tiles:
     - tileIndex: 6
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: 15.2}
+      position: {x: 11.66, y: 19.16}
     - tileIndex: 13
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: 19.2}
+      position: {x: 11.66, y: 23.16}
     - tileIndex: 20
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: 23.2}
+      position: {x: 11.66, y: 27.16}
     - tileIndex: 27
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: 27.2}
+      position: {x: 11.66, y: 31.16}
     - tileIndex: 34
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: 31.2}
+      position: {x: 11.66, y: 35.16}
     - tileIndex: 41
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: 35.2}
+      position: {x: 11.66, y: 39.16}
     - tileIndex: 48
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: 39.2}
+      position: {x: 11.66, y: 43.16}
     - tileIndex: 55
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: 43.2}
+      position: {x: 11.66, y: 47.16}
     - tileIndex: 62
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: 47.2}
+      position: {x: 11.66, y: 51.16}
     - tileIndex: 69
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 13.8, y: 51.2}
+      position: {x: 11.66, y: 55.16}
+--- !u!1 &943054853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 943054854}
+  - component: {fileID: 943054855}
+  m_Layer: 0
+  m_Name: GlobalLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &943054854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943054853}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1520824042}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &943054855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943054853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 4
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 0.6698113, g: 0.5615701, b: 0, a: 1}
+  m_Intensity: 0.5
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!114 &1045362877 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5249623847930815753, guid: 65d77d200d3196347a8f2a5ba47a894d, type: 3}
@@ -3387,337 +3773,89 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050943056}
-  m_Mesh: {fileID: 1888314418}
---- !u!43 &1250742305
-Mesh:
+  m_Mesh: {fileID: 2083157624}
+--- !u!1 &1446245867
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 11
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 114
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 76
-    localAABB:
-      m_Center: {x: 14.05, y: 20.05, z: 0}
-      m_Extent: {x: 14.05, y: 20.05, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 00000300020002000100000004000700060006000500040008000b000a000a00090008000c000f000e000e000d000c0010001300120012001100100014001700160016001500140018001b001a001a00190018001c001f001e001e001d001c0020002300220022002100200024002700260026002500240028002b002a002a00290028002c002d002e002e002f002c00300031003200320033003000340035003600360037003400380039003a003a003b0038003c003d003e003e003f003c00400041004200420043004000440045004600460047004400480049004a004a004b004800
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 76
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 912
-    _typelessdata: 000000000000000000000000cdcce0410000000000000000cdcce041cdcccc3d0000000000000000cdcccc3d00000000000000000000804000000000cdcce0410000804000000000cdcce0413333834000000000000000003333834000000000000000000000004100000000cdcce0410000004100000000cdcce0419a99014100000000000000009a99014100000000000000000000404100000000cdcce0410000404100000000cdcce0419a99414100000000000000009a99414100000000000000000000804100000000cdcce0410000804100000000cdcce041cdcc80410000000000000000cdcc804100000000000000000000a04100000000cdcce0410000a04100000000cdcce041cdcca0410000000000000000cdcca04100000000000000000000c04100000000cdcce0410000c04100000000cdcce041cdccc0410000000000000000cdccc04100000000000000000000e04100000000cdcce0410000e04100000000cdcce041cdcce0410000000000000000cdcce04100000000000000000000004200000000cdcce0410000004200000000cdcce0416666004200000000000000006666004200000000000000000000104200000000cdcce0410000104200000000cdcce0416666104200000000000000006666104200000000000000000000204200000000cdcce0410000204200000000cdcce0416666204200000000000000006666204200000000000000000000000000000000000000000000204200000000cdcccc3d0000204200000000cdcccc3d00000000000000000000804000000000000000000000804000002042000000003333834000002042000000003333834000000000000000000000004100000000000000000000004100002042000000009a99014100002042000000009a99014100000000000000000000404100000000000000000000404100002042000000009a99414100002042000000009a9941410000000000000000000080410000000000000000000080410000204200000000cdcc80410000204200000000cdcc804100000000000000000000a04100000000000000000000a0410000204200000000cdcca0410000204200000000cdcca04100000000000000000000c04100000000000000000000c0410000204200000000cdccc0410000204200000000cdccc04100000000000000000000e04100000000000000000000e0410000204200000000cdcce0410000204200000000cdcce0410000000000000000
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 14.05, y: 20.05, z: 0}
-    m_Extent: {x: 14.05, y: 20.05, z: 0}
-  m_MeshUsageFlags: 0
-  m_CookingOptions: 30
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  'm_MeshMetrics[0]': 1
-  'm_MeshMetrics[1]': 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
---- !u!43 &1601727232
-Mesh:
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1446245868}
+  - component: {fileID: 1446245869}
+  m_Layer: 0
+  m_Name: GlobalVolume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1446245868
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446245867}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1520824042}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1446245869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446245867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
-  serializedVersion: 11
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 114
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 76
-    localAABB:
-      m_Center: {x: 14.05, y: 20.05, z: 0}
-      m_Extent: {x: 14.05, y: 20.05, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 00000300020002000100000004000700060006000500040008000b000a000a00090008000c000f000e000e000d000c0010001300120012001100100014001700160016001500140018001b001a001a00190018001c001f001e001e001d001c0020002300220022002100200024002700260026002500240028002b002a002a00290028002c002d002e002e002f002c00300031003200320033003000340035003600360037003400380039003a003a003b0038003c003d003e003e003f003c00400041004200420043004000440045004600460047004400480049004a004a004b004800
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 76
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 912
-    _typelessdata: 000000000000000000000000cdcce0410000000000000000cdcce041cdcccc3d0000000000000000cdcccc3d00000000000000000000804000000000cdcce0410000804000000000cdcce0413333834000000000000000003333834000000000000000000000004100000000cdcce0410000004100000000cdcce0419a99014100000000000000009a99014100000000000000000000404100000000cdcce0410000404100000000cdcce0419a99414100000000000000009a99414100000000000000000000804100000000cdcce0410000804100000000cdcce041cdcc80410000000000000000cdcc804100000000000000000000a04100000000cdcce0410000a04100000000cdcce041cdcca0410000000000000000cdcca04100000000000000000000c04100000000cdcce0410000c04100000000cdcce041cdccc0410000000000000000cdccc04100000000000000000000e04100000000cdcce0410000e04100000000cdcce041cdcce0410000000000000000cdcce04100000000000000000000004200000000cdcce0410000004200000000cdcce0416666004200000000000000006666004200000000000000000000104200000000cdcce0410000104200000000cdcce0416666104200000000000000006666104200000000000000000000204200000000cdcce0410000204200000000cdcce0416666204200000000000000006666204200000000000000000000000000000000000000000000204200000000cdcccc3d0000204200000000cdcccc3d00000000000000000000804000000000000000000000804000002042000000003333834000002042000000003333834000000000000000000000004100000000000000000000004100002042000000009a99014100002042000000009a99014100000000000000000000404100000000000000000000404100002042000000009a99414100002042000000009a9941410000000000000000000080410000000000000000000080410000204200000000cdcc80410000204200000000cdcc804100000000000000000000a04100000000000000000000a0410000204200000000cdcca0410000204200000000cdcca04100000000000000000000c04100000000000000000000c0410000204200000000cdccc0410000204200000000cdccc04100000000000000000000e04100000000000000000000e0410000204200000000cdcce0410000204200000000cdcce0410000000000000000
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 14.05, y: 20.05, z: 0}
-    m_Extent: {x: 14.05, y: 20.05, z: 0}
-  m_MeshUsageFlags: 0
-  m_CookingOptions: 30
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  'm_MeshMetrics[0]': 1
-  'm_MeshMetrics[1]': 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: c04f08fd50b05ad498630f85139345ac, type: 2}
+--- !u!1 &1520824041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1520824042}
+  m_Layer: 0
+  m_Name: SceneEffects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1520824042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520824041}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.014397, y: 29.73798, z: -0.046186704}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1446245868}
+  - {fileID: 943054854}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1666325354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3803,7 +3941,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666325354}
-  m_Mesh: {fileID: 1811894644}
+  m_Mesh: {fileID: 370360078}
 --- !u!1 &1673431686
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,7 +3968,7 @@ Transform:
   m_GameObject: {fileID: 1673431686}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.2, y: -14.8, z: 0}
+  m_LocalPosition: {x: -14.34, y: -17.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3858,336 +3996,14 @@ MonoBehaviour:
   bottomGrid: {fileID: 394139141}
   leftGrid: {fileID: 10513586}
   centerGrid: {fileID: 643797166}
---- !u!43 &1811894644
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 11
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 132
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 88
-    localAABB:
-      m_Center: {x: 26.05, y: 14.05, z: 0}
-      m_Extent: {x: 26.05, y: 14.05, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 00000300020002000100000004000700060006000500040008000b000a000a00090008000c000f000e000e000d000c0010001300120012001100100014001700160016001500140018001b001a001a00190018001c001f001e001e001d001c00200021002200220023002000240025002600260027002400280029002a002a002b0028002c002d002e002e002f002c00300031003200320033003000340035003600360037003400380039003a003a003b0038003c003d003e003e003f003c00400041004200420043004000440045004600460047004400480049004a004a004b0048004c004d004e004e004f004c00500051005200520053005000540055005600560057005400
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 88
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 1056
-    _typelessdata: 00000000000000000000000066665042000000000000000066665042cdcccc3d0000000000000000cdcccc3d00000000000000000000804000000000666650420000804000000000666650423333834000000000000000003333834000000000000000000000004100000000666650420000004100000000666650429a99014100000000000000009a99014100000000000000000000404100000000666650420000404100000000666650429a99414100000000000000009a9941410000000000000000000080410000000066665042000080410000000066665042cdcc80410000000000000000cdcc804100000000000000000000a04100000000666650420000a0410000000066665042cdcca0410000000000000000cdcca04100000000000000000000c04100000000666650420000c0410000000066665042cdccc0410000000000000000cdccc04100000000000000000000e04100000000666650420000e0410000000066665042cdcce0410000000000000000cdcce04100000000000000000000000000000000000000000000e04100000000cdcccc3d0000e04100000000cdcccc3d0000000000000000000080400000000000000000000080400000e04100000000333383400000e04100000000333383400000000000000000000000410000000000000000000000410000e041000000009a9901410000e041000000009a9901410000000000000000000040410000000000000000000040410000e041000000009a9941410000e041000000009a9941410000000000000000000080410000000000000000000080410000e04100000000cdcc80410000e04100000000cdcc804100000000000000000000a04100000000000000000000a0410000e04100000000cdcca0410000e04100000000cdcca04100000000000000000000c04100000000000000000000c0410000e04100000000cdccc0410000e04100000000cdccc04100000000000000000000e04100000000000000000000e0410000e04100000000cdcce0410000e04100000000cdcce0410000000000000000000000420000000000000000000000420000e04100000000666600420000e04100000000666600420000000000000000000010420000000000000000000010420000e04100000000666610420000e04100000000666610420000000000000000000020420000000000000000000020420000e04100000000666620420000e04100000000666620420000000000000000000030420000000000000000000030420000e04100000000666630420000e04100000000666630420000000000000000000040420000000000000000000040420000e04100000000666640420000e04100000000666640420000000000000000000050420000000000000000000050420000e04100000000666650420000e04100000000666650420000000000000000
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 26.05, y: 14.05, z: 0}
-    m_Extent: {x: 26.05, y: 14.05, z: 0}
-  m_MeshUsageFlags: 0
-  m_CookingOptions: 30
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  'm_MeshMetrics[0]': 1
-  'm_MeshMetrics[1]': 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
---- !u!43 &1888314418
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 11
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 132
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 88
-    localAABB:
-      m_Center: {x: 26.05, y: 14.05, z: 0}
-      m_Extent: {x: 26.05, y: 14.05, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 00000300020002000100000004000700060006000500040008000b000a000a00090008000c000f000e000e000d000c0010001300120012001100100014001700160016001500140018001b001a001a00190018001c001f001e001e001d001c00200021002200220023002000240025002600260027002400280029002a002a002b0028002c002d002e002e002f002c00300031003200320033003000340035003600360037003400380039003a003a003b0038003c003d003e003e003f003c00400041004200420043004000440045004600460047004400480049004a004a004b0048004c004d004e004e004f004c00500051005200520053005000540055005600560057005400
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 88
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 1056
-    _typelessdata: 00000000000000000000000066665042000000000000000066665042cdcccc3d0000000000000000cdcccc3d00000000000000000000804000000000666650420000804000000000666650423333834000000000000000003333834000000000000000000000004100000000666650420000004100000000666650429a99014100000000000000009a99014100000000000000000000404100000000666650420000404100000000666650429a99414100000000000000009a9941410000000000000000000080410000000066665042000080410000000066665042cdcc80410000000000000000cdcc804100000000000000000000a04100000000666650420000a0410000000066665042cdcca0410000000000000000cdcca04100000000000000000000c04100000000666650420000c0410000000066665042cdccc0410000000000000000cdccc04100000000000000000000e04100000000666650420000e0410000000066665042cdcce0410000000000000000cdcce04100000000000000000000000000000000000000000000e04100000000cdcccc3d0000e04100000000cdcccc3d0000000000000000000080400000000000000000000080400000e04100000000333383400000e04100000000333383400000000000000000000000410000000000000000000000410000e041000000009a9901410000e041000000009a9901410000000000000000000040410000000000000000000040410000e041000000009a9941410000e041000000009a9941410000000000000000000080410000000000000000000080410000e04100000000cdcc80410000e04100000000cdcc804100000000000000000000a04100000000000000000000a0410000e04100000000cdcca0410000e04100000000cdcca04100000000000000000000c04100000000000000000000c0410000e04100000000cdccc0410000e04100000000cdccc04100000000000000000000e04100000000000000000000e0410000e04100000000cdcce0410000e04100000000cdcce0410000000000000000000000420000000000000000000000420000e04100000000666600420000e04100000000666600420000000000000000000010420000000000000000000010420000e04100000000666610420000e04100000000666610420000000000000000000020420000000000000000000020420000e04100000000666620420000e04100000000666620420000000000000000000030420000000000000000000030420000e04100000000666630420000e04100000000666630420000000000000000000040420000000000000000000040420000e04100000000666640420000e04100000000666640420000000000000000000050420000000000000000000050420000e04100000000666650420000e04100000000666650420000000000000000
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 26.05, y: 14.05, z: 0}
-    m_Extent: {x: 26.05, y: 14.05, z: 0}
-  m_MeshUsageFlags: 0
-  m_CookingOptions: 30
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  'm_MeshMetrics[0]': 1
-  'm_MeshMetrics[1]': 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
+  laneGridOffset: 6.96
+  cellSizeGrids: 4
+  gridLineThickness: 0.34
+  gridLineAlpha: 0.78
+  gridColor: {r: 16.94838, g: 14.053294, b: 0, a: 1}
+  setColorValue: 1
+  gridMaterial:
+    material: {fileID: 2100000, guid: f2edc504422acae4d92cdc5e2348843a, type: 2}
 --- !u!1 &2002641549
 GameObject:
   m_ObjectHideFlags: 0
@@ -4214,7 +4030,7 @@ Transform:
   m_GameObject: {fileID: 2002641549}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28, y: 0, z: 0}
+  m_LocalPosition: {x: 34.96, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4238,755 +4054,971 @@ MonoBehaviour:
   cellSize: 4
   canHostBaseBuildings: 0
   enableDebugLines: 0
-  lineThickness: 0.1
+  lineThickness: 0.34
   gridVisualizationMesh: {fileID: 1666325356}
   gridVisualizationMeshFilter: {fileID: 1666325357}
+  oldPosition: {x: 20.619999, y: -17.8, z: 0}
   cellExtents: 2
-  oldPosition: {x: 15.8, y: -14.8, z: 0}
   gridBounds:
     serializedVersion: 2
-    x: 15.799999
-    y: -14.8
+    x: 20.619999
+    y: -17.8
     width: 52
     height: 28
   allTiles:
   - tileIndex: 0
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 17.8, y: -12.8}
+    position: {x: 22.619999, y: -15.799999}
   - tileIndex: 1
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 21.8, y: -12.8}
+    position: {x: 26.619999, y: -15.799999}
   - tileIndex: 2
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 25.8, y: -12.8}
+    position: {x: 30.619999, y: -15.799999}
   - tileIndex: 3
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 29.8, y: -12.8}
+    position: {x: 34.62, y: -15.799999}
   - tileIndex: 4
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 33.8, y: -12.8}
+    position: {x: 38.62, y: -15.799999}
   - tileIndex: 5
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 37.8, y: -12.8}
+    position: {x: 42.62, y: -15.799999}
   - tileIndex: 6
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 41.8, y: -12.8}
+    position: {x: 46.62, y: -15.799999}
   - tileIndex: 7
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 45.8, y: -12.8}
+    position: {x: 50.62, y: -15.799999}
   - tileIndex: 8
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 49.8, y: -12.8}
+    position: {x: 54.62, y: -15.799999}
   - tileIndex: 9
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 53.8, y: -12.8}
+    position: {x: 58.62, y: -15.799999}
   - tileIndex: 10
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 57.8, y: -12.8}
+    position: {x: 62.62, y: -15.799999}
   - tileIndex: 11
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 61.8, y: -12.8}
+    position: {x: 66.619995, y: -15.799999}
   - tileIndex: 12
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 65.8, y: -12.8}
+    position: {x: 70.619995, y: -15.799999}
   - tileIndex: 13
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 17.8, y: -8.8}
+    position: {x: 22.619999, y: -11.799999}
   - tileIndex: 14
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 21.8, y: -8.8}
+    position: {x: 26.619999, y: -11.799999}
   - tileIndex: 15
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 25.8, y: -8.8}
+    position: {x: 30.619999, y: -11.799999}
   - tileIndex: 16
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 29.8, y: -8.8}
+    position: {x: 34.62, y: -11.799999}
   - tileIndex: 17
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 33.8, y: -8.8}
+    position: {x: 38.62, y: -11.799999}
   - tileIndex: 18
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 37.8, y: -8.8}
+    position: {x: 42.62, y: -11.799999}
   - tileIndex: 19
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 41.8, y: -8.8}
+    position: {x: 46.62, y: -11.799999}
   - tileIndex: 20
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 45.8, y: -8.8}
+    position: {x: 50.62, y: -11.799999}
   - tileIndex: 21
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 49.8, y: -8.8}
+    position: {x: 54.62, y: -11.799999}
   - tileIndex: 22
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 53.8, y: -8.8}
+    position: {x: 58.62, y: -11.799999}
   - tileIndex: 23
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 57.8, y: -8.8}
+    position: {x: 62.62, y: -11.799999}
   - tileIndex: 24
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 61.8, y: -8.8}
+    position: {x: 66.619995, y: -11.799999}
   - tileIndex: 25
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 65.8, y: -8.8}
+    position: {x: 70.619995, y: -11.799999}
   - tileIndex: 26
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 17.8, y: -4.8}
+    position: {x: 22.619999, y: -7.799999}
   - tileIndex: 27
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 21.8, y: -4.8}
+    position: {x: 26.619999, y: -7.799999}
   - tileIndex: 28
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 25.8, y: -4.8}
+    position: {x: 30.619999, y: -7.799999}
   - tileIndex: 29
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 29.8, y: -4.8}
+    position: {x: 34.62, y: -7.799999}
   - tileIndex: 30
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 33.8, y: -4.8}
+    position: {x: 38.62, y: -7.799999}
   - tileIndex: 31
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 37.8, y: -4.8}
+    position: {x: 42.62, y: -7.799999}
   - tileIndex: 32
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 41.8, y: -4.8}
+    position: {x: 46.62, y: -7.799999}
   - tileIndex: 33
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 45.8, y: -4.8}
+    position: {x: 50.62, y: -7.799999}
   - tileIndex: 34
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 49.8, y: -4.8}
+    position: {x: 54.62, y: -7.799999}
   - tileIndex: 35
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 53.8, y: -4.8}
+    position: {x: 58.62, y: -7.799999}
   - tileIndex: 36
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 57.8, y: -4.8}
+    position: {x: 62.62, y: -7.799999}
   - tileIndex: 37
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 61.8, y: -4.8}
+    position: {x: 66.619995, y: -7.799999}
   - tileIndex: 38
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 65.8, y: -4.8}
+    position: {x: 70.619995, y: -7.799999}
   - tileIndex: 39
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 17.8, y: -0.8000002}
+    position: {x: 22.619999, y: -3.7999992}
   - tileIndex: 40
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 21.8, y: -0.8000002}
+    position: {x: 26.619999, y: -3.7999992}
   - tileIndex: 41
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 25.8, y: -0.8000002}
+    position: {x: 30.619999, y: -3.7999992}
   - tileIndex: 42
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 29.8, y: -0.8000002}
+    position: {x: 34.62, y: -3.7999992}
   - tileIndex: 43
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 33.8, y: -0.8000002}
+    position: {x: 38.62, y: -3.7999992}
   - tileIndex: 44
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 37.8, y: -0.8000002}
+    position: {x: 42.62, y: -3.7999992}
   - tileIndex: 45
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 41.8, y: -0.8000002}
+    position: {x: 46.62, y: -3.7999992}
   - tileIndex: 46
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 45.8, y: -0.8000002}
+    position: {x: 50.62, y: -3.7999992}
   - tileIndex: 47
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 49.8, y: -0.8000002}
+    position: {x: 54.62, y: -3.7999992}
   - tileIndex: 48
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 53.8, y: -0.8000002}
+    position: {x: 58.62, y: -3.7999992}
   - tileIndex: 49
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 57.8, y: -0.8000002}
+    position: {x: 62.62, y: -3.7999992}
   - tileIndex: 50
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 61.8, y: -0.8000002}
+    position: {x: 66.619995, y: -3.7999992}
   - tileIndex: 51
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 65.8, y: -0.8000002}
+    position: {x: 70.619995, y: -3.7999992}
   - tileIndex: 52
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 17.8, y: 3.1999998}
+    position: {x: 22.619999, y: 0.20000076}
   - tileIndex: 53
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 21.8, y: 3.1999998}
+    position: {x: 26.619999, y: 0.20000076}
   - tileIndex: 54
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 25.8, y: 3.1999998}
+    position: {x: 30.619999, y: 0.20000076}
   - tileIndex: 55
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 29.8, y: 3.1999998}
+    position: {x: 34.62, y: 0.20000076}
   - tileIndex: 56
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 33.8, y: 3.1999998}
+    position: {x: 38.62, y: 0.20000076}
   - tileIndex: 57
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 37.8, y: 3.1999998}
+    position: {x: 42.62, y: 0.20000076}
   - tileIndex: 58
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 41.8, y: 3.1999998}
+    position: {x: 46.62, y: 0.20000076}
   - tileIndex: 59
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 45.8, y: 3.1999998}
+    position: {x: 50.62, y: 0.20000076}
   - tileIndex: 60
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 49.8, y: 3.1999998}
+    position: {x: 54.62, y: 0.20000076}
   - tileIndex: 61
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 53.8, y: 3.1999998}
+    position: {x: 58.62, y: 0.20000076}
   - tileIndex: 62
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 57.8, y: 3.1999998}
+    position: {x: 62.62, y: 0.20000076}
   - tileIndex: 63
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 61.8, y: 3.1999998}
+    position: {x: 66.619995, y: 0.20000076}
   - tileIndex: 64
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 65.8, y: 3.1999998}
+    position: {x: 70.619995, y: 0.20000076}
   - tileIndex: 65
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 17.8, y: 7.2}
+    position: {x: 22.619999, y: 4.200001}
   - tileIndex: 66
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 21.8, y: 7.2}
+    position: {x: 26.619999, y: 4.200001}
   - tileIndex: 67
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 25.8, y: 7.2}
+    position: {x: 30.619999, y: 4.200001}
   - tileIndex: 68
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 29.8, y: 7.2}
+    position: {x: 34.62, y: 4.200001}
   - tileIndex: 69
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 33.8, y: 7.2}
+    position: {x: 38.62, y: 4.200001}
   - tileIndex: 70
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 37.8, y: 7.2}
+    position: {x: 42.62, y: 4.200001}
   - tileIndex: 71
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 41.8, y: 7.2}
+    position: {x: 46.62, y: 4.200001}
   - tileIndex: 72
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 45.8, y: 7.2}
+    position: {x: 50.62, y: 4.200001}
   - tileIndex: 73
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 49.8, y: 7.2}
+    position: {x: 54.62, y: 4.200001}
   - tileIndex: 74
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 53.8, y: 7.2}
+    position: {x: 58.62, y: 4.200001}
   - tileIndex: 75
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 57.8, y: 7.2}
+    position: {x: 62.62, y: 4.200001}
   - tileIndex: 76
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 61.8, y: 7.2}
+    position: {x: 66.619995, y: 4.200001}
   - tileIndex: 77
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 65.8, y: 7.2}
+    position: {x: 70.619995, y: 4.200001}
   - tileIndex: 78
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 17.8, y: 11.2}
+    position: {x: 22.619999, y: 8.200001}
   - tileIndex: 79
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 21.8, y: 11.2}
+    position: {x: 26.619999, y: 8.200001}
   - tileIndex: 80
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 25.8, y: 11.2}
+    position: {x: 30.619999, y: 8.200001}
   - tileIndex: 81
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 29.8, y: 11.2}
+    position: {x: 34.62, y: 8.200001}
   - tileIndex: 82
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 33.8, y: 11.2}
+    position: {x: 38.62, y: 8.200001}
   - tileIndex: 83
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 37.8, y: 11.2}
+    position: {x: 42.62, y: 8.200001}
   - tileIndex: 84
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 41.8, y: 11.2}
+    position: {x: 46.62, y: 8.200001}
   - tileIndex: 85
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 45.8, y: 11.2}
+    position: {x: 50.62, y: 8.200001}
   - tileIndex: 86
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 49.8, y: 11.2}
+    position: {x: 54.62, y: 8.200001}
   - tileIndex: 87
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 53.8, y: 11.2}
+    position: {x: 58.62, y: 8.200001}
   - tileIndex: 88
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 57.8, y: 11.2}
+    position: {x: 62.62, y: 8.200001}
   - tileIndex: 89
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 61.8, y: 11.2}
+    position: {x: 66.619995, y: 8.200001}
   - tileIndex: 90
     isOccupied: 0
     canHostBaseBuildings: 0
-    position: {x: 65.8, y: 11.2}
+    position: {x: 70.619995, y: 8.200001}
   laneDirection: 1
   _lanes:
   - tiles:
     - tileIndex: 0
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 17.8, y: -12.8}
+      position: {x: 22.619999, y: -15.799999}
     - tileIndex: 1
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 21.8, y: -12.8}
+      position: {x: 26.619999, y: -15.799999}
     - tileIndex: 2
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 25.8, y: -12.8}
+      position: {x: 30.619999, y: -15.799999}
     - tileIndex: 3
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 29.8, y: -12.8}
+      position: {x: 34.62, y: -15.799999}
     - tileIndex: 4
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 33.8, y: -12.8}
+      position: {x: 38.62, y: -15.799999}
     - tileIndex: 5
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 37.8, y: -12.8}
+      position: {x: 42.62, y: -15.799999}
     - tileIndex: 6
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 41.8, y: -12.8}
+      position: {x: 46.62, y: -15.799999}
     - tileIndex: 7
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 45.8, y: -12.8}
+      position: {x: 50.62, y: -15.799999}
     - tileIndex: 8
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 49.8, y: -12.8}
+      position: {x: 54.62, y: -15.799999}
     - tileIndex: 9
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 53.8, y: -12.8}
+      position: {x: 58.62, y: -15.799999}
     - tileIndex: 10
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 57.8, y: -12.8}
+      position: {x: 62.62, y: -15.799999}
     - tileIndex: 11
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 61.8, y: -12.8}
+      position: {x: 66.619995, y: -15.799999}
     - tileIndex: 12
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 65.8, y: -12.8}
+      position: {x: 70.619995, y: -15.799999}
   - tiles:
     - tileIndex: 13
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 17.8, y: -8.8}
+      position: {x: 22.619999, y: -11.799999}
     - tileIndex: 14
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 21.8, y: -8.8}
+      position: {x: 26.619999, y: -11.799999}
     - tileIndex: 15
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 25.8, y: -8.8}
+      position: {x: 30.619999, y: -11.799999}
     - tileIndex: 16
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 29.8, y: -8.8}
+      position: {x: 34.62, y: -11.799999}
     - tileIndex: 17
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 33.8, y: -8.8}
+      position: {x: 38.62, y: -11.799999}
     - tileIndex: 18
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 37.8, y: -8.8}
+      position: {x: 42.62, y: -11.799999}
     - tileIndex: 19
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 41.8, y: -8.8}
+      position: {x: 46.62, y: -11.799999}
     - tileIndex: 20
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 45.8, y: -8.8}
+      position: {x: 50.62, y: -11.799999}
     - tileIndex: 21
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 49.8, y: -8.8}
+      position: {x: 54.62, y: -11.799999}
     - tileIndex: 22
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 53.8, y: -8.8}
+      position: {x: 58.62, y: -11.799999}
     - tileIndex: 23
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 57.8, y: -8.8}
+      position: {x: 62.62, y: -11.799999}
     - tileIndex: 24
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 61.8, y: -8.8}
+      position: {x: 66.619995, y: -11.799999}
     - tileIndex: 25
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 65.8, y: -8.8}
+      position: {x: 70.619995, y: -11.799999}
   - tiles:
     - tileIndex: 26
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 17.8, y: -4.8}
+      position: {x: 22.619999, y: -7.799999}
     - tileIndex: 27
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 21.8, y: -4.8}
+      position: {x: 26.619999, y: -7.799999}
     - tileIndex: 28
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 25.8, y: -4.8}
+      position: {x: 30.619999, y: -7.799999}
     - tileIndex: 29
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 29.8, y: -4.8}
+      position: {x: 34.62, y: -7.799999}
     - tileIndex: 30
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 33.8, y: -4.8}
+      position: {x: 38.62, y: -7.799999}
     - tileIndex: 31
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 37.8, y: -4.8}
+      position: {x: 42.62, y: -7.799999}
     - tileIndex: 32
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 41.8, y: -4.8}
+      position: {x: 46.62, y: -7.799999}
     - tileIndex: 33
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 45.8, y: -4.8}
+      position: {x: 50.62, y: -7.799999}
     - tileIndex: 34
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 49.8, y: -4.8}
+      position: {x: 54.62, y: -7.799999}
     - tileIndex: 35
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 53.8, y: -4.8}
+      position: {x: 58.62, y: -7.799999}
     - tileIndex: 36
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 57.8, y: -4.8}
+      position: {x: 62.62, y: -7.799999}
     - tileIndex: 37
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 61.8, y: -4.8}
+      position: {x: 66.619995, y: -7.799999}
     - tileIndex: 38
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 65.8, y: -4.8}
+      position: {x: 70.619995, y: -7.799999}
   - tiles:
     - tileIndex: 39
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 17.8, y: -0.8000002}
+      position: {x: 22.619999, y: -3.7999992}
     - tileIndex: 40
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 21.8, y: -0.8000002}
+      position: {x: 26.619999, y: -3.7999992}
     - tileIndex: 41
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 25.8, y: -0.8000002}
+      position: {x: 30.619999, y: -3.7999992}
     - tileIndex: 42
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 29.8, y: -0.8000002}
+      position: {x: 34.62, y: -3.7999992}
     - tileIndex: 43
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 33.8, y: -0.8000002}
+      position: {x: 38.62, y: -3.7999992}
     - tileIndex: 44
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 37.8, y: -0.8000002}
+      position: {x: 42.62, y: -3.7999992}
     - tileIndex: 45
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 41.8, y: -0.8000002}
+      position: {x: 46.62, y: -3.7999992}
     - tileIndex: 46
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 45.8, y: -0.8000002}
+      position: {x: 50.62, y: -3.7999992}
     - tileIndex: 47
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 49.8, y: -0.8000002}
+      position: {x: 54.62, y: -3.7999992}
     - tileIndex: 48
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 53.8, y: -0.8000002}
+      position: {x: 58.62, y: -3.7999992}
     - tileIndex: 49
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 57.8, y: -0.8000002}
+      position: {x: 62.62, y: -3.7999992}
     - tileIndex: 50
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 61.8, y: -0.8000002}
+      position: {x: 66.619995, y: -3.7999992}
     - tileIndex: 51
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 65.8, y: -0.8000002}
+      position: {x: 70.619995, y: -3.7999992}
   - tiles:
     - tileIndex: 52
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 17.8, y: 3.1999998}
+      position: {x: 22.619999, y: 0.20000076}
     - tileIndex: 53
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 21.8, y: 3.1999998}
+      position: {x: 26.619999, y: 0.20000076}
     - tileIndex: 54
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 25.8, y: 3.1999998}
+      position: {x: 30.619999, y: 0.20000076}
     - tileIndex: 55
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 29.8, y: 3.1999998}
+      position: {x: 34.62, y: 0.20000076}
     - tileIndex: 56
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 33.8, y: 3.1999998}
+      position: {x: 38.62, y: 0.20000076}
     - tileIndex: 57
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 37.8, y: 3.1999998}
+      position: {x: 42.62, y: 0.20000076}
     - tileIndex: 58
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 41.8, y: 3.1999998}
+      position: {x: 46.62, y: 0.20000076}
     - tileIndex: 59
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 45.8, y: 3.1999998}
+      position: {x: 50.62, y: 0.20000076}
     - tileIndex: 60
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 49.8, y: 3.1999998}
+      position: {x: 54.62, y: 0.20000076}
     - tileIndex: 61
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 53.8, y: 3.1999998}
+      position: {x: 58.62, y: 0.20000076}
     - tileIndex: 62
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 57.8, y: 3.1999998}
+      position: {x: 62.62, y: 0.20000076}
     - tileIndex: 63
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 61.8, y: 3.1999998}
+      position: {x: 66.619995, y: 0.20000076}
     - tileIndex: 64
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 65.8, y: 3.1999998}
+      position: {x: 70.619995, y: 0.20000076}
   - tiles:
     - tileIndex: 65
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 17.8, y: 7.2}
+      position: {x: 22.619999, y: 4.200001}
     - tileIndex: 66
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 21.8, y: 7.2}
+      position: {x: 26.619999, y: 4.200001}
     - tileIndex: 67
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 25.8, y: 7.2}
+      position: {x: 30.619999, y: 4.200001}
     - tileIndex: 68
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 29.8, y: 7.2}
+      position: {x: 34.62, y: 4.200001}
     - tileIndex: 69
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 33.8, y: 7.2}
+      position: {x: 38.62, y: 4.200001}
     - tileIndex: 70
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 37.8, y: 7.2}
+      position: {x: 42.62, y: 4.200001}
     - tileIndex: 71
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 41.8, y: 7.2}
+      position: {x: 46.62, y: 4.200001}
     - tileIndex: 72
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 45.8, y: 7.2}
+      position: {x: 50.62, y: 4.200001}
     - tileIndex: 73
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 49.8, y: 7.2}
+      position: {x: 54.62, y: 4.200001}
     - tileIndex: 74
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 53.8, y: 7.2}
+      position: {x: 58.62, y: 4.200001}
     - tileIndex: 75
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 57.8, y: 7.2}
+      position: {x: 62.62, y: 4.200001}
     - tileIndex: 76
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 61.8, y: 7.2}
+      position: {x: 66.619995, y: 4.200001}
     - tileIndex: 77
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 65.8, y: 7.2}
+      position: {x: 70.619995, y: 4.200001}
   - tiles:
     - tileIndex: 78
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 17.8, y: 11.2}
+      position: {x: 22.619999, y: 8.200001}
     - tileIndex: 79
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 21.8, y: 11.2}
+      position: {x: 26.619999, y: 8.200001}
     - tileIndex: 80
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 25.8, y: 11.2}
+      position: {x: 30.619999, y: 8.200001}
     - tileIndex: 81
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 29.8, y: 11.2}
+      position: {x: 34.62, y: 8.200001}
     - tileIndex: 82
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 33.8, y: 11.2}
+      position: {x: 38.62, y: 8.200001}
     - tileIndex: 83
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 37.8, y: 11.2}
+      position: {x: 42.62, y: 8.200001}
     - tileIndex: 84
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 41.8, y: 11.2}
+      position: {x: 46.62, y: 8.200001}
     - tileIndex: 85
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 45.8, y: 11.2}
+      position: {x: 50.62, y: 8.200001}
     - tileIndex: 86
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 49.8, y: 11.2}
+      position: {x: 54.62, y: 8.200001}
     - tileIndex: 87
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 53.8, y: 11.2}
+      position: {x: 58.62, y: 8.200001}
     - tileIndex: 88
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 57.8, y: 11.2}
+      position: {x: 62.62, y: 8.200001}
     - tileIndex: 89
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 61.8, y: 11.2}
+      position: {x: 66.619995, y: 8.200001}
     - tileIndex: 90
       isOccupied: 0
       canHostBaseBuildings: 0
-      position: {x: 65.8, y: 11.2}
+      position: {x: 70.619995, y: 8.200001}
+--- !u!1 &2029548784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2029548785}
+  - component: {fileID: 2029548786}
+  m_Layer: 0
+  m_Name: GridEffectsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2029548785
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029548784}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 200075705}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2029548786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029548784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 683c996c00fd41bf87e8e9a5428be7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuildingGrids:
+  - {fileID: 911358757}
+  - {fileID: 10513586}
+  - {fileID: 394139141}
+  - {fileID: 2002641551}
+  - {fileID: 643797166}
+  gridGlobalMaterial: {fileID: 2100000, guid: f2edc504422acae4d92cdc5e2348843a, type: 2}
+--- !u!43 &2064453144
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 114
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 76
+    localAABB:
+      m_Center: {x: 14.17, y: 20.17, z: 0}
+      m_Extent: {x: 14.17, y: 20.17, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 00000300020002000100000004000700060006000500040008000b000a000a00090008000c000f000e000e000d000c0010001300120012001100100014001700160016001500140018001b001a001a00190018001c001f001e001e001d001c0020002300220022002100200024002700260026002500240028002b002a002a00290028002c002d002e002e002f002c00300031003200320033003000340035003600360037003400380039003a003a003b0038003c003d003e003e003f003c00400041004200420043004000440045004600460047004400480049004a004a004b004800
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 76
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 912
+    _typelessdata: 00000000000000000000000052b8e241000000000000000052b8e2417b14ae3e00000000000000007b14ae3e0000000000000000000080400000000052b8e241000080400000000052b8e24148e18a40000000000000000048e18a400000000000000000000000410000000052b8e241000000410000000052b8e241a47005410000000000000000a47005410000000000000000000040410000000052b8e241000040410000000052b8e241a47045410000000000000000a47045410000000000000000000080410000000052b8e241000080410000000052b8e24152b88241000000000000000052b8824100000000000000000000a0410000000052b8e2410000a0410000000052b8e24152b8a241000000000000000052b8a24100000000000000000000c0410000000052b8e2410000c0410000000052b8e24152b8c241000000000000000052b8c24100000000000000000000e0410000000052b8e2410000e0410000000052b8e24152b8e241000000000000000052b8e2410000000000000000000000420000000052b8e241000000420000000052b8e241295c01420000000000000000295c01420000000000000000000010420000000052b8e241000010420000000052b8e241295c11420000000000000000295c11420000000000000000000020420000000052b8e241000020420000000052b8e241295c21420000000000000000295c2142000000000000000000000000000000000000000000002042000000007b14ae3e00002042000000007b14ae3e000000000000000000008040000000000000000000008040000020420000000048e18a40000020420000000048e18a400000000000000000000000410000000000000000000000410000204200000000a47005410000204200000000a47005410000000000000000000040410000000000000000000040410000204200000000a47045410000204200000000a4704541000000000000000000008041000000000000000000008041000020420000000052b88241000020420000000052b8824100000000000000000000a04100000000000000000000a041000020420000000052b8a241000020420000000052b8a24100000000000000000000c04100000000000000000000c041000020420000000052b8c241000020420000000052b8c24100000000000000000000e04100000000000000000000e041000020420000000052b8e241000020420000000052b8e2410000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 14.17, y: 20.17, z: 0}
+    m_Extent: {x: 14.17, y: 20.17, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &2076894359
 GameObject:
   m_ObjectHideFlags: 0
@@ -5031,6 +5063,171 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 207e9b58349e30843b7fbb4a73061913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!43 &2083157624
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 11
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 132
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 88
+    localAABB:
+      m_Center: {x: 26.17, y: 14.17, z: 0}
+      m_Extent: {x: 26.17, y: 14.17, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 00000300020002000100000004000700060006000500040008000b000a000a00090008000c000f000e000e000d000c0010001300120012001100100014001700160016001500140018001b001a001a00190018001c001f001e001e001d001c00200021002200220023002000240025002600260027002400280029002a002a002b0028002c002d002e002e002f002c00300031003200320033003000340035003600360037003400380039003a003a003b0038003c003d003e003e003f003c00400041004200420043004000440045004600460047004400480049004a004a004b0048004c004d004e004e004f004c00500051005200520053005000540055005600560057005400
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 88
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1056
+    _typelessdata: 000000000000000000000000295c51420000000000000000295c51427b14ae3e00000000000000007b14ae3e00000000000000000000804000000000295c51420000804000000000295c514248e18a40000000000000000048e18a4000000000000000000000004100000000295c51420000004100000000295c5142a47005410000000000000000a470054100000000000000000000404100000000295c51420000404100000000295c5142a47045410000000000000000a470454100000000000000000000804100000000295c51420000804100000000295c514252b88241000000000000000052b8824100000000000000000000a04100000000295c51420000a04100000000295c514252b8a241000000000000000052b8a24100000000000000000000c04100000000295c51420000c04100000000295c514252b8c241000000000000000052b8c24100000000000000000000e04100000000295c51420000e04100000000295c514252b8e241000000000000000052b8e24100000000000000000000000000000000000000000000e041000000007b14ae3e0000e041000000007b14ae3e0000000000000000000080400000000000000000000080400000e0410000000048e18a400000e0410000000048e18a400000000000000000000000410000000000000000000000410000e04100000000a47005410000e04100000000a47005410000000000000000000040410000000000000000000040410000e04100000000a47045410000e04100000000a47045410000000000000000000080410000000000000000000080410000e0410000000052b882410000e0410000000052b8824100000000000000000000a04100000000000000000000a0410000e0410000000052b8a2410000e0410000000052b8a24100000000000000000000c04100000000000000000000c0410000e0410000000052b8c2410000e0410000000052b8c24100000000000000000000e04100000000000000000000e0410000e0410000000052b8e2410000e0410000000052b8e2410000000000000000000000420000000000000000000000420000e04100000000295c01420000e04100000000295c01420000000000000000000010420000000000000000000010420000e04100000000295c11420000e04100000000295c11420000000000000000000020420000000000000000000020420000e04100000000295c21420000e04100000000295c21420000000000000000000030420000000000000000000030420000e04100000000295c31420000e04100000000295c31420000000000000000000040420000000000000000000040420000e04100000000295c41420000e04100000000295c41420000000000000000000050420000000000000000000050420000e04100000000295c51420000e04100000000295c51420000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 26.17, y: 14.17, z: 0}
+    m_Extent: {x: 26.17, y: 14.17, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1001 &6726978724417073329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5177,7 +5374,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 231880015}
   - {fileID: 1673431687}
   - {fileID: 200075705}
   - {fileID: 6726978724417073329}
+  - {fileID: 1520824042}

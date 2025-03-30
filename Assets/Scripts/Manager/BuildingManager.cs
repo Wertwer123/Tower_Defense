@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using Base;
 using Game;
+using Game.Enums;
+using Game.StatemachineSystem;
 using ScriptableObjects.Buildings;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -12,14 +14,17 @@ namespace Manager
     {
         [SerializeField] private BuildingData currentlySelectedBuildingToBuild;
         [SerializeField] private List<Building> allPlacedBuildings = new List<Building>();
+        [SerializeField] private List<Building> allBuildings = new List<Building>();
+        [SerializeField] StateMachine<BuildingManager,BuildingStates> buildingStateMachine;
 
-        public event Action<Building> OnBuildingBuilt; 
+        public event Action<Building> OnBuildingBuilt;
 
-        private bool continousBuildingIsActive = false;
+        private bool _continousBuildingIsActive = false;
         private readonly TickManager _tickManager = new TickManager();
         
         private void Start()
         {
+            buildingStateMachine.Init(this);
             _tickManager.StartUpdatingTickables();
         }
 
@@ -31,23 +36,28 @@ namespace Manager
         private void Update()
         {
             _tickManager.Update();
+            buildingStateMachine.Update();
         }
 
         public void SetCurrentlySelecetedBuildingToBuild(BuildingData building)
         {
             currentlySelectedBuildingToBuild = building;
+            
+            buildingStateMachine.SetCurrentState(nameof(BuildingStates.Building));
         }
 
         public void SetContinousBuildingIsActive(InputAction.CallbackContext context)
         {
             if (context.started)
             {
-                continousBuildingIsActive = true;
+                _continousBuildingIsActive = true;
+                buildingStateMachine.SetCurrentState(nameof(BuildingStates.Building));
                 
             }
             else if (context.canceled)
             {
-                continousBuildingIsActive = false;
+                _continousBuildingIsActive = false;
+                buildingStateMachine.SetIdle();
             }
         }
         public void PlaceCurrentlySelectedBuildingToBuild(InputAction.CallbackContext context)
@@ -72,7 +82,17 @@ namespace Manager
             var buildingInstance = Instantiate(currentlySelectedBuildingToBuild.BuildingPrefab, buildingLocation, Quaternion.identity);
             buildingInstance.OnBuild(tileToPlaceBuildingOn);
             
-            currentlySelectedBuildingToBuild = continousBuildingIsActive ? currentlySelectedBuildingToBuild :  null;
+            currentlySelectedBuildingToBuild = _continousBuildingIsActive ? currentlySelectedBuildingToBuild :  null;
+
+            if (!_continousBuildingIsActive)
+            {
+                buildingStateMachine.SetIdle();
+            }
+            else
+            {
+                buildingStateMachine.SetCurrentState(nameof(BuildingStates.Building));
+            }
+            
             allPlacedBuildings.Add(buildingInstance);
             
             OnBuildingBuilt?.Invoke(buildingInstance);

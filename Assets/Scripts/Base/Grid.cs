@@ -5,6 +5,7 @@ using Interfaces;
 using PropertyAttributes;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Utils;
 
 namespace Base
 {
@@ -19,8 +20,8 @@ namespace Base
         [SerializeField] private MeshRenderer gridVisualizationMesh;
         [SerializeField] private MeshFilter gridVisualizationMeshFilter;
         
-        [SerializeField, HideInInspector] float cellExtents;
         [SerializeField, HideInInspector] private Vector3 oldPosition;
+        [SerializeField, HideInInspector] protected float cellExtents;
         [SerializeField, HideInInspector] protected Rect gridBounds;
         [SerializeField, HideInInspector] protected List<GridTile> allTiles = new List<GridTile>();
     
@@ -42,6 +43,17 @@ namespace Base
         public void OnTransformChanged()
         {
             RegenerateGrid();
+        }
+        public void SetCellSize(float newCellSize)
+        {
+            cellSize = newCellSize;
+        }
+
+        public void SetLineThickness(float newLineThickness)
+        {
+            lineThickness = newLineThickness;
+            GenerateGridMesh();
+            Debug.Log("regenerating grid mesh");
         }
         
         public bool IsPositionInGrid(Vector2 position)

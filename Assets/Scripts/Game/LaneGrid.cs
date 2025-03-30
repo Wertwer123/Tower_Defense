@@ -26,7 +26,7 @@ namespace Game
          base.RegenerateGrid();
          CreateLanes();
       }
-
+      
       void CreateLanes()
       {
          _lanes.Clear();
