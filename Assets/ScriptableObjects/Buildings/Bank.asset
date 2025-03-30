@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9717a94fc9d46068ebbee898003f765, type: 3}
+  m_Name: Bank
+  m_EditorClassIdentifier: 
+  level: 0
+  buildingName: Bank
+  description: You want money here you get it also offers loans
+  resourceCosts:
+  - resourceValue: 300
+    resourceType: 3
+  - resourceValue: 50
+    resourceType: 1
+  - resourceValue: 20
+    resourceType: 0
+  buildingPrefab: {fileID: 8936516858998353184, guid: cba35569ad554e54b933dabb287bafe9, type: 3}
+  uISprite: {fileID: 1118296623, guid: 678042d5c4fe6a34a87c67e0554908e3, type: 3}
+  buildingGuid: f08c81ed10a462a448c712193cbed2c4
+  resourceProductionRatePerSecond: 2
+  resourceProductionType: 3
