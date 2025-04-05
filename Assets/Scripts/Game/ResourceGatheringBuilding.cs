@@ -17,19 +17,11 @@ namespace Game
         private void Start()
         {
             _resourceTicker = new Ticker(1.0f / resourceBuildingData.ResourceProductionRatePerSecond, ProduceResource);
-            
-            BuildingManager.Instance.RegisterResourceGatheringBuilding(this);
         }
 
         private void ProduceResource()
         {
             
-        }
-
-        public override void OnBuild(GridTile tileBuildingGetsPlacedOn)
-        {
-            base.OnBuild(tileBuildingGetsPlacedOn);
-            Debug.Log("OnBuild");
         }
     }
 }

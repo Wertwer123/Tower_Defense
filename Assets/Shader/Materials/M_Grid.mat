@@ -60,12 +60,12 @@ Material:
     m_Ints: []
     m_Floats:
     - _GridLineThickness: 0.1
-    - _LineAlpha: 0.78
+    - _LineAlpha: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
     - _ColumnsRows: {r: 4, g: 4, b: 0, a: 0}
-    - _GridLineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GridLineColor: {r: 22.659733, g: 8.310784, b: 0, a: 1}
     - _GridLinesEmissiveColor: {r: 0.962264, g: 0, b: 0, a: 0}
     - _TileSize: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

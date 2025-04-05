@@ -30,7 +30,8 @@ namespace UI
             foreach (var resource in _buildingToSelectOnClick.ResourceCosts)
             {
                 var resourceValueDisplay = Instantiate(resourceValueDisplayPrefab, costGrid.transform);
-                resourceValueDisplay.Init(resource);
+                resourceValueDisplay.Init(resource.ResourceType);
+                resourceValueDisplay.UpdateDisplayedAmount(resource);
             }           
         }
         

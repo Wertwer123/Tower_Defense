@@ -1,23 +1,22 @@
 using System;
 using System.Collections.Generic;
 using Base;
+using Game;
 using Interfaces;
 using PropertyAttributes;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Utils;
 using Color = UnityEngine.Color;
-using Grid = Base.Grid;
 
 namespace Manager
 {
    public class BuildingGridsManager : BaseSingleton<BuildingGridsManager>, ITransformChanged
    {
-      [SerializeField] private Grid topGrid;
-      [SerializeField] private Grid rightGrid;
-      [SerializeField] private Grid bottomGrid;
-      [SerializeField] private Grid leftGrid;
-      [SerializeField] private Grid centerGrid;
+      [SerializeField] private TdGrid topTdGrid;
+      [SerializeField] private TdGrid rightTdGrid;
+      [SerializeField] private TdGrid bottomTdGrid;
+      [SerializeField] private TdGrid leftTdGrid;
+      [SerializeField] private TdGrid centerTdGrid;
       [SerializeField, OnValueChanged(nameof(SetManagedGridPositions)), Min(0)] float laneGridOffset = 0.2f;
       [SerializeField, OnValueChanged(nameof(SetManagedGridCellSizes)),Min(0)] private float cellSizeGrids = 0.5f;
       [SerializeField, OnValueChanged(nameof(SetManagedGridLineThickness)), Min(0)] private float gridLineThickness = 0.5f;
@@ -26,15 +25,20 @@ namespace Manager
       [SerializeField, OnValueChanged(nameof(SetManagedGridColors))] private bool setColorValue;
       [SerializeField] private MaterialInterface gridMaterial;
       
-      public List<Base.Grid> grids => new List<Grid>(4)
+      public List<Base.TdGrid> grids => new List<TdGrid>(4)
       {
-         topGrid,
-         rightGrid,
-         bottomGrid,
-         leftGrid,
-         centerGrid
+         topTdGrid,
+         rightTdGrid,
+         bottomTdGrid,
+         leftTdGrid,
+         centerTdGrid
       };
-      
+
+      private void OnDestroy()
+      {
+         SetManagedGridColors();
+      }
+
       public Transform Self => transform;
       public Vector3 OldPosition { get; set; }
       public bool HasTransformChanged()
@@ -50,11 +54,11 @@ namespace Manager
       
       void SetManagedGridCellSizes()
       {
-         centerGrid.SetCellSize(cellSizeGrids);
-         topGrid.SetCellSize(cellSizeGrids);
-         rightGrid.SetCellSize(cellSizeGrids);
-         bottomGrid.SetCellSize(cellSizeGrids);
-         leftGrid.SetCellSize(cellSizeGrids);
+         centerTdGrid.SetCellSize(cellSizeGrids);
+         topTdGrid.SetCellSize(cellSizeGrids);
+         rightTdGrid.SetCellSize(cellSizeGrids);
+         bottomTdGrid.SetCellSize(cellSizeGrids);
+         leftTdGrid.SetCellSize(cellSizeGrids);
          
          SetManagedGridPositions();
       }
@@ -67,11 +71,11 @@ namespace Manager
 
       void SetManagedGridLineThickness()
       {
-         centerGrid.SetLineThickness(gridLineThickness);
-         topGrid.SetLineThickness(gridLineThickness);
-         rightGrid.SetLineThickness(gridLineThickness);
-         bottomGrid.SetLineThickness(gridLineThickness);
-         leftGrid.SetLineThickness(gridLineThickness);
+         centerTdGrid.SetLineThickness(gridLineThickness);
+         topTdGrid.SetLineThickness(gridLineThickness);
+         rightTdGrid.SetLineThickness(gridLineThickness);
+         bottomTdGrid.SetLineThickness(gridLineThickness);
+         leftTdGrid.SetLineThickness(gridLineThickness);
       }
 
       void SetManagedGridLineAlpha()
@@ -85,18 +89,18 @@ namespace Manager
       /// <param name="centerGridBounds"></param>
       void SetManagedGridPositions()
       {
-         centerGrid.transform.position = transform.position;
-         Rect centerGridBounds = centerGrid.GridBounds;
+         centerTdGrid.transform.position = transform.position;
+         Rect centerGridBounds = centerTdGrid.GridBounds;
          
          Vector2 topGridPosition = (centerGridBounds.min + Vector2.up * centerGridBounds.height) + Vector2.up * laneGridOffset;
-         Vector2 leftGridPosition = (centerGrid.GridBounds.min + Vector2.left * leftGrid.GridBounds.width) + Vector2.left * laneGridOffset;
-         Vector2 bottomGridPosition = (centerGridBounds.position + Vector2.down * bottomGrid.GridBounds.height) + Vector2.down * laneGridOffset;
+         Vector2 leftGridPosition = (centerTdGrid.GridBounds.min + Vector2.left * leftTdGrid.GridBounds.width) + Vector2.left * laneGridOffset;
+         Vector2 bottomGridPosition = (centerGridBounds.position + Vector2.down * bottomTdGrid.GridBounds.height) + Vector2.down * laneGridOffset;
          Vector2 rightGridPosition = (centerGridBounds.position + Vector2.right * centerGridBounds.width) + Vector2.right * laneGridOffset;
 
-         topGrid.transform.position = topGridPosition;
-         rightGrid.transform.position = rightGridPosition;
-         bottomGrid.transform.position = bottomGridPosition;
-         leftGrid.transform.position = leftGridPosition;
+         topTdGrid.transform.position = topGridPosition;
+         rightTdGrid.transform.position = rightGridPosition;
+         bottomTdGrid.transform.position = bottomGridPosition;
+         leftTdGrid.transform.position = leftGridPosition;
       }
       
       public void OnTransformChanged()

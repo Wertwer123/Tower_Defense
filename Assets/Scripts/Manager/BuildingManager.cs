@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using Base;
 using Game;
 using Game.Enums;
@@ -12,73 +11,60 @@ namespace Manager
 {
     public class BuildingManager : BaseSingleton<BuildingManager>
     {
+        [SerializeField] private PlacedBuildingsManager placedBuildingsManager;
         [SerializeField] private BuildingData currentlySelectedBuildingToBuild;
-        [SerializeField] private List<Building> allPlacedBuildings = new List<Building>();
-        [SerializeField] private List<Building> allBuildings = new List<Building>();
-        [SerializeField] StateMachine<BuildingManager,BuildingStates> buildingStateMachine;
+        [SerializeField] private BuildingPreview buildingPreview;
+        [SerializeField] private StateMachine<BuildingManager,BuildingStates> buildingStateMachine;
 
-        public event Action<Building> OnBuildingBuilt;
-
-        private bool _continousBuildingIsActive = false;
-        private readonly TickManager _tickManager = new TickManager();
+        private int _continousBuildingsBuilt;
+        private bool _continousBuildingIsActive;
+        event Action<Building> OnBuildingBuilt;
         
         private void Start()
         {
             buildingStateMachine.Init(this);
-            _tickManager.StartUpdatingTickables();
-        }
-
-        private void OnDestroy()
-        {
-            _tickManager.StopTicking();
         }
 
         private void Update()
         {
-            _tickManager.Update();
             buildingStateMachine.Update();
-        }
 
-        public void SetCurrentlySelecetedBuildingToBuild(BuildingData building)
-        {
-            currentlySelectedBuildingToBuild = building;
-            
-            buildingStateMachine.SetCurrentState(nameof(BuildingStates.Building));
-        }
-
-        public void SetContinousBuildingIsActive(InputAction.CallbackContext context)
-        {
-            if (context.started)
+            if (HasCurrentlySelectedBuilding())
             {
-                _continousBuildingIsActive = true;
-                buildingStateMachine.SetCurrentState(nameof(BuildingStates.Building));
-                
-            }
-            else if (context.canceled)
-            {
-                _continousBuildingIsActive = false;
-                buildingStateMachine.SetIdle();
+                GridTile currentlyHoveredTile = MouseDataManager.Instance.CurrentlyHoveredTile;
+                SetBuildingPreviewPosition(currentlyHoveredTile);
+                SetBuildingPreviewState(currentlyHoveredTile);
             }
         }
-        public void PlaceCurrentlySelectedBuildingToBuild(InputAction.CallbackContext context)
+
+        private void SetBuildingPreviewPosition(GridTile currentlyHoveredTile )
         {
-            if (!context.performed)
+            if (currentlyHoveredTile == null)
             {
                 return;
             }
             
-            GridTile tileToPlaceBuildingOn = MouseDataManager.Instance.CurrentlyHoveredTile;
-           
-            if (tileToPlaceBuildingOn == null 
-                || tileToPlaceBuildingOn.IsOccupied 
-                || !tileToPlaceBuildingOn.CanHostBaseBuildings
-                || currentlySelectedBuildingToBuild == null)
+            buildingPreview.SetPosition(currentlyHoveredTile.Position);
+        }
+
+        private void SetBuildingPreviewState(GridTile currentlyHoveredTile)
+        {
+            if (currentlyHoveredTile == null)
             {
-                return;
+                buildingPreview.Disable();
             }
-            
+            else
+            {
+                buildingPreview.Enable();
+                buildingPreview.ChangeSpriteState(CanPlaceBuilding(currentlyHoveredTile, currentlySelectedBuildingToBuild));
+            }
+        }
+        
+        private void PlaceBuilding(GridTile tileToPlaceBuildingOn)
+        {
             //Also check for sufficient resources availablity of the tile etc
             Vector2 buildingLocation = tileToPlaceBuildingOn.Position;
+            
             var buildingInstance = Instantiate(currentlySelectedBuildingToBuild.BuildingPrefab, buildingLocation, Quaternion.identity);
             buildingInstance.OnBuild(tileToPlaceBuildingOn);
             
@@ -87,20 +73,86 @@ namespace Manager
             if (!_continousBuildingIsActive)
             {
                 buildingStateMachine.SetIdle();
+                _continousBuildingsBuilt = 0;
+                buildingPreview.Disable();
             }
-            else
-            {
-                buildingStateMachine.SetCurrentState(nameof(BuildingStates.Building));
-            }
-            
-            allPlacedBuildings.Add(buildingInstance);
-            
+
+            _continousBuildingsBuilt++;
+            placedBuildingsManager.AddPlacedBuilding(buildingInstance);
+           
             OnBuildingBuilt?.Invoke(buildingInstance);
         }
         
-        public void RegisterResourceGatheringBuilding(ResourceGatheringBuilding building)
+        private bool HasCurrentlySelectedBuilding()
         {
-            _tickManager.RegisterTickable(building.ResourceTicker);
+            return currentlySelectedBuildingToBuild;
+        }
+
+        private bool CanPlaceBuilding(GridTile tileToPlaceBuildingOn, BuildingData buildingToPlace)
+        {
+            if (tileToPlaceBuildingOn == null)
+            {
+                return false;
+            }
+
+            if (buildingToPlace.IsBaseBuilding)
+            {
+                return !tileToPlaceBuildingOn.IsOccupied 
+                       && tileToPlaceBuildingOn.CanHostBaseBuildings;
+            }
+            
+            return !tileToPlaceBuildingOn.IsOccupied
+                   && !tileToPlaceBuildingOn.CanHostBaseBuildings;          
+        }
+        
+        public void SetCurrentlySelecetedBuildingToBuild(BuildingData building)
+        {
+            currentlySelectedBuildingToBuild = building;
+            buildingPreview.Init(currentlySelectedBuildingToBuild.BuildingPrefab.BuildingSprite);
+            buildingStateMachine.SetCurrentState(nameof(BuildingStates.Building));
+        }
+
+        public void SetContinousBuildingIsActive(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                _continousBuildingIsActive = true;
+            }
+            else if (context.canceled)
+            {
+                _continousBuildingIsActive = false;
+
+                //if we cancel continous building, and we have started building continously then rest the building state
+                if (_continousBuildingsBuilt <= 0) return;
+                
+                currentlySelectedBuildingToBuild = null;
+                buildingStateMachine.SetIdle();
+            }
+        }
+        public void PlaceCurrentlySelectedBuildingToBuild(InputAction.CallbackContext context)
+        {
+            if (!context.performed || !HasCurrentlySelectedBuilding())
+            {
+                return;
+            }
+            
+            GridTile tileToPlaceBuildingOn = MouseDataManager.Instance.CurrentlyHoveredTile;
+           
+            if (!CanPlaceBuilding(tileToPlaceBuildingOn, currentlySelectedBuildingToBuild))
+            {
+                return;
+            }
+            
+            PlaceBuilding(tileToPlaceBuildingOn);
+        }
+        
+        public void UnsubcribeFromBuildingBuilt(Action<Building> onBuildingBuilt)
+        {
+            OnBuildingBuilt -= onBuildingBuilt;
+        }
+        public void SubscribeToOnBuildingBuilt(Action<Building> onBuildingBuilt)
+        {
+            OnBuildingBuilt += onBuildingBuilt;
         }
     }
 }

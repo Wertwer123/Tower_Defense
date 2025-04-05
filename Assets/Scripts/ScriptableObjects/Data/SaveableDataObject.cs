@@ -25,6 +25,11 @@ namespace ScriptableObjects.Data
             }
         }
 
+        private void OnDisable()
+        {
+            _isLoaded = false;
+        }
+        
         /// <summary>
         /// Save the file and optionally if the directory doesnt exist already create a savefile for it
         /// </summary>

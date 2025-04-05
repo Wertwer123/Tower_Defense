@@ -15,6 +15,7 @@ MonoBehaviour:
   level: 0
   buildingName: Bank
   description: You want money here you get it also offers loans
+  isBaseBuilding: 1
   resourceCosts:
   - resourceValue: 300
     resourceType: 3

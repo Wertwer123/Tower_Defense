@@ -18,5 +18,25 @@ namespace Game
             this.resourceValue = resourceValue;
             this.resourceType = resourceType;
         }
+        
+        public static ResourceValue operator+(ResourceValue a, ResourceValue b)
+        {
+            if (a.ResourceType != b.ResourceType)
+            {
+                throw new ArgumentException("Resource type mismatch");
+            }
+            
+            return new ResourceValue(a.resourceValue + b.resourceValue, a.ResourceType);
+        }
+        
+        public static ResourceValue operator-(ResourceValue a, ResourceValue b)
+        {
+            if (a.ResourceType != b.ResourceType)
+            {
+                throw new ArgumentException("Resource type mismatch");
+            }
+            
+            return new ResourceValue(a.resourceValue - b.resourceValue, a.ResourceType);
+        }
     }
 }

@@ -3,14 +3,13 @@ using Base;
 using Game;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Grid = Base.Grid;
 
 namespace Manager
 {
     public class MouseDataManager : BaseSingleton<MouseDataManager>
     {
         [SerializeField] Vector2 currentMousePositionWorld;
-        [SerializeField] List<Grid> buildingGrids = new List<Grid>();
+        [SerializeField] List<TdGrid> buildingGrids = new List<TdGrid>();
         [SerializeField] Camera playerCamera;
 
         private GridTile _currentlyHoveredTile = null;
@@ -30,7 +29,7 @@ namespace Manager
         {
             GridTile hoveredTile = null;
 
-            foreach (Grid buildingGrid in buildingGrids)
+            foreach (TdGrid buildingGrid in buildingGrids)
             {
                 if (!buildingGrid.IsPositionInGrid(mousePosition))
                 {

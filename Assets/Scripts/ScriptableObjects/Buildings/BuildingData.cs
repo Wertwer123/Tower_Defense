@@ -14,6 +14,7 @@ namespace ScriptableObjects.Buildings
         [SerializeField, Min(1)] private int level;
         [SerializeField] private string buildingName;
         [SerializeField, TextArea]private string description;
+        [SerializeField] private bool isBaseBuilding;
         [SerializeField] private List<ResourceValue> resourceCosts = new List<ResourceValue>()
         {
             new ResourceValue(0, ResourceType.Gold),    
@@ -28,6 +29,7 @@ namespace ScriptableObjects.Buildings
         public int Level => level;
         public string Description => description;
         public string BuildingName => buildingName;
+        public bool IsBaseBuilding => isBaseBuilding;
         public List<ResourceValue> ResourceCosts => resourceCosts;
         public ResourceValue Cost(ResourceType resourceType) => resourceCosts.Find(resource => resource.ResourceType == resourceType);
         public Building BuildingPrefab => buildingPrefab;

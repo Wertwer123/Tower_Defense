@@ -19,16 +19,15 @@ public class BuildingSelectionPanelInGame : MonoBehaviour
     [SerializeField] private BuildingDatabase buildingDataBase;
     [SerializeField] private GridLayoutGroup buildingGridLayout;
     [SerializeField] private BuildingSelectionButton selectionButtonPrefab;
+
+    private readonly List<BuildingSelectionButton> _buttonInstances = new List<BuildingSelectionButton>();
     
-    List<BuildingSelectionButton> buttonInstances = new List<BuildingSelectionButton>();
-    
-    //TODO creat UI grid layout for selected buildings and dynamiccally fill it with the selected buildings
     //TODO also implement some kind of resource manager probably wouldnt be that bad to have this information as well 
 
     private void Start()
     {
         CreateBuildingSelectionDisplay();
-        BuildingManager.Instance.OnBuildingBuilt += UpdateBuildingSelectionDisplay;
+        BuildingManager.Instance.SubscribeToOnBuildingBuilt(UpdateBuildingSelectionDisplay);
     }
 
     public void CreateBuildingSelectionDisplay()
@@ -41,7 +40,7 @@ public class BuildingSelectionPanelInGame : MonoBehaviour
             var buildingButton = Instantiate(selectionButtonPrefab, buildingGridLayout.transform);
             buildingButton.Init(buildingData);
             
-            buttonInstances.Add(buildingButton);
+            _buttonInstances.Add(buildingButton);
         }
     }
     
