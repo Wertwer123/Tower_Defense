@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Title Mission Panel Status Red_0: -2251342238141004578
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

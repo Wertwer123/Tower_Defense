@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Battle magic_0: 2353980486744624571
+      Wenrexa Battle magic_1: 6927157821669811077
+      Wenrexa Battle magic_2: 4741655994424288562
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

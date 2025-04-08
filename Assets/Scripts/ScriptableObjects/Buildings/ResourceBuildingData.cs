@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Game;
 using Game.Enums;
 using UnityEngine;
 
@@ -7,9 +9,9 @@ namespace ScriptableObjects.Buildings
     public class ResourceBuildingData : BuildingData
     {
         [SerializeField, Min(0.1f)] float resourceProductionRatePerSecond;
-        [SerializeField] private ResourceType resourceProductionType;
+        [SerializeField] private List<ResourceValue> producedResourcesPerTick;
         
         public float ResourceProductionRatePerSecond => resourceProductionRatePerSecond;
-        public ResourceType ResourceProductionType => resourceProductionType;
+        public List<ResourceValue> ProducedResources => producedResourcesPerTick;
     }
 }

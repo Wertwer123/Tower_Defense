@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Long Dagger_0: 798092165634636789
+      Wenrexa Long Dagger_1: -1254294585480934700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

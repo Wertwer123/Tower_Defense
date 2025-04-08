@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Winter_0: 445236552322003678
+      Wenrexa Winter_1: 5504729590872915153
+      Wenrexa Winter_2: 5375014666659384832
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

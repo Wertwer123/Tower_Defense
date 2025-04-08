@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CheckBox Check or True_0: -2029394889059695897
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

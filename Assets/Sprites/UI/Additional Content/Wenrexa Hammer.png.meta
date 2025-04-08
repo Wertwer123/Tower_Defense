@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Hammer_0: -4963652535462575749
+      Wenrexa Hammer_1: 8969505617450927404
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

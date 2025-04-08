@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Plough_0: -24250402957141138
+      Wenrexa Plough_1: 8816166522299653463
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

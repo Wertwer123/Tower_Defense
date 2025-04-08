@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Icon Status Offline_0: -1568984793886712934
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

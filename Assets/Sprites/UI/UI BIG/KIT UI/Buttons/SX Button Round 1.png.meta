@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SX Button Round 1_0: -9123725083698573534
+      SX Button Round 1_1: -1387935011126967911
+      SX Button Round 1_2: 8286562080276563216
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

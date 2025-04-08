@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Medical Box_0: 7901575673542162972
+      Wenrexa Medical Box_1: -2989984060122917364
+      Wenrexa Medical Box_2: -48740621806771847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

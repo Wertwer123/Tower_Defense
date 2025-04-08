@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Game;
 using UnityEngine;
 
@@ -8,6 +7,7 @@ namespace Manager
     public class PlacedBuildingsManager : MonoBehaviour
     {
         [SerializeField] private List<Building> allPlacedBuildings = new List<Building>();
+        [SerializeField] private ResourceManager resourceManager;
         
         private readonly TickManager _tickManager = new TickManager();
 
@@ -32,7 +32,9 @@ namespace Manager
 
             if (building is ResourceGatheringBuilding buildingCastToResourceGatheringBuilding)
             {
+                Debug.Log("placed a resource building");
                 _tickManager.RegisterTickable(buildingCastToResourceGatheringBuilding.ResourceTicker);
+                buildingCastToResourceGatheringBuilding.AssignResourceManager(resourceManager);
             }
         }
 

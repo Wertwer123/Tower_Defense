@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SXL Button 1_0: -990307236313964556
+      SXL Button 1_1: -9040323011389751622
+      SXL Button 1_2: 5459416623558121333
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

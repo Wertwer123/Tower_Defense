@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Submachine gun + Ammo_0: 1472126497281936139
+      Wenrexa Submachine gun + Ammo_1: -7426092422377810071
+      Wenrexa Submachine gun + Ammo_2: 6724899917246660536
+      Wenrexa Submachine gun + Ammo_3: -7369224016457369557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

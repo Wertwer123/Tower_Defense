@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Torch_0: 5271857882067044980
+      Wenrexa Torch_1: 5714899395968809901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Extensions;
 using ScriptableObjects.Buildings;
 using SpriteAnimation;
 using UnityEngine;
@@ -24,8 +25,7 @@ namespace Game
         {
             _occupiedTile = tileBuildingGetsPlacedOn;
             _occupiedTile.IsOccupied = true;
-            var animInstanceToPlay = Instantiate(onBuildAnimation);
-            animInstanceToPlay.PlayAnimation(this);
+            onBuildAnimation.GetCopy<SpriteAnimTemplate>().PlayAnimation(this);
         }
     }
 }

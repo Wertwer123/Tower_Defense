@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Earh magic_0: 6038408894104716766
+      Wenrexa Earh magic_1: 2049846656707418245
+      Wenrexa Earh magic_2: -4011752005004848839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

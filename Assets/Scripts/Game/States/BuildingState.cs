@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Game.States
 {
     [CreateAssetMenu(fileName = "BuildingState", menuName = "States/BuildingState", order = 1)]
-    public class BuildingState : State<BuildingManager, BuildingStates>
+    public class BuildingState : State
     {
         [SerializeField, Min(0.0f)] float colorInterpolationSpeed = 0.5f;
         [SerializeField, ColorUsage( true)] Color fromColor = Color.white;
@@ -15,12 +15,14 @@ namespace Game.States
 
         private float _timePassed;
 
-        public override void OnStateEnter(BuildingManager stateOwner)
+        public override void OnStateEnter(GameObject stateOwner)
         {
             GridEffectsManager.Instance.SetGridAlpha(1.0f);
+            GridEffectsManager.Instance.SetGridColor(fromColor);
+            Debug.Log("Entered building state");
         }
 
-        public override void UpdateState(BuildingManager stateOwner)
+        public override void UpdateState(GameObject stateOwner)
         {
             _timePassed += Time.deltaTime;
             
@@ -31,7 +33,7 @@ namespace Game.States
            GridEffectsManager.Instance.SetGridColor(gridColor);
         }
 
-        public override void OnStateExit(BuildingManager stateOwner)
+        public override void OnStateExit(GameObject stateOwner)
         {
             _timePassed = 0.0f;
             GridEffectsManager.Instance.SetGridAlpha(0.0f);

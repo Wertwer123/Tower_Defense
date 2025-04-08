@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Chest_0: 3808816640114056506
+      Wenrexa Chest_1: 2764539513971342049
+      Wenrexa Chest_2: -664718733168570916
+      Wenrexa Chest_3: -8067241913449886196
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

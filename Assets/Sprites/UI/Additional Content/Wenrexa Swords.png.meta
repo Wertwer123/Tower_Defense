@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Swords_0: 4577404015347436603
+      Wenrexa Swords_1: -8153209820704399677
+      Wenrexa Swords_2: 7433078072184515076
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

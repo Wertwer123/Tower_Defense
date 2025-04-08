@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Belt_0: -2066744399967011932
+      Wenrexa Belt_1: 8845800683227242340
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

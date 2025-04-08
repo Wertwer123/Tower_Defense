@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Special magic_0: 6262246580116346087
+      Wenrexa Special magic_1: 6122750837499441693
+      Wenrexa Special magic_2: -5059068145218637971
+      Wenrexa Special magic_3: 1104664706144344447
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

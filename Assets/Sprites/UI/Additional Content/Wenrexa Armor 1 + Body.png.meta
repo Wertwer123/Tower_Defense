@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Armor 1 + Body_0: -4096380324325093684
+      Wenrexa Armor 1 + Body_1: -5695131409486532860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

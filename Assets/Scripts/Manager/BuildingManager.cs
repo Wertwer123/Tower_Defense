@@ -1,8 +1,8 @@
 using System;
 using Base;
 using Game;
-using Game.Enums;
-using Game.StatemachineSystem;
+using Game.Statemachine;
+using Game.States;
 using ScriptableObjects.Buildings;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -14,17 +14,15 @@ namespace Manager
         [SerializeField] private PlacedBuildingsManager placedBuildingsManager;
         [SerializeField] private BuildingData currentlySelectedBuildingToBuild;
         [SerializeField] private BuildingPreview buildingPreview;
-        [SerializeField] private StateMachine<BuildingManager,BuildingStates> buildingStateMachine;
+        [SerializeField] private StateMachine buildingStateMachine;
+        
+        [Header("States")] 
+        [SerializeField] private BuildingState buildingStateTemplate;
 
         private int _continousBuildingsBuilt;
         private bool _continousBuildingIsActive;
         event Action<Building> OnBuildingBuilt;
-        
-        private void Start()
-        {
-            buildingStateMachine.Init(this);
-        }
-
+  
         private void Update()
         {
             buildingStateMachine.Update();
@@ -68,19 +66,20 @@ namespace Manager
             var buildingInstance = Instantiate(currentlySelectedBuildingToBuild.BuildingPrefab, buildingLocation, Quaternion.identity);
             buildingInstance.OnBuild(tileToPlaceBuildingOn);
             
+            placedBuildingsManager.AddPlacedBuilding(buildingInstance);
+            OnBuildingBuilt?.Invoke(buildingInstance);
+            
             currentlySelectedBuildingToBuild = _continousBuildingIsActive ? currentlySelectedBuildingToBuild :  null;
-
+           
             if (!_continousBuildingIsActive)
             {
                 buildingStateMachine.SetIdle();
                 _continousBuildingsBuilt = 0;
                 buildingPreview.Disable();
+                return;
             }
-
-            _continousBuildingsBuilt++;
-            placedBuildingsManager.AddPlacedBuilding(buildingInstance);
            
-            OnBuildingBuilt?.Invoke(buildingInstance);
+            _continousBuildingsBuilt++;
         }
         
         private bool HasCurrentlySelectedBuilding()
@@ -109,7 +108,7 @@ namespace Manager
         {
             currentlySelectedBuildingToBuild = building;
             buildingPreview.Init(currentlySelectedBuildingToBuild.BuildingPrefab.BuildingSprite);
-            buildingStateMachine.SetCurrentState(nameof(BuildingStates.Building));
+            buildingStateMachine.SetCurrentState(buildingStateTemplate.CreateInstance());
         }
 
         public void SetContinousBuildingIsActive(InputAction.CallbackContext context)
@@ -127,6 +126,7 @@ namespace Manager
                 
                 currentlySelectedBuildingToBuild = null;
                 buildingStateMachine.SetIdle();
+                buildingPreview.Disable();
             }
         }
         public void PlaceCurrentlySelectedBuildingToBuild(InputAction.CallbackContext context)

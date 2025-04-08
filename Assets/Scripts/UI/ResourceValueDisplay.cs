@@ -10,21 +10,22 @@ namespace UI
     [RequireComponent(typeof(Image))]
     public class ResourceValueDisplay : MonoBehaviour
     {
-        [SerializeField] ResourceType resourceTypeToDisplay;
         [SerializeField] private Image displayImage;
         [SerializeField] private TMP_Text costText;
         [SerializeField] private Sprite goldSprite;
         [SerializeField] private Sprite stoneSprite;
         [SerializeField] private Sprite woodSprite;
         [SerializeField] private Sprite metalSprite;
-        public ResourceType DisplayedResourceType{get => resourceTypeToDisplay; set => resourceTypeToDisplay = value;}
+        
+        private ResourceType _resourceTypeToDisplay;
+        public ResourceType DisplayedResourceType{get => _resourceTypeToDisplay; set => _resourceTypeToDisplay = value;}
         
         public void Init(ResourceType resourceValue)
         {
-            resourceTypeToDisplay = resourceValue;
+            _resourceTypeToDisplay = resourceValue;
             costText.text = "0";
             
-            switch (resourceTypeToDisplay)
+            switch (_resourceTypeToDisplay)
             {
                 case ResourceType.Stone:
                 {

@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Pistel 2 + Ammo_0: 8622227547883889758
+      Wenrexa Pistel 2 + Ammo_1: -5376340927493984668
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

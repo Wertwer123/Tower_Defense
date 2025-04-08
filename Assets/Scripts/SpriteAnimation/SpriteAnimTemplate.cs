@@ -46,7 +46,7 @@ namespace SpriteAnimation
             {
                 return;
             }
-            Debug.Log(_currentFrame);
+
             _currentAnimationCoroutine = target.StartCoroutine(frames[_currentFrame].PlayAnimation(target.transform));
         }
 

@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Necklace_0: -8800272928329440300
+      Wenrexa Necklace_1: -8796665328785592228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

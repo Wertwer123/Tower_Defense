@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Icon Status Online Orange_0: -3078238563078365101
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

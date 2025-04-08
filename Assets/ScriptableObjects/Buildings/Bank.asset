@@ -26,5 +26,7 @@ MonoBehaviour:
   buildingPrefab: {fileID: 8936516858998353184, guid: cba35569ad554e54b933dabb287bafe9, type: 3}
   uISprite: {fileID: 1118296623, guid: 678042d5c4fe6a34a87c67e0554908e3, type: 3}
   buildingGuid: f08c81ed10a462a448c712193cbed2c4
-  resourceProductionRatePerSecond: 2
-  resourceProductionType: 3
+  resourceProductionRatePerSecond: 0.2
+  producedResourcesPerTick:
+  - resourceValue: 100
+    resourceType: 3

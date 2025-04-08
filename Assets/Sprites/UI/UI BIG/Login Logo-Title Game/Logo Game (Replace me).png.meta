@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Logo Game (Replace me)_0: -6729288360067299795
+      Logo Game (Replace me)_1: 7616166665512493675
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

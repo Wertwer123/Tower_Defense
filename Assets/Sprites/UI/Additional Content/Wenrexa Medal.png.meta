@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Medal_0: 5817288174416414568
+      Wenrexa Medal_1: -7981000165030257986
+      Wenrexa Medal_2: 2534026563277106543
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

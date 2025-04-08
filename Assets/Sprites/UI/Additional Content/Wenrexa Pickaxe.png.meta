@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Pickaxe_0: 4488307672091246527
+      Wenrexa Pickaxe_1: 6536601037522412234
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

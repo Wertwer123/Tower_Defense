@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Hand Gesture of Power_0: -222306533845628826
+      Wenrexa Hand Gesture of Power_1: 664169329950859529
+      Wenrexa Hand Gesture of Power_2: 6318404923564820768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

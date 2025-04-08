@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Potion_0: 4570396295558888876
+      Wenrexa Potion_1: -4861822472802731818
+      Wenrexa Potion_2: 7593754567264222680
+      Wenrexa Potion_3: -1684638483198027067
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

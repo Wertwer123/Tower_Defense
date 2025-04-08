@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gamepad Button 3_0: 344047019229558150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

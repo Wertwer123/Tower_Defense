@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Grenade_0: 1404253938392143779
+      Wenrexa Grenade_1: 9081037941571094692
+      Wenrexa Grenade_2: -7594876749116871542
+      Wenrexa Grenade_3: 2977319527219830030
+      Wenrexa Grenade_4: -5621941376937312943
+      Wenrexa Grenade_5: 2406283661592607157
+      Wenrexa Grenade_6: -576269329646293991
+      Wenrexa Grenade_7: 343995815861710770
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

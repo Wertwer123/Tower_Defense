@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Satellite dish_0: 5981971636431769215
+      Wenrexa Satellite dish_1: -4169201740604562213
+      Wenrexa Satellite dish_2: -6673155324286405494
+      Wenrexa Satellite dish_3: 4925729741079165158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,16 +1,17 @@
 ﻿using System;
+using Extensions;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Game.StatemachineSystem
 {
     [Serializable]
-    public abstract class State<T,TIdentifier> : ScriptableObject
+    public abstract class State : ScriptableObject
     {
-        [SerializeField] TIdentifier stateIdentifier;
-        public abstract void OnStateEnter(T stateOwner);
-        public abstract void UpdateState(T stateOwner);
-        public abstract void OnStateExit(T stateOwner);
+        public abstract void OnStateEnter(GameObject stateOwner);
+        public abstract void UpdateState(GameObject stateOwner);
+        public abstract void OnStateExit(GameObject stateOwner);
 
-        public TIdentifier StateIdentifier => stateIdentifier;
+        public State CreateInstance() => this.GetCopy<State>();
     }
 }

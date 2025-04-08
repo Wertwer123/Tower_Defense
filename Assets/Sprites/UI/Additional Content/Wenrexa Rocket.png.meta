@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wenrexa Rocket_0: 8016368645325292291
+      Wenrexa Rocket_1: 719437484116586544
+      Wenrexa Rocket_2: -5974649790058491878
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
