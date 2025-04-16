@@ -13,11 +13,11 @@ namespace Manager
         [SerializeField] private ResourceValue currentWood;
         [SerializeField] private ResourceValue currentMetal;
 
-        private void Start()
+        private void OnEnable()
         {
             ObservablesManager.Instance.RegisterObservable(typeof(ResourceManager), this);
         }
-
+        
         public void AddResource(ResourceValue resource)
         {
             switch (resource.ResourceType)

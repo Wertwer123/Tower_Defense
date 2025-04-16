@@ -24,7 +24,6 @@ namespace Base
         [SerializeField, HideInInspector] protected float cellExtents;
         [SerializeField, HideInInspector] protected Rect gridBounds;
         [SerializeField, HideInInspector] protected List<GridTile> allTiles = new List<GridTile>();
-    
         public Transform Self => transform;
         public Vector3 OldPosition { get => oldPosition; set => oldPosition = value; }
         public Rect GridBounds => gridBounds;

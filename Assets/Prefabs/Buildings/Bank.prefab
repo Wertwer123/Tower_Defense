@@ -31,7 +31,8 @@ Transform:
   m_LocalPosition: {x: -17.79, y: -4.4, z: -0.039441757}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5375917653733868502}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &574421617777827688
@@ -149,5 +150,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingSpriteRenderer: {fileID: 574421617777827688}
   onBuildAnimation: {fileID: 11400000, guid: 9a9a974930e6a5b46b94faf84c817eae, type: 2}
+  hoveredMaterial: {fileID: 2100000, guid: 38b18b586f3ec354d917d74545bae630, type: 2}
   resourceBuildingData: {fileID: 11400000, guid: a0c989e20347ddb4ea28516144efaee7, type: 2}
   produceResourceAnimation: {fileID: 11400000, guid: b85fdab7a7c03cd4cb4f7cae7423857f, type: 2}
+--- !u!1001 &7410250614233696589
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4742781556111691722}
+    m_Modifications:
+    - target: {fileID: 1583040383583289746, guid: d9aa4974000eb3c46b13b3fc093584ac, type: 3}
+      propertyPath: m_Name
+      value: BuildingBuiltDustEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192321182477716123, guid: d9aa4974000eb3c46b13b3fc093584ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192321182477716123, guid: d9aa4974000eb3c46b13b3fc093584ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192321182477716123, guid: d9aa4974000eb3c46b13b3fc093584ac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192321182477716123, guid: d9aa4974000eb3c46b13b3fc093584ac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192321182477716123, guid: d9aa4974000eb3c46b13b3fc093584ac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192321182477716123, guid: d9aa4974000eb3c46b13b3fc093584ac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192321182477716123, guid: d9aa4974000eb3c46b13b3fc093584ac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192321182477716123, guid: d9aa4974000eb3c46b13b3fc093584ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192321182477716123, guid: d9aa4974000eb3c46b13b3fc093584ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192321182477716123, guid: d9aa4974000eb3c46b13b3fc093584ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d9aa4974000eb3c46b13b3fc093584ac, type: 3}
+--- !u!4 &5375917653733868502 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3192321182477716123, guid: d9aa4974000eb3c46b13b3fc093584ac, type: 3}
+  m_PrefabInstance: {fileID: 7410250614233696589}
+  m_PrefabAsset: {fileID: 0}

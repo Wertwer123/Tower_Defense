@@ -11,12 +11,13 @@ namespace Manager
 {
     public class BuildingManager : BaseSingleton<BuildingManager>
     {
+        [SerializeField, Min(0.1f)] private float buildingPreviewInterpolationSpeed;
         [SerializeField] private PlacedBuildingsManager placedBuildingsManager;
         [SerializeField] private BuildingData currentlySelectedBuildingToBuild;
         [SerializeField] private BuildingPreview buildingPreview;
-        [SerializeField] private StateMachine buildingStateMachine;
         
         [Header("States")] 
+        [SerializeField] private StateMachine buildingStateMachine;
         [SerializeField] private BuildingState buildingStateTemplate;
 
         private int _continousBuildingsBuilt;
@@ -42,7 +43,8 @@ namespace Manager
                 return;
             }
             
-            buildingPreview.SetPosition(currentlyHoveredTile.Position);
+            Vector3 buildingPreviewPosition = Vector3.Lerp(buildingPreview.GetPosition(),currentlyHoveredTile.Position, Time.deltaTime * buildingPreviewInterpolationSpeed);
+            buildingPreview.SetPosition(buildingPreviewPosition);
         }
 
         private void SetBuildingPreviewState(GridTile currentlyHoveredTile)
@@ -146,7 +148,7 @@ namespace Manager
             PlaceBuilding(tileToPlaceBuildingOn);
         }
         
-        public void UnsubcribeFromBuildingBuilt(Action<Building> onBuildingBuilt)
+        public void UnsubscribeFromBuildingBuilt(Action<Building> onBuildingBuilt)
         {
             OnBuildingBuilt -= onBuildingBuilt;
         }

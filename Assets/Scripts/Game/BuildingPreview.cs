@@ -22,6 +22,11 @@ namespace Game
         {
             transform.position = position;
         }
+
+        public Vector3 GetPosition()
+        {
+            return transform.position;
+        }
         
         public void Enable()
         {
