@@ -1,69 +1,63 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace SpriteAnimation
 {
     /// <summary>
-    /// this scriptable object needs to be instanced to be used
+    ///     this scriptable object needs to be instanced to be used
     /// </summary>
     [CreateAssetMenu(fileName = "New Sprite Animation", menuName = "Sprite Animation")]
     public class SpriteAnimTemplate : ScriptableObject
     {
-        [SerializeField] SpriteAnimationFrame[] frames;
-        [SerializeField] bool loop;
-        [SerializeField, Tooltip("-1 means it loops endlessly"), Min(-1)] int loopTimes;
+        [SerializeField] private SpriteAnimationFrame[] frames = new SpriteAnimationFrame[0];
+        [SerializeField] private bool loop;
 
-        public event Action OnAnimationFinished;
-        
-        private MonoBehaviour _owningComponent;
+        [SerializeField] [Tooltip("-1 means it loops endlessly")] [Min(-1)]
+        private int loopTimes;
+
         private Coroutine _currentAnimationCoroutine;
-        private int _currentFrame = 0;
-        private int loopCount = 0;
-        
-        
-        private void OnValidate()
-        {
-            loopCount = 0;
-            _currentFrame = 0;
-            
-            foreach (var animationFrame in frames)
-            {
-                animationFrame.OnFrameFinished = null;
-            }
-        }
+        private int _currentFrame;
+
+        private MonoBehaviour _owningComponent;
+        private int loopCount;
 
         private void OnEnable()
         {
             InitAnimation();
         }
 
-        public void PlayAnimation(MonoBehaviour target)
+
+        private void OnValidate()
+        {
+            loopCount = 0;
+            _currentFrame = 0;
+
+            foreach (SpriteAnimationFrame animationFrame in frames) animationFrame.OnFrameFinished = null;
+        }
+
+        public event Action OnAnimationFinished;
+
+        public void PlayAnimation(MonoBehaviour target, bool reverse = false)
         {
             _owningComponent = target;
-            
-            if (_currentAnimationCoroutine != null)
-            {
-                return;
-            }
 
-            _currentAnimationCoroutine = target.StartCoroutine(frames[_currentFrame].PlayAnimation(target.transform));
+            if (_currentAnimationCoroutine != null) return;
+
+            _currentAnimationCoroutine =
+                target.StartCoroutine(frames[_currentFrame].PlayAnimation(target.transform, reverse));
         }
 
         public void StopAnimation()
         {
             _owningComponent.StopCoroutine(_currentAnimationCoroutine);
         }
-        
-        void InitAnimation()
+
+        private void InitAnimation()
         {
-            foreach (var animationFrame in frames)
-            {
-                animationFrame.OnFrameFinished += ContinueFrame;
-            }
+            foreach (SpriteAnimationFrame animationFrame in frames) animationFrame.OnFrameFinished += ContinueFrame;
         }
 
-        void ContinueFrame()
+        private void ContinueFrame()
         {
             _currentFrame++;
 
@@ -81,8 +75,8 @@ namespace SpriteAnimation
             }
             else
             {
-                OnAnimationFinished?.Invoke();
                 StopAnimation();
+                OnAnimationFinished?.Invoke();
             }
         }
     }

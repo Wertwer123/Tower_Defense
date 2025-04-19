@@ -8,54 +8,48 @@ namespace Manager
 {
     public class MouseDataManager : BaseSingleton<MouseDataManager>
     {
-        [SerializeField] Vector2 currentMousePositionWorld;
-        [SerializeField] List<TdGrid> buildingGrids = new List<TdGrid>();
-        [SerializeField] Camera playerCamera;
+        [SerializeField] private Vector2 currentMousePositionWorld;
+        [SerializeField] private List<TdGrid> buildingGrids = new();
+        [SerializeField] private Camera playerCamera;
 
-        private GridTile _currentlyHoveredTile = null;
-        
-        public GridTile CurrentlyHoveredTile => _currentlyHoveredTile;
-        
+        private Vector2 _currentMousePositionScreen;
+
+        public GridTile CurrentlyHoveredTile { get; private set; }
+        public Vector2 CurrentMousePositionScreen => _currentMousePositionScreen;
+        public Vector2 CurrentMousePositionWorld => currentMousePositionWorld;
+
+        private void OnDrawGizmos()
+        {
+            if (!Application.isPlaying) return;
+            Gizmos.color = Color.red;
+            if (CurrentlyHoveredTile == null) return;
+
+            Gizmos.DrawCube(CurrentlyHoveredTile.CellCenter, Vector3.one / 2);
+        }
+
         public void OnMouseMove(InputAction.CallbackContext context)
         {
-            Vector2 mousePosition = context.ReadValue<Vector2>();
-            Vector3 mousePositionNearClipPlaneAdded = new Vector3(mousePosition.x, mousePosition.y, playerCamera.nearClipPlane);
+            _currentMousePositionScreen = context.ReadValue<Vector2>();
+            Vector3 mousePositionNearClipPlaneAdded =
+                new(_currentMousePositionScreen.x, _currentMousePositionScreen.y, playerCamera.nearClipPlane);
 
             currentMousePositionWorld = playerCamera.ScreenToWorldPoint(mousePositionNearClipPlaneAdded);
-            _currentlyHoveredTile = GetCurrentlyHoveredTile(currentMousePositionWorld);
+            CurrentlyHoveredTile = GetCurrentlyHoveredTile(currentMousePositionWorld);
         }
-        
-        GridTile GetCurrentlyHoveredTile(Vector2 mousePosition)
+
+        private GridTile GetCurrentlyHoveredTile(Vector2 mousePosition)
         {
             GridTile hoveredTile = null;
 
             foreach (TdGrid buildingGrid in buildingGrids)
             {
-                if (!buildingGrid.IsPositionInGrid(mousePosition))
-                {
-                    continue;
-                }
-                
+                if (!buildingGrid.IsPositionInGrid(mousePosition)) continue;
+
                 hoveredTile = buildingGrid.GetTileAtPosition(mousePosition);
                 break;
             }
-            
-            return hoveredTile;
-        }
 
-        private void OnDrawGizmos()
-        {
-            if (!Application.isPlaying)
-            {
-                return;
-            }
-            Gizmos.color = Color.red;
-            if (_currentlyHoveredTile == null)
-            {
-                return;
-            }
-            
-            Gizmos.DrawCube(_currentlyHoveredTile.Position, Vector3.one / 2);
+            return hoveredTile;
         }
     }
 }

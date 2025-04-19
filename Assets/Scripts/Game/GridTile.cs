@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Game
 {
@@ -9,8 +8,19 @@ namespace Game
     {
         [SerializeField] private int tileIndex;
         [SerializeField] private bool isOccupied;
-        [SerializeField] private bool canHostBaseBuildings = false;
+        [SerializeField] private bool canHostBaseBuildings;
         [SerializeField] private Vector2 position;
+        [SerializeField] private Vector2 cellCenter;
+
+        public GridTile(int tileIndex, bool canHostBaseBuildings, Vector2 position, Vector2 cellCenter)
+        {
+            this.tileIndex = tileIndex;
+            isOccupied = false;
+            this.position = position;
+            this.cellCenter = cellCenter;
+            this.canHostBaseBuildings = canHostBaseBuildings;
+        }
+
 
         public int TileIndex => tileIndex;
         public bool CanHostBaseBuildings => canHostBaseBuildings;
@@ -22,13 +32,6 @@ namespace Game
         }
 
         public Vector2 Position => position;
-        
-        public GridTile(int tileIndex, bool canHostBaseBuildings, Vector2 position)
-        {
-            this.tileIndex = tileIndex;
-            this.isOccupied = false;
-            this.position = position;
-            this.canHostBaseBuildings = canHostBaseBuildings;
-        }
+        public Vector2 CellCenter => cellCenter;
     }
 }

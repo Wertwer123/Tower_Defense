@@ -1,5 +1,6 @@
 using System;
 using Game.Enums;
+using Manager;
 using UnityEngine;
 
 namespace Game
@@ -9,8 +10,13 @@ namespace Game
     {
         [SerializeField, Min(0)] private int resourceValue;
         [SerializeField] private ResourceType resourceType;
-        
-        public int ResourceVal => resourceValue;
+
+        public int ResourceVal
+        {
+            get => resourceValue;
+            set => resourceValue = value;
+        }
+
         public ResourceType ResourceType => resourceType;
 
         public ResourceValue(int resourceValue, ResourceType resourceType)

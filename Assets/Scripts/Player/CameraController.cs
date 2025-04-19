@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 using Utils;
 
 namespace Player
@@ -10,15 +9,15 @@ namespace Player
     {
         //Capable of edge paning camera shakes focusing a viewpoint
         //zooming
-        [SerializeField, Min(0.0f)] float cameraSpeed = 5f;
-        [SerializeField, Min(0.0f)] float cameraZoomSpeed = 5f;
-        [SerializeField, Min(0.1f)] float minZoom = 1;
-        [SerializeField, Min(0.0f)] float maxZoom = 5;
-        [SerializeField, Range(0, 100)] int edgePanThreshold = 50;
-        [SerializeField] Camera playerCamera;
+        [SerializeField] [Min(0.0f)] private float cameraSpeed = 5f;
+        [SerializeField] [Min(0.0f)] private float cameraZoomSpeed = 5f;
+        [SerializeField] [Min(0.1f)] private float minZoom = 1;
+        [SerializeField] [Min(0.0f)] private float maxZoom = 5;
+        [SerializeField] [Range(0, 100)] private int edgePanThreshold = 50;
+        [SerializeField] private Camera playerCamera;
+        private Vector2 _currentMovementVector = Vector2.zero;
 
-        float _currentZoom = 0;
-        Vector2 _currentMovementVector = Vector2.zero;
+        private float _currentZoom;
 
         private void Start()
         {
@@ -32,15 +31,18 @@ namespace Player
             ZoomCamera();
         }
 
-        void MoveCamera()
+        public event Action OnZoom;
+
+        private void MoveCamera()
         {
             transform.Translate(_currentMovementVector);
         }
 
-        void ZoomCamera()
+        private void ZoomCamera()
         {
             _currentZoom = Mathf.Clamp(_currentZoom, minZoom, maxZoom);
-            playerCamera.orthographicSize = Mathf.Lerp(playerCamera.orthographicSize, _currentZoom, cameraZoomSpeed * Time.deltaTime);
+            playerCamera.orthographicSize = Mathf.Lerp(playerCamera.orthographicSize, _currentZoom,
+                cameraZoomSpeed * Time.deltaTime);
         }
 
         public void Zoom(InputAction.CallbackContext context)
@@ -52,25 +54,27 @@ namespace Player
                 _currentZoom += zoomValue;
             }
         }
+
         public void EdgePan(InputAction.CallbackContext context)
         {
             Vector2 mousePos = context.ReadValue<Vector2>();
-            
+
             float mouseX = mousePos.x;
             float mouseY = mousePos.y;
-            
+
             float screenWidth = Screen.width;
             float screenHeight = Screen.height;
-            
+
             //If the mouse it out of screenbounds
             if (mouseX > screenWidth - edgePanThreshold || mouseX < 0 + edgePanThreshold
-                                                        || mouseY > screenHeight - edgePanThreshold || mouseY < 0 + edgePanThreshold)
+                                                        || mouseY > screenHeight - edgePanThreshold ||
+                                                        mouseY < 0 + edgePanThreshold)
             {
                 //calculate the direction from center screen pos to mouse pos
-                Vector2 screenCenter = new Vector2(screenWidth * 0.5f, screenHeight * 0.5f);
+                Vector2 screenCenter = new(screenWidth * 0.5f, screenHeight * 0.5f);
                 Vector3 directionToMouse = mousePos - screenCenter;
-                
-                _currentMovementVector= directionToMouse.normalized * cameraSpeed * Time.deltaTime;
+
+                _currentMovementVector = directionToMouse.normalized * cameraSpeed * Time.deltaTime;
             }
             else
             {
@@ -79,4 +83,3 @@ namespace Player
         }
     }
 }
-

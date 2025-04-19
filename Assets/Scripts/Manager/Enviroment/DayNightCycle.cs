@@ -12,7 +12,7 @@ namespace Manager.Enviroment
     /// This class manages the day time it hold s events for when certain daytimes hit to which you can subscribe
     /// You can finetune how daytimes look how intense and in which colors the light will shine
     /// </summary>
-    public class DayNightCycle : Observable<DayTime>
+    public class DayNightCycle : MonoBehaviour
     {
         [Header("Daytime clock")]
         [SerializeField] DayTimeClock dayTimeClock;

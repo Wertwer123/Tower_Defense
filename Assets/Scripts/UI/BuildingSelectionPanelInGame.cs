@@ -1,53 +1,70 @@
 using System;
 using System.Collections.Generic;
 using Game;
+using Interfaces;
 using Manager;
 using ScriptableObjects.Buildings;
 using ScriptableObjects.Data;
-using UI;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-/// <summary>
-/// Represents the panel in game from where towers and buildings etc can be selected
-/// </summary>
-public class BuildingSelectionPanelInGame : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private BuildingSelectionData selectedBuildings;
-    [SerializeField] private List<BuildingData> availableBuildings = new List<BuildingData>();
-    [SerializeField] private BuildingDatabase buildingDataBase;
-    [SerializeField] private GridLayoutGroup buildingGridLayout;
-    [SerializeField] private BuildingSelectionButton selectionButtonPrefab;
-
-    private readonly List<BuildingSelectionButton> _buttonInstances = new List<BuildingSelectionButton>();
-    
-    //TODO also implement some kind of resource manager probably wouldnt be that bad to have this information as well 
-
-    private void Start()
+    /// <summary>
+    ///     Represents the panel in game from where towers and buildings etc can be selected
+    /// </summary>
+    public class BuildingSelectionPanelInGame : MonoBehaviour, IBlockingUIElement, IPointerEnterHandler,
+        IPointerExitHandler
     {
-        CreateBuildingSelectionDisplay();
-        BuildingManager.Instance.SubscribeToOnBuildingBuilt(UpdateBuildingSelectionDisplay);
-    }
+        [SerializeField] private BuildingSelectionData selectedBuildings;
+        [SerializeField] private BuildingDatabase buildingDataBase;
+        [SerializeField] private GridLayoutGroup buildingGridLayout;
+        [SerializeField] private BuildingSelectionButton selectionButtonPrefab;
+        [SerializeField] private List<BuildingData> availableBuildings = new();
 
-    public void CreateBuildingSelectionDisplay()
-    {
-        foreach (string buildingId in selectedBuildings.DataObject.selectedBuildings)
+        private readonly List<BuildingSelectionButton> _buttonInstances = new();
+
+        private void Start()
         {
-            BuildingData buildingData = buildingDataBase.GetBuildingFromDatabaseByGuid(new GUID(buildingId));
-            availableBuildings.Add(buildingData);
-
-            var buildingButton = Instantiate(selectionButtonPrefab, buildingGridLayout.transform);
-            buildingButton.Init(buildingData);
-            
-            _buttonInstances.Add(buildingButton);
+            CreateBuildingSelectionDisplay();
+            BuildingManager.Instance.OnBuildingBuilt += UpdateBuildingSelectionDisplay;
+            BlockingUIManager.Instance.AddBlockingUIElement(this);
         }
-    }
-    
-    
-    
-    void UpdateBuildingSelectionDisplay(Building _)
-    {
-        
+
+        public event Action OnBlockingUIElementEntered;
+        public event Action OnBlockingUIElementExited;
+        public event Action OnBlockingUIElementDestroyed;
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            OnBlockingUIElementEntered?.Invoke();
+        }
+
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            OnBlockingUIElementExited?.Invoke();
+        }
+
+        public void CreateBuildingSelectionDisplay()
+        {
+            foreach (string buildingId in selectedBuildings.DataObject.selectedBuildings)
+            {
+                BuildingData buildingData = buildingDataBase.GetBuildingDataFromDatabaseByGuid(new GUID(buildingId));
+                availableBuildings.Add(buildingData);
+
+                BuildingSelectionButton buildingButton =
+                    Instantiate(selectionButtonPrefab, buildingGridLayout.transform);
+                buildingButton.Init(buildingData);
+
+                _buttonInstances.Add(buildingButton);
+            }
+        }
+
+
+        private void UpdateBuildingSelectionDisplay(Building _)
+        {
+        }
     }
 }

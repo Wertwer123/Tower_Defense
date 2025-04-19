@@ -10,18 +10,19 @@ namespace UI
     /// <summary>
     /// Displays all kinds of resources in a vertical layout
     /// </summary>
-    public class ResourcesDisplay : MonoBehaviour, Interfaces.IObserver<ResourceValue>
+    public class ResourcesDisplay : MonoBehaviour
     {
         [SerializeField] private HorizontalLayoutGroup resourcesLayoutGroup;
         [SerializeField] private ResourceValueDisplay resourceDisplayPrefab;
         [SerializeField] private List<ResourceType> resourcesToDisplay;
+        [SerializeField] private ResourceManager resourceManager;
 
         private readonly Dictionary<ResourceType, ResourceValueDisplay> _resourcesDisplays = new();
 
         //TODO Implement the prefab in unity and connect the resource manager to resource production buildings also then implement the logic in the building manager if you have sufficient resources 
         public void Start()
         {
-            ObservablesManager.Instance.GetObservable<ResourceManager, ResourceValue>().Subscribe(this);
+            resourceManager.OnResourceChanged += OnResourceChanged;
 
             foreach (var resourceType in resourcesToDisplay)
             {
@@ -32,7 +33,7 @@ namespace UI
             }
         }
 
-        public void Notify(ResourceValue observedValue)
+        void OnResourceChanged(ResourceValue observedValue)
         {
             if (_resourcesDisplays.TryGetValue(observedValue.ResourceType, out ResourceValueDisplay resourceDisplay))
             {

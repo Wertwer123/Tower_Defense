@@ -65,7 +65,7 @@ Material:
     - _QueueOffset: 0
     m_Colors:
     - _ColumnsRows: {r: 4, g: 4, b: 0, a: 0}
-    - _GridLineColor: {r: 22.659733, g: 8.310784, b: 0, a: 1}
+    - _GridLineColor: {r: 20.548883, g: 8.064874, b: 0.67850125, a: 1}
     - _GridLinesEmissiveColor: {r: 0.962264, g: 0, b: 0, a: 0}
     - _TileSize: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

@@ -11,19 +11,19 @@ namespace Manager
 {
     public class BuildingManager : BaseSingleton<BuildingManager>
     {
-        [SerializeField, Min(0.1f)] private float buildingPreviewInterpolationSpeed;
+        [SerializeField] [Min(0.1f)] private float buildingPreviewInterpolationSpeed;
         [SerializeField] private PlacedBuildingsManager placedBuildingsManager;
         [SerializeField] private BuildingData currentlySelectedBuildingToBuild;
         [SerializeField] private BuildingPreview buildingPreview;
-        
-        [Header("States")] 
-        [SerializeField] private StateMachine buildingStateMachine;
+        [SerializeField] private ResourceManager resourceManager;
+
+        [Header("States")] [SerializeField] private StateMachine buildingStateMachine;
+
         [SerializeField] private BuildingState buildingStateTemplate;
 
-        private int _continousBuildingsBuilt;
         private bool _continousBuildingIsActive;
-        event Action<Building> OnBuildingBuilt;
-  
+        private int _continousBuildingsBuilt;
+
         private void Update()
         {
             buildingStateMachine.Update();
@@ -36,78 +36,13 @@ namespace Manager
             }
         }
 
-        private void SetBuildingPreviewPosition(GridTile currentlyHoveredTile )
-        {
-            if (currentlyHoveredTile == null)
-            {
-                return;
-            }
-            
-            Vector3 buildingPreviewPosition = Vector3.Lerp(buildingPreview.GetPosition(),currentlyHoveredTile.Position, Time.deltaTime * buildingPreviewInterpolationSpeed);
-            buildingPreview.SetPosition(buildingPreviewPosition);
-        }
+        public event Action OnBuildingModeEntered;
+        public event Action OnBuildingModeExited;
+        public event Action<Building> OnBuildingBuilt;
 
-        private void SetBuildingPreviewState(GridTile currentlyHoveredTile)
-        {
-            if (currentlyHoveredTile == null)
-            {
-                buildingPreview.Disable();
-            }
-            else
-            {
-                buildingPreview.Enable();
-                buildingPreview.ChangeSpriteState(CanPlaceBuilding(currentlyHoveredTile, currentlySelectedBuildingToBuild));
-            }
-        }
-        
-        private void PlaceBuilding(GridTile tileToPlaceBuildingOn)
-        {
-            //Also check for sufficient resources availablity of the tile etc
-            Vector2 buildingLocation = tileToPlaceBuildingOn.Position;
-            
-            var buildingInstance = Instantiate(currentlySelectedBuildingToBuild.BuildingPrefab, buildingLocation, Quaternion.identity);
-            buildingInstance.OnBuild(tileToPlaceBuildingOn);
-            
-            placedBuildingsManager.AddPlacedBuilding(buildingInstance);
-            OnBuildingBuilt?.Invoke(buildingInstance);
-            
-            currentlySelectedBuildingToBuild = _continousBuildingIsActive ? currentlySelectedBuildingToBuild :  null;
-           
-            if (!_continousBuildingIsActive)
-            {
-                buildingStateMachine.SetIdle();
-                _continousBuildingsBuilt = 0;
-                buildingPreview.Disable();
-                return;
-            }
-           
-            _continousBuildingsBuilt++;
-        }
-        
-        private bool HasCurrentlySelectedBuilding()
-        {
-            return currentlySelectedBuildingToBuild;
-        }
-
-        private bool CanPlaceBuilding(GridTile tileToPlaceBuildingOn, BuildingData buildingToPlace)
-        {
-            if (tileToPlaceBuildingOn == null)
-            {
-                return false;
-            }
-
-            if (buildingToPlace.IsBaseBuilding)
-            {
-                return !tileToPlaceBuildingOn.IsOccupied 
-                       && tileToPlaceBuildingOn.CanHostBaseBuildings;
-            }
-            
-            return !tileToPlaceBuildingOn.IsOccupied
-                   && !tileToPlaceBuildingOn.CanHostBaseBuildings;          
-        }
-        
         public void SetCurrentlySelecetedBuildingToBuild(BuildingData building)
         {
+            OnBuildingModeEntered?.Invoke();
             currentlySelectedBuildingToBuild = building;
             buildingPreview.Init(currentlySelectedBuildingToBuild.BuildingPrefab.BuildingSprite);
             buildingStateMachine.SetCurrentState(buildingStateTemplate.CreateInstance());
@@ -125,36 +60,107 @@ namespace Manager
 
                 //if we cancel continous building, and we have started building continously then rest the building state
                 if (_continousBuildingsBuilt <= 0) return;
-                
-                currentlySelectedBuildingToBuild = null;
-                buildingStateMachine.SetIdle();
-                buildingPreview.Disable();
+
+                ExitBuildingMode();
             }
         }
+
         public void PlaceCurrentlySelectedBuildingToBuild(InputAction.CallbackContext context)
         {
-            if (!context.performed || !HasCurrentlySelectedBuilding())
-            {
-                return;
-            }
-            
+            if (!context.performed || !HasCurrentlySelectedBuilding()) return;
+
             GridTile tileToPlaceBuildingOn = MouseDataManager.Instance.CurrentlyHoveredTile;
-           
-            if (!CanPlaceBuilding(tileToPlaceBuildingOn, currentlySelectedBuildingToBuild))
-            {
-                return;
-            }
-            
+
+            if (!CanPlaceBuilding(tileToPlaceBuildingOn, currentlySelectedBuildingToBuild)) return;
+
+            Debug.Log("Placing building");
             PlaceBuilding(tileToPlaceBuildingOn);
         }
-        
-        public void UnsubscribeFromBuildingBuilt(Action<Building> onBuildingBuilt)
+
+        public void OnExitBuildingMode(InputAction.CallbackContext context)
         {
-            OnBuildingBuilt -= onBuildingBuilt;
+            if (context.performed) ExitBuildingMode();
         }
-        public void SubscribeToOnBuildingBuilt(Action<Building> onBuildingBuilt)
+
+        private void ExitBuildingMode()
         {
-            OnBuildingBuilt += onBuildingBuilt;
+            currentlySelectedBuildingToBuild = null;
+            buildingStateMachine.SetIdle();
+            _continousBuildingsBuilt = 0;
+            buildingPreview.Disable();
+            OnBuildingModeExited?.Invoke();
+        }
+
+        private void SetBuildingPreviewPosition(GridTile currentlyHoveredTile)
+        {
+            if (currentlyHoveredTile == null) return;
+
+            Vector3 buildingPreviewPosition = Vector3.Lerp(buildingPreview.GetPosition(),
+                currentlyHoveredTile.CellCenter,
+                Time.deltaTime * buildingPreviewInterpolationSpeed);
+            buildingPreview.SetPosition(buildingPreviewPosition);
+        }
+
+        private void SetBuildingPreviewState(GridTile currentlyHoveredTile)
+        {
+            if (currentlyHoveredTile == null)
+            {
+                buildingPreview.Disable();
+            }
+            else
+            {
+                buildingPreview.Enable();
+                buildingPreview.ChangeSpriteState(
+                    CanPlaceBuilding(currentlyHoveredTile, currentlySelectedBuildingToBuild)
+                    && resourceManager.HasEnoughResourcesForBuilding(currentlySelectedBuildingToBuild));
+            }
+        }
+
+        private void PlaceBuilding(GridTile tileToPlaceBuildingOn)
+        {
+            //Also check for sufficient resources availablity of the tile etc
+            Vector2 buildingLocation = tileToPlaceBuildingOn.CellCenter;
+
+            Building buildingInstance = Instantiate(currentlySelectedBuildingToBuild.BuildingPrefab, buildingLocation,
+                Quaternion.identity);
+            buildingInstance.OnBuild(tileToPlaceBuildingOn, currentlySelectedBuildingToBuild.BuildingGuid);
+
+            placedBuildingsManager.AddPlacedBuilding(buildingInstance);
+            resourceManager.RemoveResources(currentlySelectedBuildingToBuild.ResourceCosts);
+            OnBuildingBuilt?.Invoke(buildingInstance);
+
+            currentlySelectedBuildingToBuild = _continousBuildingIsActive ? currentlySelectedBuildingToBuild : null;
+
+            if (!_continousBuildingIsActive)
+            {
+                ExitBuildingMode();
+                return;
+            }
+
+            _continousBuildingsBuilt++;
+        }
+
+        public bool IsInBuildingMode()
+        {
+            return buildingStateMachine.IsInState(buildingStateTemplate);
+        }
+
+        private bool HasCurrentlySelectedBuilding()
+        {
+            return currentlySelectedBuildingToBuild;
+        }
+
+        private bool CanPlaceBuilding(GridTile tileToPlaceBuildingOn, BuildingData buildingToPlace)
+        {
+            if (tileToPlaceBuildingOn == null) return false;
+
+            if (buildingToPlace.IsBaseBuilding)
+                return !tileToPlaceBuildingOn.IsOccupied
+                       && tileToPlaceBuildingOn.CanHostBaseBuildings
+                       && resourceManager.HasEnoughResourcesForBuilding(currentlySelectedBuildingToBuild);
+
+            return !tileToPlaceBuildingOn.IsOccupied
+                   && !tileToPlaceBuildingOn.CanHostBaseBuildings;
         }
     }
 }

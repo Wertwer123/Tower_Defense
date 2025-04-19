@@ -13,16 +13,16 @@ namespace Game
             gameObject.SetActive(true);
         }
 
-        public void ChangeSpriteState(bool isValidPlacementPoint)
+        public void ChangeSpriteState(bool canPlaceBuilding)
         {
-            spriteRenderer.color = isValidPlacementPoint ? Color.green : Color.red;
+            spriteRenderer.color = canPlaceBuilding ? Color.green : Color.red;
         }
 
         public void SetPosition(Vector3 position)
         {
             transform.position = position;
         }
-
+        
         public Vector3 GetPosition()
         {
             return transform.position;

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using Game.Enums;
 using UnityEngine;
 
@@ -13,53 +12,51 @@ namespace SpriteAnimation
         [SerializeField] private AnimationCurve curve;
         [SerializeField] private Vector3 from = Vector3.one;
         [SerializeField] private Vector3 to;
-        [SerializeField] private List<AnimateTransform> transformValuesToAnimate;
-        
-        public float FrameTime => frameTime;
+        [SerializeField] private AnimateTransform transformValueToAnimate;
         public Action OnFrameFinished;
 
-        public IEnumerator PlayAnimation(Transform target)
+        public float FrameTime => frameTime;
+
+        public IEnumerator PlayAnimation(Transform target, bool reverse = false)
         {
             float t = 0.0f;
-            WaitForEndOfFrame wait = new WaitForEndOfFrame();
-            
+            WaitForEndOfFrame wait = new();
+
             while (t < frameTime)
             {
                 t += Time.deltaTime;
-                
-                AnimateTransform(target, curve.Evaluate(t / frameTime));
-                
+
+                AnimateTransform(target, curve.Evaluate(t / frameTime), reverse);
+
                 yield return wait;
             }
-            
+
             OnFrameFinished?.Invoke();
         }
 
-        void AnimateTransform(Transform target, float t)
+        private void AnimateTransform(Transform target, float t, bool reverse = false)
         {
-            foreach (var animatedTransformValue in transformValuesToAnimate)
+            Vector3 fromToAnimate = reverse ? to : from;
+            Vector3 toToAnimate = reverse ? from : to;
+
+            switch (transformValueToAnimate)
             {
-                switch (animatedTransformValue)
+                case Game.Enums.AnimateTransform.Position:
                 {
-                    case Game.Enums.AnimateTransform.Position:
-                    {
-                        target.position = Vector3.Lerp(from, to, t);
-                        break;
-                    }
-                    case Game.Enums.AnimateTransform.Scale:
-                    {
-                        target.localScale = Vector3.Lerp(from, to, t);
-                        break;
-                    }
-                    case Game.Enums.AnimateTransform.Rotation:
-                    {
-                        target.localEulerAngles = Vector3.Lerp(from, to, t);
-                        break;
-                    }
+                    target.position = Vector3.Lerp(fromToAnimate, toToAnimate, t);
+                    break;
+                }
+                case Game.Enums.AnimateTransform.Scale:
+                {
+                    target.localScale = Vector3.Lerp(fromToAnimate, toToAnimate, t);
+                    break;
+                }
+                case Game.Enums.AnimateTransform.Rotation:
+                {
+                    target.localEulerAngles = Vector3.Lerp(fromToAnimate, toToAnimate, t);
+                    break;
                 }
             }
         }
     }
-    
-    
 }

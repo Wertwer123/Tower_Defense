@@ -1,87 +1,103 @@
 using System;
-using Base;
+using System.Collections.Generic;
 using Game;
 using Game.Enums;
+using ScriptableObjects.Buildings;
 using UnityEngine;
 
 namespace Manager
 {
-    public class ResourceManager : Observable<ResourceValue>
+    public class ResourceManager : MonoBehaviour
     {
         [SerializeField] private ResourceValue currentGold;
         [SerializeField] private ResourceValue currentStone;
         [SerializeField] private ResourceValue currentWood;
         [SerializeField] private ResourceValue currentMetal;
 
-        private void OnEnable()
+        public event Action<ResourceValue> OnResourceChanged;
+        
+        private void Start()
         {
-            ObservablesManager.Instance.RegisterObservable(typeof(ResourceManager), this);
+            OnResourceChanged?.Invoke(currentGold);
+            OnResourceChanged?.Invoke(currentStone);
+            OnResourceChanged?.Invoke(currentWood);
+            OnResourceChanged?.Invoke(currentMetal);
+        }
+
+        public bool HasEnoughResourcesForBuilding(BuildingData buildingData)
+        {
+            foreach (var resourceValue in buildingData.ResourceCosts)
+            {
+                ResourceValue availableResource = GetResource(resourceValue.ResourceType);
+                
+                if (availableResource.ResourceVal < resourceValue.ResourceVal)
+                {
+                    return false;
+                }
+            }
+            
+            return true;
         }
         
         public void AddResource(ResourceValue resource)
         {
-            switch (resource.ResourceType)
+            ResourceValue availableResource = GetResource(resource.ResourceType);
+            availableResource.ResourceVal += resource.ResourceVal;
+            OnResourceChanged?.Invoke(availableResource);
+        }
+
+        public void AddResources(List<ResourceValue> resources)
+        {
+            foreach (var resourceValue in resources)
             {
-                case ResourceType.Stone:
-                {
-                    currentStone += resource;
-                    Notify(currentStone);
-                    break;
-                }
-                case ResourceType.Wood:
-                {
-                    currentWood += resource;
-                    Notify(currentWood);
-                    break;
-                }
-                case ResourceType.Metal:
-                {
-                    currentMetal += resource;
-                    Notify(currentMetal);
-                    break;
-                }
-                case ResourceType.Gold:
-                {
-                    currentGold += resource;
-                    Notify(currentGold);
-                    break;
-                }
-                default:
-                    throw new ArgumentOutOfRangeException();
+                ResourceValue availableResource = GetResource(resourceValue.ResourceType);
+                availableResource.ResourceVal += resourceValue.ResourceVal;
+                OnResourceChanged?.Invoke(availableResource);
             }
         }
 
         public void RemoveResource(ResourceValue resource)
         {
-            switch (resource.ResourceType)
+            ResourceValue availableResource = GetResource(resource.ResourceType);
+            availableResource.ResourceVal -= resource.ResourceVal;
+            OnResourceChanged?.Invoke(availableResource);
+        }
+
+        public void RemoveResources(List<ResourceValue> resources)
+        {
+            foreach (var resource in resources)
+            {
+                ResourceValue availableResource = GetResource(resource.ResourceType);
+                availableResource.ResourceVal -= resource.ResourceVal;
+                OnResourceChanged?.Invoke(availableResource);
+            }
+        }
+
+        ResourceValue GetResource(ResourceType resourceType)
+        {
+            switch (resourceType)
             {
                 case ResourceType.Stone:
                 {
-                    currentStone -= resource;
-                    Notify(currentStone);
-                    break;
+                    return currentStone;
                 }
                 case ResourceType.Wood:
                 {
-                    currentWood -= resource;
-                    Notify(currentWood);
-                    break;
+                    return currentWood;
                 }
                 case ResourceType.Metal:
                 {
-                    currentMetal -= resource;
-                    Notify(currentMetal);
-                    break;
+                    return currentMetal;
                 }
                 case ResourceType.Gold:
                 {
-                    currentGold -= resource;
-                    Notify(currentGold);
-                    break;
+                    return currentGold;
                 }
                 default:
-                    throw new ArgumentOutOfRangeException();
+                    throw new ArgumentOutOfRangeException(nameof(resourceType), resourceType, null);
             }
         }
+
+        
     }
 }
