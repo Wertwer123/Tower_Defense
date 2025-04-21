@@ -27,7 +27,6 @@ namespace Manager
 
         private void DisableSelection()
         {
-            Debug.Log("Disabling selection");
             _canSelectBuilding = false;
             _previouslySelectedBuilding = null;
         }
@@ -36,7 +35,6 @@ namespace Manager
         {
             if (buildingManager.IsInBuildingMode())
                 return;
-            Debug.Log("enableing selection");
 
             _canSelectBuilding = true;
         }

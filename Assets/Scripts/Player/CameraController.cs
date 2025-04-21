@@ -31,7 +31,10 @@ namespace Player
             ZoomCamera();
         }
 
-        public event Action OnZoom;
+        /// <summary>
+        ///     Takes in the percentage of zoom as a parameter
+        /// </summary>
+        public event Action<float> OnZoom;
 
         private void MoveCamera()
         {
@@ -43,6 +46,8 @@ namespace Player
             _currentZoom = Mathf.Clamp(_currentZoom, minZoom, maxZoom);
             playerCamera.orthographicSize = Mathf.Lerp(playerCamera.orthographicSize, _currentZoom,
                 cameraZoomSpeed * Time.deltaTime);
+
+            OnZoom?.Invoke(playerCamera.orthographicSize / maxZoom);
         }
 
         public void Zoom(InputAction.CallbackContext context)

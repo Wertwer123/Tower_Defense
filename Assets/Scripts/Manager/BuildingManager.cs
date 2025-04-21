@@ -73,7 +73,6 @@ namespace Manager
 
             if (!CanPlaceBuilding(tileToPlaceBuildingOn, currentlySelectedBuildingToBuild)) return;
 
-            Debug.Log("Placing building");
             PlaceBuilding(tileToPlaceBuildingOn);
         }
 

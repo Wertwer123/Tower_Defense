@@ -3236,6 +3236,7 @@ GameObject:
   - component: {fileID: 421504851}
   - component: {fileID: 421504850}
   - component: {fileID: 421504853}
+  - component: {fileID: 421504854}
   m_Layer: 0
   m_Name: BuiltBuildingInformationPanel
   m_TagString: Untagged
@@ -3345,6 +3346,21 @@ MonoBehaviour:
   closeButton: {fileID: 1231113260}
   openInformationPanelAnimation: {fileID: 11400000, guid: 49180f8048757b64ba8b08fbc49c7c19, type: 2}
   healthPercentageText: {fileID: 2066528386}
+--- !u!114 &421504854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421504848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70a3cd60454093d40b24d69774600bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minScale: 0.2
+  maxScale: 1
+  cameraController: {fileID: 519420034}
 --- !u!1 &428625571
 GameObject:
   m_ObjectHideFlags: 0
