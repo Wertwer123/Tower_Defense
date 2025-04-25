@@ -15,7 +15,7 @@ namespace Player
         [SerializeField] [Min(0.0f)] private float maxZoom = 5;
         [SerializeField] [Range(0, 100)] private int edgePanThreshold = 50;
         [SerializeField] private Camera playerCamera;
-        private Vector2 _currentMovementVector = Vector2.zero;
+        private Vector3 _currentMovementVector = Vector3.zero;
 
         private float _currentZoom;
 
@@ -38,13 +38,13 @@ namespace Player
 
         private void MoveCamera()
         {
-            transform.Translate(_currentMovementVector);
+            transform.position += _currentMovementVector;
         }
 
         private void ZoomCamera()
         {
             _currentZoom = Mathf.Clamp(_currentZoom, minZoom, maxZoom);
-            playerCamera.orthographicSize = Mathf.Lerp(playerCamera.orthographicSize, _currentZoom,
+            playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, _currentZoom,
                 cameraZoomSpeed * Time.deltaTime);
 
             OnZoom?.Invoke(playerCamera.orthographicSize / maxZoom);
@@ -77,9 +77,12 @@ namespace Player
             {
                 //calculate the direction from center screen pos to mouse pos
                 Vector2 screenCenter = new(screenWidth * 0.5f, screenHeight * 0.5f);
-                Vector3 directionToMouse = mousePos - screenCenter;
+                Vector2 directionToMouse = mousePos - screenCenter;
 
-                _currentMovementVector = directionToMouse.normalized * cameraSpeed * Time.deltaTime;
+                Vector2 movementVector = directionToMouse;
+
+                _currentMovementVector = new Vector3(movementVector.x, 0, movementVector.y).normalized * cameraSpeed *
+                                         Time.deltaTime;
             }
             else
             {

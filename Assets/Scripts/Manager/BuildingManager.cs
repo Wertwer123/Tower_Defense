@@ -44,7 +44,7 @@ namespace Manager
         {
             OnBuildingModeEntered?.Invoke();
             currentlySelectedBuildingToBuild = building;
-            buildingPreview.Init(currentlySelectedBuildingToBuild.BuildingPrefab.BuildingSprite);
+            buildingPreview.Init(currentlySelectedBuildingToBuild.BuildingPrefab.BuildingMesh);
             buildingStateMachine.SetCurrentState(buildingStateTemplate.CreateInstance());
         }
 
@@ -93,10 +93,11 @@ namespace Manager
         private void SetBuildingPreviewPosition(GridTile currentlyHoveredTile)
         {
             if (currentlyHoveredTile == null) return;
-
+            Debug.Log(currentlyHoveredTile.CellCenter);
             Vector3 buildingPreviewPosition = Vector3.Lerp(buildingPreview.GetPosition(),
                 currentlyHoveredTile.CellCenter,
                 Time.deltaTime * buildingPreviewInterpolationSpeed);
+            Debug.Log(buildingPreviewPosition);
             buildingPreview.SetPosition(buildingPreviewPosition);
         }
 
@@ -118,8 +119,8 @@ namespace Manager
         private void PlaceBuilding(GridTile tileToPlaceBuildingOn)
         {
             //Also check for sufficient resources availablity of the tile etc
-            Vector2 buildingLocation = tileToPlaceBuildingOn.CellCenter;
-
+            Vector3 buildingLocation = tileToPlaceBuildingOn.CellCenter;
+            Debug.Log(buildingLocation);
             Building buildingInstance = Instantiate(currentlySelectedBuildingToBuild.BuildingPrefab, buildingLocation,
                 Quaternion.identity);
             buildingInstance.OnBuild(tileToPlaceBuildingOn, currentlySelectedBuildingToBuild.BuildingGuid);

@@ -1,39 +1,38 @@
 using System;
-using Base;
 using Game;
 using Game.Enums;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
-using UnityEngine.Serialization;
 
 namespace Manager.Enviroment
 {
     /// <summary>
-    /// This class manages the day time it hold s events for when certain daytimes hit to which you can subscribe
-    /// You can finetune how daytimes look how intense and in which colors the light will shine
+    ///     This class manages the day time it hold s events for when certain daytimes hit to which you can subscribe
+    ///     You can finetune how daytimes look how intense and in which colors the light will shine
     /// </summary>
     public class DayNightCycle : MonoBehaviour
     {
-        [Header("Daytime clock")]
-        [SerializeField] DayTimeClock dayTimeClock;
-        
-        [Header("Daytime settings")]
-        [SerializeField, Min(5)] int dayLengthInSeconds;
-        [SerializeField, Range(0f, 1f)] private float percentageOfMorningOfOneDay = 0.25f;
-        [SerializeField, Range(0f, 1f)] private float percentageOfAfternoonOfOneDay = 0.25f;
-        [SerializeField, Range(0f, 1f)] private float percentageOfEveningOfOneDay = 0.25f;
-        [SerializeField, Range(0f, 1f)] private float percentageOfNightOfOneDay = 0.25f;
-        
-        [Header("Color settings")]
-        [SerializeField] private Light2D sunLight;
+        [Header("Daytime clock")] [SerializeField]
+        private DayTimeClock dayTimeClock;
+
+        [Header("Daytime settings")] [SerializeField] [Min(5)]
+        private int dayLengthInSeconds;
+
+        [SerializeField] [Range(0f, 1f)] private float percentageOfMorningOfOneDay = 0.25f;
+        [SerializeField] [Range(0f, 1f)] private float percentageOfAfternoonOfOneDay = 0.25f;
+        [SerializeField] [Range(0f, 1f)] private float percentageOfEveningOfOneDay = 0.25f;
+        [SerializeField] [Range(0f, 1f)] private float percentageOfNightOfOneDay = 0.25f;
+
+        [Header("Color settings")] [SerializeField]
+        private Light sunLight;
+
         [SerializeField] private DayPart morning;
         [SerializeField] private DayPart afternoon;
         [SerializeField] private DayPart evening;
         [SerializeField] private DayPart night;
 
         private DayPart _currentDayTimePart;
-        private float _passedDayTime = 0.0f;
-        
+        private float _passedDayTime;
+
         private void Start()
         {
             dayTimeClock.Init(percentageOfMorningOfOneDay, percentageOfAfternoonOfOneDay, percentageOfEveningOfOneDay);
@@ -51,7 +50,6 @@ namespace Manager.Enviroment
 
         private void CaluclateLengthOfDayTimes()
         {
-            
             float lengthOfMorningInSeconds = dayLengthInSeconds * percentageOfMorningOfOneDay;
             float lengthOfAfternoonInSeconds = dayLengthInSeconds * percentageOfAfternoonOfOneDay;
             float lengthOfEveningInSeconds = dayLengthInSeconds * percentageOfEveningOfOneDay;
@@ -75,13 +73,13 @@ namespace Manager.Enviroment
                 SwitchDaytime();
                 Debug.Log($"Its now {_currentDayTimePart.DayTime}");
             }
-            
+
             //Switch the day
             if (_passedDayTime >= dayLengthInSeconds)
             {
                 _passedDayTime = 0.0f;
                 _currentDayTimePart = morning;
-                Debug.Log($"Next day started");
+                Debug.Log("Next day started");
             }
         }
 
@@ -89,7 +87,7 @@ namespace Manager.Enviroment
         {
             sunLight.color = _currentDayTimePart.GetDayPartColor(_passedDayTime);
         }
-        
+
         private void SwitchDaytime()
         {
             switch (_currentDayTimePart.DayTime)
@@ -118,7 +116,7 @@ namespace Manager.Enviroment
                     throw new ArgumentOutOfRangeException();
             }
         }
-        
+
         private void SetCurrentDayTime(DayTime dayTime)
         {
             switch (dayTime)
@@ -148,7 +146,7 @@ namespace Manager.Enviroment
                 default:
                     throw new ArgumentOutOfRangeException(nameof(dayTime), dayTime, null);
             }
-            
+
             _passedDayTime = _currentDayTimePart.StartTime;
         }
     }

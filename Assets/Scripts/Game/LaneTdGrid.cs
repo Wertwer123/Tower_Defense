@@ -36,11 +36,11 @@ namespace Game
             {
                 case LaneDirection.LeftToRight:
                 {
-                    for (int y = 0; y < rowCount; y++)
+                    for (int y = 0; y < rows; y++)
                     {
                         List<GridTile> laneTiles = new();
 
-                        for (int x = laneCount - 1; x >= 0; x--) laneTiles.Add(allTiles[GetGridIndex(x, y)]);
+                        for (int x = columns - 1; x >= 0; x--) laneTiles.Add(AllTiles[x, y]);
 
                         _lanes.Add(new Lane(laneTiles));
                     }
@@ -49,11 +49,11 @@ namespace Game
                 }
                 case LaneDirection.RightToLeft:
                 {
-                    for (int y = 0; y < rowCount; y++)
+                    for (int y = 0; y < rows; y++)
                     {
                         List<GridTile> laneTiles = new();
 
-                        for (int x = 0; x < laneCount; x++) laneTiles.Add(allTiles[GetGridIndex(x, y)]);
+                        for (int x = 0; x < columns; x++) laneTiles.Add(AllTiles[x, y]);
 
                         _lanes.Add(new Lane(laneTiles));
                     }
@@ -62,11 +62,11 @@ namespace Game
                 }
                 case LaneDirection.TopToBottom:
                 {
-                    for (int x = 0; x < laneCount; x++)
+                    for (int x = 0; x < columns; x++)
                     {
                         List<GridTile> laneTiles = new();
 
-                        for (int y = 0; y < rowCount; y++) laneTiles.Add(allTiles[GetGridIndex(x, y)]);
+                        for (int y = 0; y < rows; y++) laneTiles.Add(AllTiles[x, y]);
 
                         _lanes.Add(new Lane(laneTiles));
                     }
@@ -75,11 +75,11 @@ namespace Game
                 }
                 case LaneDirection.BottomToTop:
                 {
-                    for (int x = 0; x < laneCount; x++)
+                    for (int x = 0; x < columns; x++)
                     {
                         List<GridTile> laneTiles = new();
 
-                        for (int y = rowCount - 1; y >= 0; y--) laneTiles.Add(allTiles[GetGridIndex(x, y)]);
+                        for (int y = rows - 1; y >= 0; y--) laneTiles.Add(AllTiles[x, y]);
 
                         _lanes.Add(new Lane(laneTiles));
                     }

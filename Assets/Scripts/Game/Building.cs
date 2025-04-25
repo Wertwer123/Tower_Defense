@@ -8,7 +8,9 @@ namespace Game
 {
     public abstract class Building : MonoBehaviour
     {
-        [SerializeField] private SpriteRenderer buildingSpriteRenderer;
+        [SerializeField] private MeshRenderer buildingMeshRenderer;
+        [SerializeField] private MeshFilter buildingMesh;
+
         [SerializeField] private SpriteAnimTemplate onBuildAnimation;
         [SerializeField] private Material hoveredMaterial;
 
@@ -17,18 +19,18 @@ namespace Game
 
         public GUID BuildingGuid { get; private set; }
 
-        public Sprite BuildingSprite => buildingSpriteRenderer.sprite;
+        public Mesh BuildingMesh => buildingMesh.sharedMesh;
 
         private void OnMouseEnter()
         {
             List<Material> hoveredMaterials = new() { _buildingMaterial, Instantiate(hoveredMaterial) };
-            buildingSpriteRenderer.SetSharedMaterials(hoveredMaterials);
+            buildingMeshRenderer.SetSharedMaterials(hoveredMaterials);
         }
 
         private void OnMouseExit()
         {
             List<Material> defaultMaterials = new() { _buildingMaterial };
-            buildingSpriteRenderer.SetSharedMaterials(defaultMaterials);
+            buildingMeshRenderer.SetSharedMaterials(defaultMaterials);
         }
 
         /// <summary>
@@ -39,7 +41,7 @@ namespace Game
         public virtual void OnBuild(GridTile tileBuildingGetsPlacedOn, GUID buildingGuid)
         {
             BuildingGuid = buildingGuid;
-            _buildingMaterial = buildingSpriteRenderer.material;
+            _buildingMaterial = buildingMeshRenderer.material;
             _occupiedTile = tileBuildingGetsPlacedOn;
             _occupiedTile.IsOccupied = true;
             onBuildAnimation.GetCopy<SpriteAnimTemplate>().PlayAnimation(this);
