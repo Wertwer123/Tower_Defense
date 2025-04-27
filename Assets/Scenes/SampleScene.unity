@@ -2764,7 +2764,7 @@ Terrain:
   m_StaticShadowCaster: 0
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: 033662289232a7248b046c1607218d7a, type: 2}
+  m_MaterialTemplate: {fileID: 2100000, guid: de88a99af89bcfa43bef05091d41a653, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -2967,7 +2967,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 37.2, z: -54.22}
+  m_LocalPosition: {x: -0.4, y: 37.2, z: -26.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3946,8 +3946,8 @@ MonoBehaviour:
     colorValue: {r: 0.78823537, g: 0.91372555, b: 0.1254902, a: 1}
   - colorKey: {r: 0.4901961, g: 0.5176471, b: 0.57254905, a: 1}
     colorValue: {r: 1, g: 1, b: 1, a: 1}
-  colorBlockSize: {x: 2, y: 2}
-  useAveragedColors: 1
+  colorBlockSize: {x: 32, y: 32}
+  useAveragedColors: 0
   colorIntensity: 1
 --- !u!114 &793178885
 MonoBehaviour:
