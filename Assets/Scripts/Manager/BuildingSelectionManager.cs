@@ -46,11 +46,12 @@ namespace Manager
 
             //cast a ray from the mouse to get the selected building under the mouse
             Ray ray = mainCamera.ScreenPointToRay(MouseDataManager.Instance.CurrentMousePositionScreen);
-            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity, buildingLayerMask);
+            bool hit = Physics.Raycast(ray.origin, ray.direction, out RaycastHit hitInfo, Mathf.Infinity,
+                buildingLayerMask);
 
             if (hit)
             {
-                if (hit.collider.TryGetComponent(out Building building))
+                if (hitInfo.collider.TryGetComponent(out Building building))
                 {
                     if (IsPreviouslySelectedBuilding(building)) return;
 

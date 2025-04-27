@@ -30,9 +30,7 @@ public class DayTimeClock : MonoBehaviour
       float angleOfAfternoon = fullRotationAmount * morningPercentage;
       float angleOfEvening = angleOfAfternoon + fullRotationAmount * afternoonPercentage;
       float angleOfNight = angleOfEvening + fullRotationAmount * eveningPercentage;
-      Debug.Log(angleOfNight);
-      Debug.Log(angleOfEvening);
-      
+     
       Vector3 center = transform.position;
       
       Vector3 startPositionMorningDisplay = Utilities.GetPositionOnCircleByAngle(angleOfMorning, clockRadius, center);

@@ -2,17 +2,19 @@ using System.Collections.Generic;
 using Game;
 using Interfaces;
 using PropertyAttributes;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Base
 {
     public class TdGrid : MonoBehaviour, ITransformChanged
     {
-        [SerializeField] [OnValueChanged(nameof(RegenerateGrid))] [Min(1)]
-        protected int laneCount = 3;
+        [FormerlySerializedAs("laneCount")] [SerializeField] [OnValueChanged(nameof(RegenerateGrid))] [Min(1)]
+        protected int columns = 3;
 
-        [SerializeField] [OnValueChanged(nameof(RegenerateGrid))] [Min(1)]
-        protected int rowCount = 5;
+        [FormerlySerializedAs("rowCount")] [SerializeField] [OnValueChanged(nameof(RegenerateGrid))] [Min(1)]
+        protected int rows = 5;
 
         [SerializeField] [OnValueChanged(nameof(RegenerateGrid))] [Min(0.1f)]
         protected float cellSize = 0.5f;
@@ -26,22 +28,42 @@ namespace Base
         [SerializeField] [OnValueChanged(nameof(RegenerateGrid))]
         protected float lineThickness = 0.1f;
 
+        [SerializeField] [OnValueChanged(nameof(RegenerateGrid))]
+        protected float meshGroundOffset = 0.1f;
+
+        [SerializeField] [OnValueChanged(nameof(RegenerateGrid))]
+        protected int subsampleGridLineAmount = 20;
+
+
+        [SerializeField] private LayerMask terrainLayerMask;
         [SerializeField] private MeshRenderer gridVisualizationMesh;
         [SerializeField] private MeshFilter gridVisualizationMeshFilter;
+        [SerializeField] protected BoxCollider gridBounds;
 
         [SerializeField] [HideInInspector] private Vector3 oldPosition;
         [SerializeField] [HideInInspector] protected float cellExtents;
-        [SerializeField] [HideInInspector] protected Rect gridBounds;
-        [SerializeField] [HideInInspector] protected List<GridTile> allTiles = new();
-        public Rect GridBounds => gridBounds;
+
+        protected GridTile[,] AllTiles;
+
+
+        private void Start()
+        {
+            CreateGrid();
+        }
 
         protected virtual void OnDrawGizmos()
         {
             if (!enableDebugLines) return;
 
-            Gizmos.color = Color.yellow;
-            foreach (GridTile tile in allTiles)
-                Gizmos.DrawWireCube(tile.CellCenter, new Vector3(cellSize, cellSize, 0));
+            Handles.color = Color.yellow;
+            if (AllTiles == null) return;
+
+            foreach (GridTile tile in AllTiles)
+            {
+                Handles.DrawWireDisc(tile.CellCenter, Vector3.up, cellExtents);
+                Handles.color = Color.red;
+                Handles.DrawWireDisc(tile.Position, Vector3.up, 0.1f);
+            }
 
             Gizmos.color = Color.green;
             Gizmos.DrawWireCube(gridBounds.center, gridBounds.size);
@@ -85,23 +107,18 @@ namespace Base
 
         public bool IsPositionInGrid(Vector2 position)
         {
-            return gridBounds.Contains(position);
+            return gridBounds.bounds.Contains(position);
         }
 
-        public GridTile GetTileAtPosition(Vector2 position)
+        public GridTile GetTileAtPosition(Vector3 position)
         {
             int xOffset = Mathf.FloorToInt((position.x - transform.position.x) / cellSize);
-            int yOffset = Mathf.FloorToInt((position.y - transform.position.y) / cellSize);
+            int yOffset = Mathf.FloorToInt((position.z - transform.position.z) / cellSize);
 
-            if (xOffset < 0 || yOffset < 0 || xOffset >= laneCount || yOffset >= allTiles.Count / laneCount)
+            if (xOffset < 0 || yOffset < 0 || xOffset >= columns || yOffset >= rows)
                 return null;
 
-            return allTiles[GetGridIndex(xOffset, yOffset)];
-        }
-
-        protected int GetGridIndex(int x, int y)
-        {
-            return y * laneCount + x;
+            return AllTiles[xOffset, yOffset];
         }
 
         protected virtual void RegenerateGrid()
@@ -120,16 +137,29 @@ namespace Base
             List<int> triangles = new();
 
             //offset the end to the right  to close the grid bounds
-            Vector2 horizontalLinesStart = Vector2.zero;
-            Vector2 horizontalLinesEnd = Vector2.right * laneCount * cellSize + Vector2.right * lineThickness;
+            Vector3 columnLinesStart = transform.position;
+            Vector3 columnLinesEnd = columnLinesStart + transform.forward * rows * cellSize;
 
-            Vector2 verticalLinesStart = Vector2.zero;
-            Vector2 verticalLinesEnd = Vector3.up * rowCount * cellSize;
+            Vector3 rowLinesStart = transform.position;
+            Vector3 rowLinesEnd = rowLinesStart + transform.right * columns * cellSize;
 
-            CreateGridLines(true, rowCount + 1, vertices, triangles, horizontalLinesStart, horizontalLinesEnd,
-                Vector2.up);
-            CreateGridLines(false, laneCount + 1, vertices, triangles, verticalLinesStart, verticalLinesEnd,
-                Vector2.right);
+            Vector3 rowLinesCreationStep = (columnLinesEnd - columnLinesStart) / rows;
+            Vector3 columnLinesCreationStep = (rowLinesEnd - rowLinesStart) / columns;
+
+            for (int x = 0; x <= columns; x++)
+            {
+                // Debug.DrawLine(columnLinesStart, columnLinesEnd, Color.green, 1);
+                GenerateSubsampledLine(columnLinesStart, columnLinesEnd, vertices, triangles);
+                columnLinesStart += columnLinesCreationStep;
+                columnLinesEnd += columnLinesCreationStep;
+            }
+
+            for (int y = 0; y <= rows; y++)
+            {
+                GenerateSubsampledLine(rowLinesStart, rowLinesEnd, vertices, triangles);
+                rowLinesStart += rowLinesCreationStep;
+                rowLinesEnd += rowLinesCreationStep;
+            }
 
             mesh.vertices = vertices.ToArray();
             mesh.triangles = triangles.ToArray();
@@ -137,78 +167,88 @@ namespace Base
             gridVisualizationMeshFilter.mesh = mesh;
         }
 
-        private void CreateGridLines(
-            bool reverseTriangleOrder,
-            int numLines,
-            List<Vector3> vertices,
-            List<int> triangles,
-            Vector2 linesStart,
-            Vector2 linesEnd,
-            Vector2 lineCreationDirection)
+        private void GenerateSubsampledLine(Vector3 startPoint, Vector3 endPoint, List<Vector3> vertices,
+            List<int> triangles)
         {
-            for (int i = 0; i < numLines; i++)
+            int vertexCount = vertices.Count;
+            Vector3 direction = (endPoint - startPoint).normalized;
+            Vector3 right = Vector3.Cross(direction, Vector3.up);
+            Vector3 sampleStep = (endPoint - startPoint) / subsampleGridLineAmount;
+            Vector3 previousSampleStep = startPoint;
+            Vector3 currentSampleStep = startPoint + sampleStep;
+
+            for (int i = 0; i < subsampleGridLineAmount; i++)
             {
-                int verticeCount = vertices.Count;
+                bool hitPrevious = Physics.Raycast(previousSampleStep, Vector3.down,
+                    out RaycastHit hitInfoPrevious,
+                    Mathf.Infinity, terrainLayerMask);
+                bool hitCurrent = Physics.Raycast(currentSampleStep, Vector3.down,
+                    out RaycastHit hitInfoCurrent,
+                    Mathf.Infinity, terrainLayerMask);
+                if (hitPrevious && hitCurrent)
+                {
+                    //generate equal to the left and right of the hit points to center the line
+                    Vector3 pointCurrent = hitInfoCurrent.point + Vector3.up * meshGroundOffset;
+                    Vector3 pointPrevious = hitInfoPrevious.point + Vector3.up * meshGroundOffset;
 
-                triangles.Add(verticeCount + 0);
-                triangles.Add(verticeCount + (reverseTriangleOrder ? 3 : 1));
-                triangles.Add(verticeCount + 2);
-                triangles.Add(verticeCount + 2);
-                triangles.Add(verticeCount + (reverseTriangleOrder ? 1 : 3));
-                triangles.Add(verticeCount + 0);
+                    Vector3 vertex1 = pointPrevious - right * lineThickness * 0.5f;
+                    Vector3 vertex2 = pointPrevious + right * lineThickness * 0.5f;
+                    Vector3 vertex3 = pointCurrent + right * lineThickness * 0.5f;
+                    Vector3 vertex4 = pointCurrent - right * lineThickness * 0.5f;
 
-                //For testing insert a rectangle from start to end 
-                vertices.Add(linesStart);
-                vertices.Add(linesEnd);
-                vertices.Add(linesEnd + lineCreationDirection * lineThickness);
-                vertices.Add(linesStart + lineCreationDirection * lineThickness);
+                    vertices.Add(transform.InverseTransformPoint(vertex1));
+                    vertices.Add(transform.InverseTransformPoint(vertex2));
+                    vertices.Add(transform.InverseTransformPoint(vertex3));
+                    vertices.Add(transform.InverseTransformPoint(vertex4));
 
-                linesStart += lineCreationDirection * cellSize;
-                linesEnd += lineCreationDirection * cellSize;
+                    triangles.Add(vertexCount);
+                    triangles.Add(vertexCount + 1);
+                    triangles.Add(vertexCount + 2);
+                    triangles.Add(vertexCount + 2);
+                    triangles.Add(vertexCount + 3);
+                    triangles.Add(vertexCount);
+
+                    vertexCount += 4;
+                }
+
+                previousSampleStep = currentSampleStep;
+                currentSampleStep += sampleStep;
             }
         }
 
         private void CalculateGridBounds()
         {
-            Vector3 gridExtents = new(laneCount * cellSize, rowCount * cellSize);
-            Vector3 gridCenter = transform.position +
-                                 new Vector3(laneCount * cellSize * 0.5f, rowCount * cellSize * 0.5f, 0);
+            //collider bounds are relative
+            Vector3 gridBoundsSize = new(columns * cellSize, 25, rows * cellSize);
+            Vector3 gridCenter = new(columns * cellSize * 0.5f, -gridBoundsSize.y / 2, rows * cellSize * 0.5f);
 
             gridBounds.center = gridCenter;
-            gridBounds.width = gridExtents.x;
-            gridBounds.height = gridExtents.y;
+            gridBounds.size = gridBoundsSize;
         }
 
         private void CreateGrid()
         {
-            allTiles.Clear();
+            AllTiles = new GridTile[columns, rows];
 
-            int gridSize = rowCount * laneCount;
             cellExtents = cellSize * 0.5f;
 
-            //shift half a cell from the transform position to make the origin the lower left corner
-            Vector2 gridOrigin = new(
-                transform.position.x,
-                transform.position.y);
+            Vector3 cellCenterOffset = transform.right * cellExtents + transform.forward * cellExtents;
 
-            Vector2 cellCenterOffset = new(cellExtents, cellExtents);
-            Vector2 laneTilePosition = gridOrigin;
-
-            for (int i = 1; i < gridSize + 1; i++)
+            for (int x = 0; x < columns; x++)
+            for (int y = 0; y < rows; y++)
             {
-                //if we reached the end of one lane switch up by one row
-                GridTile newGridTile = new(i - 1, canHostBaseBuildings, laneTilePosition,
-                    laneTilePosition + cellCenterOffset);
+                //Pivot is on the lower left
+                Vector3 cellOrigin = transform.position + transform.right * cellSize * x +
+                                     transform.forward * cellSize * y;
+                Physics.Raycast(
+                    cellOrigin + cellCenterOffset,
+                    Vector3.down,
+                    out RaycastHit hitInfo, Mathf.Infinity, terrainLayerMask);
 
-                allTiles.Add(newGridTile);
+                GridTile newGridTile = new(new Vector2(x, y), canHostBaseBuildings, cellOrigin,
+                    hitInfo.point);
 
-                laneTilePosition.x += cellSize;
-
-                if (i % laneCount == 0)
-                {
-                    laneTilePosition.y += cellSize;
-                    laneTilePosition.x = transform.position.x;
-                }
+                AllTiles[x, y] = newGridTile;
             }
         }
     }

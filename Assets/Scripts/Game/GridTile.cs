@@ -6,15 +6,15 @@ namespace Game
     [Serializable]
     public class GridTile
     {
-        [SerializeField] private int tileIndex;
         [SerializeField] private bool isOccupied;
         [SerializeField] private bool canHostBaseBuildings;
-        [SerializeField] private Vector2 position;
-        [SerializeField] private Vector2 cellCenter;
+        [SerializeField] private Vector2 tileCoordinates;
+        [SerializeField] private Vector3 position;
+        [SerializeField] private Vector3 cellCenter;
 
-        public GridTile(int tileIndex, bool canHostBaseBuildings, Vector2 position, Vector2 cellCenter)
+        public GridTile(Vector2 tileCoordinates, bool canHostBaseBuildings, Vector3 position, Vector3 cellCenter)
         {
-            this.tileIndex = tileIndex;
+            this.tileCoordinates = tileCoordinates;
             isOccupied = false;
             this.position = position;
             this.cellCenter = cellCenter;
@@ -22,7 +22,7 @@ namespace Game
         }
 
 
-        public int TileIndex => tileIndex;
+        public Vector2 TileCoordinates => tileCoordinates;
         public bool CanHostBaseBuildings => canHostBaseBuildings;
 
         public bool IsOccupied
@@ -31,7 +31,7 @@ namespace Game
             set => isOccupied = value;
         }
 
-        public Vector2 Position => position;
-        public Vector2 CellCenter => cellCenter;
+        public Vector3 Position => position;
+        public Vector3 CellCenter => cellCenter;
     }
 }
