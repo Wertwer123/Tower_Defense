@@ -21,11 +21,12 @@ namespace Game.Player.Camera
             heightMappings.Clear();
 
             float stepSize = 1.0f / heightSteps;
-
-
+            float alphaSteps = 1.0f / heightSteps;
+            
             for (int i = 0; i < heightSteps; i++)
             {
-                Color currentColor = Color.Lerp(Color.black, Color.white, i * stepSize);
+                Color currentColor = Color.Lerp(Color.white, Color.black, i * stepSize);
+                currentColor.a = Mathf.Lerp(1.0f, 0.0f,  i * alphaSteps / 1.0f);
                 heightMappings.Add(new ColorPair(currentColor, currentColor));
             }
         }
@@ -58,9 +59,9 @@ namespace Game.Player.Camera
                 Color lerpedHeightColor =
                     Color.Lerp(Color.black, Color.white,
                         hit.distance / (screenShotFarClip * screenShotHeightOvershoot));
-                Color heightColor = Utilities.GetClosestColorToPixelColor(lerpedHeightColor, heightMappings);
+                ColorPair heightColor = Utilities.GetClosestColorToPixelColor(lerpedHeightColor, heightMappings);
 
-                screenShot.SetPixel(x, y, heightColor);
+                screenShot.SetPixel(x, y, heightColor.colorValue);
             }
 
             if (saveAsImage) SaveScreenshot(screenShot, terrainScreenShotName);

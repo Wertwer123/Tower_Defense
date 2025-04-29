@@ -22,10 +22,25 @@ namespace Utils
 
             return new Vector3(x, y, 0);
         }
-
-        public static Color GetClosestColorToPixelColor(Color color, List<ColorPair> colorPairs)
+        
+        /// <summary>
+        /// This returns the normalized distance between colors as the colors in unity are already normalized lol
+        /// </summary>
+        /// <param name="color1"></param>
+        /// <param name="color2"></param>
+        /// <returns></returns>
+        public static float GetDistanceBetweenColors(Color color1, Color color2)
         {
-            Color closestColor = Color.clear;
+            float rDiff = Mathf.Pow(color1.r - color2.r, 2);
+            float gDiff = Mathf.Pow(color1.g - color2.g, 2);
+            float bDiff = Mathf.Pow(color1.b - color2.b, 2);
+            
+            return Mathf.Sqrt(rDiff + gDiff + bDiff);
+        }
+
+        public static ColorPair GetClosestColorToPixelColor(Color color, List<ColorPair> colorPairs)
+        {
+            ColorPair closestColor = null;
 
             float smallestDiff = float.MaxValue;
 
@@ -34,16 +49,12 @@ namespace Utils
                 ColorPair miniMapColor = colorPairs[i];
                 Color keyColor = miniMapColor.colorKey;
 
-                float rDiff = Mathf.Pow(color.r - keyColor.r, 2);
-                float gDiff = Mathf.Pow(color.g - keyColor.g, 2);
-                float bDiff = Mathf.Pow(color.b - keyColor.b, 2);
+                float distance = GetDistanceBetweenColors(color, keyColor);
 
-                float wholeDiff = Mathf.Sqrt(rDiff + gDiff + bDiff);
-
-                if (wholeDiff < smallestDiff)
+                if (distance < smallestDiff)
                 {
-                    smallestDiff = wholeDiff;
-                    closestColor = miniMapColor.colorValue;
+                    smallestDiff = distance;
+                    closestColor = miniMapColor;
                 }
             }
 

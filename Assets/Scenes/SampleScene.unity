@@ -3747,7 +3747,7 @@ Transform:
   m_GameObject: {fileID: 704327992}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: -3.3, y: -9.1, z: 0.6}
+  m_LocalPosition: {x: -3.3, y: -18.1, z: 0.6}
   m_LocalScale: {x: 60, y: 30, z: 30}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3938,17 +3938,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98af6102704180c4e8bb466735729857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colorIntensity: 1
+  edgeIntensityThreshold: 0.172
+  useAveragedColors: 1
+  useHeightMap: 0
   screenshot: {fileID: 793178887}
   miniMapColors:
   - colorKey: {r: 0.29803923, g: 0.53333336, b: 0.7803922, a: 1}
-    colorValue: {r: 0, g: 0.56353164, b: 1, a: 1}
-  - colorKey: {r: 0.78823537, g: 0.91372555, b: 0.1254902, a: 1}
-    colorValue: {r: 0.78823537, g: 0.91372555, b: 0.1254902, a: 1}
+    colorValue: {r: 0.03139687, g: 0.31961256, b: 0.54177886, a: 1}
+  - colorKey: {r: 0.77759415, g: 0.89757407, b: 0.14395042, a: 1}
+    colorValue: {r: 0.55563164, g: 1, b: 0, a: 1}
   - colorKey: {r: 0.4901961, g: 0.5176471, b: 0.57254905, a: 1}
     colorValue: {r: 1, g: 1, b: 1, a: 1}
-  colorBlockSize: {x: 32, y: 32}
-  useAveragedColors: 0
-  colorIntensity: 1
+  edgeColor: {r: 0.2668463, g: 0.2668463, b: 0.2668463, a: 0.24313726}
+  colorBlockSize: {x: 4, y: 4}
 --- !u!114 &793178885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4061,9 +4064,9 @@ MonoBehaviour:
   screenshotHeight: 1080
   screenshotPath: Assets/Sprites/MiniMapOutputs
   screenshotName: Test
-  screenShotFarClip: 100
+  screenShotFarClip: 50
   screenShotHeightOvershoot: 1.1
-  heightSteps: 30
+  heightSteps: 50
   terrainScreenShotName: DepthTest
   screenshotLayers:
     serializedVersion: 2
@@ -4071,66 +4074,106 @@ MonoBehaviour:
   terrain: {fileID: 430157626}
   screenshotMaterial: {fileID: 2100000, guid: de88a99af89bcfa43bef05091d41a653, type: 2}
   heightMappings:
-  - colorKey: {r: 0, g: 0, b: 0, a: 1}
-    colorValue: {r: 0, g: 0, b: 0, a: 1}
-  - colorKey: {r: 0.033333335, g: 0.033333335, b: 0.033333335, a: 1}
-    colorValue: {r: 0.033333335, g: 0.033333335, b: 0.033333335, a: 1}
-  - colorKey: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
-    colorValue: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
-  - colorKey: {r: 0.10000001, g: 0.10000001, b: 0.10000001, a: 1}
-    colorValue: {r: 0.10000001, g: 0.10000001, b: 0.10000001, a: 1}
-  - colorKey: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
-    colorValue: {r: 0.13333334, g: 0.13333334, b: 0.13333334, a: 1}
-  - colorKey: {r: 0.16666667, g: 0.16666667, b: 0.16666667, a: 1}
-    colorValue: {r: 0.16666667, g: 0.16666667, b: 0.16666667, a: 1}
-  - colorKey: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 1}
-    colorValue: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 1}
-  - colorKey: {r: 0.23333335, g: 0.23333335, b: 0.23333335, a: 1}
-    colorValue: {r: 0.23333335, g: 0.23333335, b: 0.23333335, a: 1}
-  - colorKey: {r: 0.26666668, g: 0.26666668, b: 0.26666668, a: 1}
-    colorValue: {r: 0.26666668, g: 0.26666668, b: 0.26666668, a: 1}
-  - colorKey: {r: 0.3, g: 0.3, b: 0.3, a: 1}
-    colorValue: {r: 0.3, g: 0.3, b: 0.3, a: 1}
-  - colorKey: {r: 0.33333334, g: 0.33333334, b: 0.33333334, a: 1}
-    colorValue: {r: 0.33333334, g: 0.33333334, b: 0.33333334, a: 1}
-  - colorKey: {r: 0.36666667, g: 0.36666667, b: 0.36666667, a: 1}
-    colorValue: {r: 0.36666667, g: 0.36666667, b: 0.36666667, a: 1}
-  - colorKey: {r: 0.40000004, g: 0.40000004, b: 0.40000004, a: 1}
-    colorValue: {r: 0.40000004, g: 0.40000004, b: 0.40000004, a: 1}
-  - colorKey: {r: 0.43333337, g: 0.43333337, b: 0.43333337, a: 1}
-    colorValue: {r: 0.43333337, g: 0.43333337, b: 0.43333337, a: 1}
-  - colorKey: {r: 0.4666667, g: 0.4666667, b: 0.4666667, a: 1}
-    colorValue: {r: 0.4666667, g: 0.4666667, b: 0.4666667, a: 1}
-  - colorKey: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    colorValue: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  - colorKey: {r: 0.53333336, g: 0.53333336, b: 0.53333336, a: 1}
-    colorValue: {r: 0.53333336, g: 0.53333336, b: 0.53333336, a: 1}
-  - colorKey: {r: 0.5666667, g: 0.5666667, b: 0.5666667, a: 1}
-    colorValue: {r: 0.5666667, g: 0.5666667, b: 0.5666667, a: 1}
-  - colorKey: {r: 0.6, g: 0.6, b: 0.6, a: 1}
-    colorValue: {r: 0.6, g: 0.6, b: 0.6, a: 1}
-  - colorKey: {r: 0.6333334, g: 0.6333334, b: 0.6333334, a: 1}
-    colorValue: {r: 0.6333334, g: 0.6333334, b: 0.6333334, a: 1}
-  - colorKey: {r: 0.6666667, g: 0.6666667, b: 0.6666667, a: 1}
-    colorValue: {r: 0.6666667, g: 0.6666667, b: 0.6666667, a: 1}
-  - colorKey: {r: 0.70000005, g: 0.70000005, b: 0.70000005, a: 1}
-    colorValue: {r: 0.70000005, g: 0.70000005, b: 0.70000005, a: 1}
-  - colorKey: {r: 0.73333335, g: 0.73333335, b: 0.73333335, a: 1}
-    colorValue: {r: 0.73333335, g: 0.73333335, b: 0.73333335, a: 1}
-  - colorKey: {r: 0.7666667, g: 0.7666667, b: 0.7666667, a: 1}
-    colorValue: {r: 0.7666667, g: 0.7666667, b: 0.7666667, a: 1}
-  - colorKey: {r: 0.8000001, g: 0.8000001, b: 0.8000001, a: 1}
-    colorValue: {r: 0.8000001, g: 0.8000001, b: 0.8000001, a: 1}
-  - colorKey: {r: 0.8333334, g: 0.8333334, b: 0.8333334, a: 1}
-    colorValue: {r: 0.8333334, g: 0.8333334, b: 0.8333334, a: 1}
-  - colorKey: {r: 0.86666673, g: 0.86666673, b: 0.86666673, a: 1}
-    colorValue: {r: 0.86666673, g: 0.86666673, b: 0.86666673, a: 1}
-  - colorKey: {r: 0.90000004, g: 0.90000004, b: 0.90000004, a: 1}
-    colorValue: {r: 0.90000004, g: 0.90000004, b: 0.90000004, a: 1}
-  - colorKey: {r: 0.9333334, g: 0.9333334, b: 0.9333334, a: 1}
-    colorValue: {r: 0.9333334, g: 0.9333334, b: 0.9333334, a: 1}
-  - colorKey: {r: 0.9666667, g: 0.9666667, b: 0.9666667, a: 1}
-    colorValue: {r: 0.9666667, g: 0.9666667, b: 0.9666667, a: 1}
+  - colorKey: {r: 1, g: 1, b: 1, a: 1}
+    colorValue: {r: 1, g: 1, b: 1, a: 1}
+  - colorKey: {r: 0.98, g: 0.98, b: 0.98, a: 0.98}
+    colorValue: {r: 0.98, g: 0.98, b: 0.98, a: 0.98}
+  - colorKey: {r: 0.96, g: 0.96, b: 0.96, a: 0.96}
+    colorValue: {r: 0.96, g: 0.96, b: 0.96, a: 0.96}
+  - colorKey: {r: 0.94, g: 0.94, b: 0.94, a: 0.94}
+    colorValue: {r: 0.94, g: 0.94, b: 0.94, a: 0.94}
+  - colorKey: {r: 0.92, g: 0.92, b: 0.92, a: 0.92}
+    colorValue: {r: 0.92, g: 0.92, b: 0.92, a: 0.92}
+  - colorKey: {r: 0.9, g: 0.9, b: 0.9, a: 0.9}
+    colorValue: {r: 0.9, g: 0.9, b: 0.9, a: 0.9}
+  - colorKey: {r: 0.88, g: 0.88, b: 0.88, a: 0.88}
+    colorValue: {r: 0.88, g: 0.88, b: 0.88, a: 0.88}
+  - colorKey: {r: 0.86, g: 0.86, b: 0.86, a: 0.86}
+    colorValue: {r: 0.86, g: 0.86, b: 0.86, a: 0.86}
+  - colorKey: {r: 0.84000003, g: 0.84000003, b: 0.84000003, a: 0.84000003}
+    colorValue: {r: 0.84000003, g: 0.84000003, b: 0.84000003, a: 0.84000003}
+  - colorKey: {r: 0.82, g: 0.82, b: 0.82, a: 0.82}
+    colorValue: {r: 0.82, g: 0.82, b: 0.82, a: 0.82}
+  - colorKey: {r: 0.8, g: 0.8, b: 0.8, a: 0.8}
+    colorValue: {r: 0.8, g: 0.8, b: 0.8, a: 0.8}
+  - colorKey: {r: 0.78, g: 0.78, b: 0.78, a: 0.78}
+    colorValue: {r: 0.78, g: 0.78, b: 0.78, a: 0.78}
+  - colorKey: {r: 0.76, g: 0.76, b: 0.76, a: 0.76}
+    colorValue: {r: 0.76, g: 0.76, b: 0.76, a: 0.76}
+  - colorKey: {r: 0.74, g: 0.74, b: 0.74, a: 0.74}
+    colorValue: {r: 0.74, g: 0.74, b: 0.74, a: 0.74}
+  - colorKey: {r: 0.72, g: 0.72, b: 0.72, a: 0.72}
+    colorValue: {r: 0.72, g: 0.72, b: 0.72, a: 0.72}
+  - colorKey: {r: 0.70000005, g: 0.70000005, b: 0.70000005, a: 0.70000005}
+    colorValue: {r: 0.70000005, g: 0.70000005, b: 0.70000005, a: 0.70000005}
+  - colorKey: {r: 0.68, g: 0.68, b: 0.68, a: 0.68}
+    colorValue: {r: 0.68, g: 0.68, b: 0.68, a: 0.68}
+  - colorKey: {r: 0.65999997, g: 0.65999997, b: 0.65999997, a: 0.65999997}
+    colorValue: {r: 0.65999997, g: 0.65999997, b: 0.65999997, a: 0.65999997}
+  - colorKey: {r: 0.64, g: 0.64, b: 0.64, a: 0.64}
+    colorValue: {r: 0.64, g: 0.64, b: 0.64, a: 0.64}
+  - colorKey: {r: 0.62, g: 0.62, b: 0.62, a: 0.62}
+    colorValue: {r: 0.62, g: 0.62, b: 0.62, a: 0.62}
+  - colorKey: {r: 0.6, g: 0.6, b: 0.6, a: 0.6}
+    colorValue: {r: 0.6, g: 0.6, b: 0.6, a: 0.6}
+  - colorKey: {r: 0.58000004, g: 0.58000004, b: 0.58000004, a: 0.58000004}
+    colorValue: {r: 0.58000004, g: 0.58000004, b: 0.58000004, a: 0.58000004}
+  - colorKey: {r: 0.56, g: 0.56, b: 0.56, a: 0.56}
+    colorValue: {r: 0.56, g: 0.56, b: 0.56, a: 0.56}
+  - colorKey: {r: 0.54, g: 0.54, b: 0.54, a: 0.54}
+    colorValue: {r: 0.54, g: 0.54, b: 0.54, a: 0.54}
+  - colorKey: {r: 0.52, g: 0.52, b: 0.52, a: 0.52}
+    colorValue: {r: 0.52, g: 0.52, b: 0.52, a: 0.52}
+  - colorKey: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    colorValue: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+  - colorKey: {r: 0.48000002, g: 0.48000002, b: 0.48000002, a: 0.48000002}
+    colorValue: {r: 0.48000002, g: 0.48000002, b: 0.48000002, a: 0.48000002}
+  - colorKey: {r: 0.46000004, g: 0.46000004, b: 0.46000004, a: 0.46000004}
+    colorValue: {r: 0.46000004, g: 0.46000004, b: 0.46000004, a: 0.46000004}
+  - colorKey: {r: 0.44, g: 0.44, b: 0.44, a: 0.44}
+    colorValue: {r: 0.44, g: 0.44, b: 0.44, a: 0.44}
+  - colorKey: {r: 0.42000002, g: 0.42000002, b: 0.42000002, a: 0.42000002}
+    colorValue: {r: 0.42000002, g: 0.42000002, b: 0.42000002, a: 0.42000002}
+  - colorKey: {r: 0.40000004, g: 0.40000004, b: 0.40000004, a: 0.40000004}
+    colorValue: {r: 0.40000004, g: 0.40000004, b: 0.40000004, a: 0.40000004}
+  - colorKey: {r: 0.38, g: 0.38, b: 0.38, a: 0.38}
+    colorValue: {r: 0.38, g: 0.38, b: 0.38, a: 0.38}
+  - colorKey: {r: 0.36, g: 0.36, b: 0.36, a: 0.36}
+    colorValue: {r: 0.36, g: 0.36, b: 0.36, a: 0.36}
+  - colorKey: {r: 0.34000003, g: 0.34000003, b: 0.34000003, a: 0.34000003}
+    colorValue: {r: 0.34000003, g: 0.34000003, b: 0.34000003, a: 0.34000003}
+  - colorKey: {r: 0.32, g: 0.32, b: 0.32, a: 0.32}
+    colorValue: {r: 0.32, g: 0.32, b: 0.32, a: 0.32}
+  - colorKey: {r: 0.3, g: 0.3, b: 0.3, a: 0.3}
+    colorValue: {r: 0.3, g: 0.3, b: 0.3, a: 0.3}
+  - colorKey: {r: 0.28000003, g: 0.28000003, b: 0.28000003, a: 0.28000003}
+    colorValue: {r: 0.28000003, g: 0.28000003, b: 0.28000003, a: 0.28000003}
+  - colorKey: {r: 0.26, g: 0.26, b: 0.26, a: 0.26}
+    colorValue: {r: 0.26, g: 0.26, b: 0.26, a: 0.26}
+  - colorKey: {r: 0.24000001, g: 0.24000001, b: 0.24000001, a: 0.24000001}
+    colorValue: {r: 0.24000001, g: 0.24000001, b: 0.24000001, a: 0.24000001}
+  - colorKey: {r: 0.22000003, g: 0.22000003, b: 0.22000003, a: 0.22000003}
+    colorValue: {r: 0.22000003, g: 0.22000003, b: 0.22000003, a: 0.22000003}
+  - colorKey: {r: 0.20000005, g: 0.20000005, b: 0.20000005, a: 0.20000005}
+    colorValue: {r: 0.20000005, g: 0.20000005, b: 0.20000005, a: 0.20000005}
+  - colorKey: {r: 0.18, g: 0.18, b: 0.18, a: 0.18}
+    colorValue: {r: 0.18, g: 0.18, b: 0.18, a: 0.18}
+  - colorKey: {r: 0.16000003, g: 0.16000003, b: 0.16000003, a: 0.16000003}
+    colorValue: {r: 0.16000003, g: 0.16000003, b: 0.16000003, a: 0.16000003}
+  - colorKey: {r: 0.14000005, g: 0.14000005, b: 0.14000005, a: 0.14000005}
+    colorValue: {r: 0.14000005, g: 0.14000005, b: 0.14000005, a: 0.14000005}
+  - colorKey: {r: 0.120000005, g: 0.120000005, b: 0.120000005, a: 0.120000005}
+    colorValue: {r: 0.120000005, g: 0.120000005, b: 0.120000005, a: 0.120000005}
+  - colorKey: {r: 0.100000024, g: 0.100000024, b: 0.100000024, a: 0.100000024}
+    colorValue: {r: 0.100000024, g: 0.100000024, b: 0.100000024, a: 0.100000024}
+  - colorKey: {r: 0.08000004, g: 0.08000004, b: 0.08000004, a: 0.08000004}
+    colorValue: {r: 0.08000004, g: 0.08000004, b: 0.08000004, a: 0.08000004}
+  - colorKey: {r: 0.060000002, g: 0.060000002, b: 0.060000002, a: 0.060000002}
+    colorValue: {r: 0.060000002, g: 0.060000002, b: 0.060000002, a: 0.060000002}
+  - colorKey: {r: 0.04000002, g: 0.04000002, b: 0.04000002, a: 0.04000002}
+    colorValue: {r: 0.04000002, g: 0.04000002, b: 0.04000002, a: 0.04000002}
+  - colorKey: {r: 0.02000004, g: 0.02000004, b: 0.02000004, a: 0.02000004}
+    colorValue: {r: 0.02000004, g: 0.02000004, b: 0.02000004, a: 0.02000004}
 --- !u!1 &820033713
 GameObject:
   m_ObjectHideFlags: 0
@@ -5597,7 +5640,7 @@ Transform:
   m_GameObject: {fileID: 1053747148}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 70.5, z: -70.5}
+  m_LocalPosition: {x: -9.1, y: 70.5, z: -70.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5682,7 +5725,7 @@ Camera:
   far clip plane: 1000
   field of view: 20.5
   orthographic: 1
-  orthographic size: 155.7
+  orthographic size: 80.8
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
