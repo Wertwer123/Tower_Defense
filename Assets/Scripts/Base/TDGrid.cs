@@ -8,12 +8,12 @@ using UnityEngine.Serialization;
 
 namespace Base
 {
+    [RequireComponent(typeof(GridMesh))]
     public class TdGrid : MonoBehaviour, ITransformChanged
     {
-        [FormerlySerializedAs("laneCount")] [SerializeField] [OnValueChanged(nameof(RegenerateGrid))] [Min(1)]
+        [SerializeField] [OnValueChanged(nameof(RegenerateGrid))] [Min(1)]
         protected int columns = 3;
-
-        [FormerlySerializedAs("rowCount")] [SerializeField] [OnValueChanged(nameof(RegenerateGrid))] [Min(1)]
+        [SerializeField] [OnValueChanged(nameof(RegenerateGrid))] [Min(1)]
         protected int rows = 5;
 
         [SerializeField] [OnValueChanged(nameof(RegenerateGrid))] [Min(0.1f)]
@@ -25,21 +25,11 @@ namespace Base
         [SerializeField] [OnValueChanged(nameof(RegenerateGrid))]
         protected bool enableDebugLines;
 
-        [SerializeField] [OnValueChanged(nameof(RegenerateGrid))]
-        protected float lineThickness = 0.1f;
-
-        [SerializeField] [OnValueChanged(nameof(RegenerateGrid))]
-        protected float meshGroundOffset = 0.1f;
-
-        [SerializeField] [OnValueChanged(nameof(RegenerateGrid))]
-        protected int subsampleGridLineAmount = 20;
-
-
         [SerializeField] private LayerMask terrainLayerMask;
-        [SerializeField] private MeshRenderer gridVisualizationMesh;
-        [SerializeField] private MeshFilter gridVisualizationMeshFilter;
+        
         [SerializeField] protected BoxCollider gridBounds;
-
+        [SerializeField] GridMesh gridMesh;
+        
         [SerializeField] [HideInInspector] private Vector3 oldPosition;
         [SerializeField] [HideInInspector] protected float cellExtents;
 
@@ -76,6 +66,10 @@ namespace Base
             get => oldPosition;
             set => oldPosition = value;
         }
+        
+        public int Columns => columns;
+        public int Rows => rows;
+        public float CellSize => cellSize;
 
         public bool HasTransformChanged()
         {
@@ -97,14 +91,6 @@ namespace Base
         {
             cellSize = newCellSize;
         }
-
-        public void SetLineThickness(float newLineThickness)
-        {
-            lineThickness = newLineThickness;
-            GenerateGridMesh();
-            Debug.Log("regenerating grid mesh");
-        }
-
         public bool IsPositionInGrid(Vector2 position)
         {
             return gridBounds.bounds.Contains(position);
@@ -125,95 +111,7 @@ namespace Base
         {
             CreateGrid();
             CalculateGridBounds();
-            GenerateGridMesh();
-        }
-
-        protected void GenerateGridMesh()
-        {
-            if (gridVisualizationMeshFilter == null) return;
-
-            Mesh mesh = new();
-            List<Vector3> vertices = new();
-            List<int> triangles = new();
-
-            //offset the end to the right  to close the grid bounds
-            Vector3 columnLinesStart = transform.position;
-            Vector3 columnLinesEnd = columnLinesStart + transform.forward * rows * cellSize;
-
-            Vector3 rowLinesStart = transform.position;
-            Vector3 rowLinesEnd = rowLinesStart + transform.right * columns * cellSize;
-
-            Vector3 rowLinesCreationStep = (columnLinesEnd - columnLinesStart) / rows;
-            Vector3 columnLinesCreationStep = (rowLinesEnd - rowLinesStart) / columns;
-
-            for (int x = 0; x <= columns; x++)
-            {
-                // Debug.DrawLine(columnLinesStart, columnLinesEnd, Color.green, 1);
-                GenerateSubsampledLine(columnLinesStart, columnLinesEnd, vertices, triangles);
-                columnLinesStart += columnLinesCreationStep;
-                columnLinesEnd += columnLinesCreationStep;
-            }
-
-            for (int y = 0; y <= rows; y++)
-            {
-                GenerateSubsampledLine(rowLinesStart, rowLinesEnd, vertices, triangles);
-                rowLinesStart += rowLinesCreationStep;
-                rowLinesEnd += rowLinesCreationStep;
-            }
-
-            mesh.vertices = vertices.ToArray();
-            mesh.triangles = triangles.ToArray();
-
-            gridVisualizationMeshFilter.mesh = mesh;
-        }
-
-        private void GenerateSubsampledLine(Vector3 startPoint, Vector3 endPoint, List<Vector3> vertices,
-            List<int> triangles)
-        {
-            int vertexCount = vertices.Count;
-            Vector3 direction = (endPoint - startPoint).normalized;
-            Vector3 right = Vector3.Cross(direction, Vector3.up);
-            Vector3 sampleStep = (endPoint - startPoint) / subsampleGridLineAmount;
-            Vector3 previousSampleStep = startPoint;
-            Vector3 currentSampleStep = startPoint + sampleStep;
-
-            for (int i = 0; i < subsampleGridLineAmount; i++)
-            {
-                bool hitPrevious = Physics.Raycast(previousSampleStep, Vector3.down,
-                    out RaycastHit hitInfoPrevious,
-                    Mathf.Infinity, terrainLayerMask);
-                bool hitCurrent = Physics.Raycast(currentSampleStep, Vector3.down,
-                    out RaycastHit hitInfoCurrent,
-                    Mathf.Infinity, terrainLayerMask);
-                if (hitPrevious && hitCurrent)
-                {
-                    //generate equal to the left and right of the hit points to center the line
-                    Vector3 pointCurrent = hitInfoCurrent.point + Vector3.up * meshGroundOffset;
-                    Vector3 pointPrevious = hitInfoPrevious.point + Vector3.up * meshGroundOffset;
-
-                    Vector3 vertex1 = pointPrevious - right * lineThickness * 0.5f;
-                    Vector3 vertex2 = pointPrevious + right * lineThickness * 0.5f;
-                    Vector3 vertex3 = pointCurrent + right * lineThickness * 0.5f;
-                    Vector3 vertex4 = pointCurrent - right * lineThickness * 0.5f;
-
-                    vertices.Add(transform.InverseTransformPoint(vertex1));
-                    vertices.Add(transform.InverseTransformPoint(vertex2));
-                    vertices.Add(transform.InverseTransformPoint(vertex3));
-                    vertices.Add(transform.InverseTransformPoint(vertex4));
-
-                    triangles.Add(vertexCount);
-                    triangles.Add(vertexCount + 1);
-                    triangles.Add(vertexCount + 2);
-                    triangles.Add(vertexCount + 2);
-                    triangles.Add(vertexCount + 3);
-                    triangles.Add(vertexCount);
-
-                    vertexCount += 4;
-                }
-
-                previousSampleStep = currentSampleStep;
-                currentSampleStep += sampleStep;
-            }
+            gridMesh?.GenerateGridMesh(this);
         }
 
         private void CalculateGridBounds()

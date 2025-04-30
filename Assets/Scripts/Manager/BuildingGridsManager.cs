@@ -22,9 +22,6 @@ namespace Manager
         [SerializeField] [OnValueChanged(nameof(SetManagedGridCellSizes))] [Min(0)]
         private float cellSizeGrids = 0.5f;
 
-        [SerializeField] [OnValueChanged(nameof(SetManagedGridLineThickness))] [Min(0)]
-        private float gridLineThickness = 0.5f;
-
         [SerializeField] [OnValueChanged(nameof(SetManagedGridLineAlpha))] [Min(0)]
         private float gridLineAlpha = 0.5f;
 
@@ -84,15 +81,6 @@ namespace Manager
         {
             gridMaterial.SetMaterialColor("_GridLineColor", gridColor);
             setColorValue = true;
-        }
-
-        private void SetManagedGridLineThickness()
-        {
-            centerTdGrid.SetLineThickness(gridLineThickness);
-            topTdGrid.SetLineThickness(gridLineThickness);
-            rightTdGrid.SetLineThickness(gridLineThickness);
-            bottomTdGrid.SetLineThickness(gridLineThickness);
-            leftTdGrid.SetLineThickness(gridLineThickness);
         }
 
         private void SetManagedGridLineAlpha()
