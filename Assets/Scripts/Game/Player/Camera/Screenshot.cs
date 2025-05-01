@@ -1,5 +1,5 @@
-﻿using System.IO;
-using UnityEngine;
+﻿using UnityEngine;
+using Utils;
 
 namespace Game.CameraComponents
 {
@@ -30,19 +30,11 @@ namespace Game.CameraComponents
             //Release the render texture from memory
             screenshotRenderTexture.Release();
 
-            if (saveAsImage) SaveScreenshot(screenshot, screenshotName);
+            if (saveAsImage) Utilities.FileUtils.SaveTexture(screenshot, screenshotPath, screenshotName);
 
             return screenshot;
         }
 
-        public string SaveScreenshot(Texture2D screenshotTexture, string newScreenshotName)
-        {
-            string savedPath = Path.Combine(screenshotPath, newScreenshotName + ".png");
-            byte[] textureDataAsPng = screenshotTexture.EncodeToPNG();
-            File.WriteAllBytes(savedPath, textureDataAsPng);
-
-            return savedPath;
-        }
 
         private RenderTexture CreateScreenshotRenderTexture(RenderTextureFormat format = RenderTextureFormat.ARGB32)
         {

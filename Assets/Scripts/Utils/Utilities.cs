@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using Game.Player.Camera;
 using UnityEngine;
 using Cursor = UnityEngine.Cursor;
@@ -22,9 +23,9 @@ namespace Utils
 
             return new Vector3(x, y, 0);
         }
-        
+
         /// <summary>
-        /// This returns the normalized distance between colors as the colors in unity are already normalized lol
+        ///     This returns the normalized distance between colors as the colors in unity are already normalized lol
         /// </summary>
         /// <param name="color1"></param>
         /// <param name="color2"></param>
@@ -34,7 +35,7 @@ namespace Utils
             float rDiff = Mathf.Pow(color1.r - color2.r, 2);
             float gDiff = Mathf.Pow(color1.g - color2.g, 2);
             float bDiff = Mathf.Pow(color1.b - color2.b, 2);
-            
+
             return Mathf.Sqrt(rDiff + gDiff + bDiff);
         }
 
@@ -59,6 +60,19 @@ namespace Utils
             }
 
             return closestColor;
+        }
+
+        public static class FileUtils
+        {
+            public static string SaveTexture(Texture2D screenshotTexture, string texturePath, string textureName,
+                string extension = ".png")
+            {
+                string savedPath = Path.Combine(texturePath, textureName + extension);
+                byte[] textureDataAsPng = screenshotTexture.EncodeToPNG();
+                File.WriteAllBytes(savedPath, textureDataAsPng);
+
+                return savedPath;
+            }
         }
     }
 }
