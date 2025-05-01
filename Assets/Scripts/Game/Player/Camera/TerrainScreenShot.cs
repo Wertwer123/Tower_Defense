@@ -9,11 +9,12 @@ namespace Game.Player.Camera
     {
         [SerializeField] [Min(10.0f)] private float screenShotFarClip;
         [SerializeField] [Range(1.1f, 2f)] private float screenShotHeightOvershoot;
+        [SerializeField] private int terrainHeight = 2000;
+        [SerializeField] private int terrainWidth = 2000;
         [SerializeField] [Min(1)] private int heightSteps = 5;
         [SerializeField] private string terrainScreenShotName;
         [SerializeField] protected LayerMask screenshotLayers;
-        [SerializeField] private Terrain terrain;
-        [SerializeField] private Material screenshotMaterial;
+        [SerializeField] private Transform terrain;
         [SerializeField] private List<ColorPair> heightMappings;
 
         private void CreateHeightMappings()
@@ -21,12 +22,10 @@ namespace Game.Player.Camera
             heightMappings.Clear();
 
             float stepSize = 1.0f / heightSteps;
-            float alphaSteps = 1.0f / heightSteps;
-            
+
             for (int i = 0; i < heightSteps; i++)
             {
-                Color currentColor = Color.Lerp(Color.white, Color.black, i * stepSize);
-                currentColor.a = Mathf.Lerp(1.0f, 0.0f,  i * alphaSteps / 1.0f);
+                Color currentColor = Color.Lerp(Color.gray, Color.white, i * stepSize);
                 heightMappings.Add(new ColorPair(currentColor, currentColor));
             }
         }
@@ -39,11 +38,8 @@ namespace Game.Player.Camera
         {
             CreateHeightMappings();
 
-            Material defaultTerrainMaterial = terrain.materialTemplate;
-            terrain.materialTemplate = screenshotMaterial;
-
-            float sampleStepX = terrain.terrainData.size.x / screenshotWidth;
-            float sampleStepY = terrain.terrainData.size.z / screenshotHeight;
+            float sampleStepX = (float)terrainWidth / screenshotWidth;
+            float sampleStepY = (float)terrainHeight / screenshotHeight;
 
             Texture2D screenShot = new(screenshotWidth, screenshotHeight, TextureFormat.RGBA32, false);
             for (int x = 0; x < screenshotWidth; x++)
@@ -55,6 +51,7 @@ namespace Game.Player.Camera
                     out RaycastHit hit,
                     screenShotFarClip * screenShotHeightOvershoot,
                     screenshotLayers);
+                Debug.DrawLine(position, Vector3.down * 1000, Color.green, 20.0f);
 
                 Color lerpedHeightColor =
                     Color.Lerp(Color.black, Color.white,
@@ -66,7 +63,6 @@ namespace Game.Player.Camera
 
             if (saveAsImage) SaveScreenshot(screenShot, terrainScreenShotName);
 
-            terrain.materialTemplate = defaultTerrainMaterial;
             return screenShot;
         }
     }
